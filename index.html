@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <meta property="og:title" content="台南市先進運輸系統路線圖">
+    <meta property="og:description" content="台南市先進運輸系統路線圖 以 臺南市先進運輸系統第一期藍線的內容提及路線為基礎進行繪製，希望提供在地的朋友作為討論基礎">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="http://kiang.github.io/tainan_basecode/images/og_image.png">
+    <title>台南市先進運輸系統路線圖</title>
+    <link rel="stylesheet" href="https://openlayers.org/en/v4.2.0/css/ol.css" type="text/css">
+    <!-- The line below is only needed for old environments like Internet Explorer and Android 4.x -->
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,URL"></script>
+    <script src="https://openlayers.org/en/v4.2.0/build/ol.js"></script>
+    <style>
+      .ol-popup {
+        position: absolute;
+        background-color: white;
+        -webkit-filter: drop-shadow(0 1px 4px rgba(0,0,0,0.2));
+        filter: drop-shadow(0 1px 4px rgba(0,0,0,0.2));
+        padding: 15px;
+        border-radius: 10px;
+        border: 1px solid #cccccc;
+        bottom: 12px;
+        left: -50px;
+        min-width: 280px;
+      }
+      .ol-popup:after, .ol-popup:before {
+        top: 100%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+      }
+      .ol-popup:after {
+        border-top-color: white;
+        border-width: 10px;
+        left: 48px;
+        margin-left: -10px;
+      }
+      .ol-popup:before {
+        border-top-color: #cccccc;
+        border-width: 11px;
+        left: 48px;
+        margin-left: -11px;
+      }
+      .ol-popup-closer {
+        text-decoration: none;
+        position: absolute;
+        top: 2px;
+        right: 8px;
+      }
+      .ol-popup-closer:after {
+        content: "✖";
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map" class="map"></div>
+    <div id="popup" class="ol-popup">
+      <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+      <div id="popup-content"></div>
+    </div>
+    <form>
+      <label>radius size</label>
+      <input id="radius" type="range" min="1" max="50" step="1" value="2"/>
+      <label>blur size</label>
+      <input id="blur" type="range" min="1" max="50" step="1" value="5"/>
+    </form>
+    <script>
+      var blur = document.getElementById('blur');
+      var radius = document.getElementById('radius');
+
+      var projection = ol.proj.get('EPSG:3857');
+      var projectionExtent = projection.getExtent();
+      var size = ol.extent.getWidth(projectionExtent) / 256;
+      var resolutions = new Array(20);
+      var matrixIds = new Array(20);
+      for (var z = 0; z < 20; ++z) {
+          // generate resolutions and matrixIds arrays for this WMTS
+          resolutions[z] = size / Math.pow(2, z);
+          matrixIds[z] = z;
+      }
+      var container = document.getElementById('popup');
+      var content = document.getElementById('popup-content');
+      var closer = document.getElementById('popup-closer');
+      var popup = new ol.Overlay({
+        element: container,
+        autoPan: true,
+        autoPanAnimation: {
+          duration: 250
+        }
+      });
+
+      closer.onclick = function() {
+        popup.setPosition(undefined);
+        closer.blur();
+        return false;
+      };
+
+      var baseLayer = new ol.layer.Tile({
+          source: new ol.source.WMTS({
+              matrixSet: 'EPSG:3857',
+              format: 'image/png',
+              url: 'http://wmts.nlsc.gov.tw/wmts',
+              layer: 'EMAP',
+              tileGrid: new ol.tilegrid.WMTS({
+                  origin: ol.extent.getTopLeft(projectionExtent),
+                  resolutions: resolutions,
+                  matrixIds: matrixIds
+              }),
+              style: 'default',
+              wrapX: true,
+              attributions: '<a href="http://maps.nlsc.gov.tw/" target="_blank">國土測繪圖資服務雲</a>'
+          }),
+          opacity: 0.5
+      });
+
+      var vector = new ol.layer.Heatmap({
+        source: new ol.source.Vector({
+          url: 'weight.json',
+          format: new ol.format.GeoJSON()
+        }),
+        blur: parseInt(blur.value, 10),
+        radius: parseInt(radius.value, 10)
+      });
+
+      var lineLayer = new ol.layer.Vector({
+          source: new ol.source.Vector({
+              url: 'doc.kml',
+              format: new ol.format.KML()
+          })
+      });
+
+      var map = new ol.Map({
+        layers: [baseLayer, vector, lineLayer],
+        overlays: [popup],
+        target: 'map',
+        view: new ol.View({
+          center: ol.proj.fromLonLat([120.301507, 23.124694]),
+          zoom: 11
+        })
+      });
+
+      blur.addEventListener('input', function() {
+        vector.setBlur(parseInt(blur.value, 10));
+      });
+
+      radius.addEventListener('input', function() {
+        vector.setRadius(parseInt(radius.value, 10));
+      });
+
+      /**
+       * Add a click handler to the map to render the popup.
+       */
+      map.on('singleclick', function(evt) {
+        var coordinate = evt.coordinate;
+        var message = '';
+        var weight = 0;
+
+        map.forEachFeatureAtPixel(evt.pixel, function (feature, layer) {
+            var p = feature.getProperties();
+            for(k in p) {
+              switch(k) {
+                case 'name':
+                message += p[k] + ' | ';
+                break;
+                case 'weight':
+                weight += parseInt(p[k]);
+                break;
+                default:
+                console.log(k);
+              }
+            }
+        });
+        if(weight > 0) {
+          message += '<br />點選位置人口約 ' + weight + ' 人'
+        }
+        if(message !== '') {
+          content.innerHTML = message;
+          popup.setPosition(coordinate);
+        } else {
+          popup.setPosition(undefined);
+          closer.blur();
+        }
+
+      });
+    </script>
+  </body>
+</html>
