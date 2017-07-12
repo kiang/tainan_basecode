@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.6.0 (24063 thorn-02.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <relation id="6384303" visible="true" version="2" changeset="40473036" timestamp="2016-07-04T08:04:19Z" user="Kagami" uid="189328">
+  <member type="relation" ref="6384302" role="forward"/>
+  <tag k="name" v="77路安平假日環線公車"/>
+  <tag k="network" v="臺南市公車"/>
+  <tag k="operator" v="四方客運"/>
+  <tag k="public_transport:version" v="2"/>
+  <tag k="ref" v="77-1"/>
+  <tag k="ref:category" v="CityBus"/>
+  <tag k="ref:querycode" v="1803"/>
+  <tag k="route_master" v="bus"/>
+  <tag k="type" v="route_master"/>
+ </relation>
+</osm>

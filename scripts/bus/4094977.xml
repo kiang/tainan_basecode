@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.6.0 (24103 thorn-02.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <relation id="4094977" visible="true" version="7" changeset="41112283" timestamp="2016-07-29T15:30:11Z" user="Kagami" uid="189328">
+  <member type="relation" ref="4094972" role="forward"/>
+  <member type="relation" ref="4094973" role="backward"/>
+  <member type="relation" ref="4095010" role="forward_extend"/>
+  <member type="relation" ref="4095011" role="backward_extend"/>
+  <member type="relation" ref="6446355" role="forward_extend"/>
+  <member type="relation" ref="6446356" role="backward_extend"/>
+  <tag k="name" v="黃3"/>
+  <tag k="network" v="臺南市公車"/>
+  <tag k="operator" v="新營客運"/>
+  <tag k="public_transport:version" v="2"/>
+  <tag k="ref" v="黃3"/>
+  <tag k="ref:category" v="Yellow"/>
+  <tag k="ref:querycode" v="1503"/>
+  <tag k="route_master" v="bus"/>
+  <tag k="type" v="route_master"/>
+ </relation>
+</osm>

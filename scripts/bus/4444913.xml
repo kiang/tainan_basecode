@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.6.0 (23911 thorn-02.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <relation id="4444913" visible="true" version="7" changeset="45183020" timestamp="2017-01-15T04:07:37Z" user="Kagami" uid="189328">
+  <member type="relation" ref="4444911" role="backward"/>
+  <member type="relation" ref="4444912" role="forward"/>
+  <member type="relation" ref="4444936" role="forward"/>
+  <member type="relation" ref="4444937" role="backward"/>
+  <member type="relation" ref="6881265" role="backward_extend"/>
+  <member type="relation" ref="6881264" role="forward_extend"/>
+  <tag k="name" v="19路"/>
+  <tag k="network" v="臺南市公車"/>
+  <tag k="operator" v="府城客運"/>
+  <tag k="public_transport:version" v="2"/>
+  <tag k="ref" v="19"/>
+  <tag k="ref:category" v="CityBus"/>
+  <tag k="ref:querycode" v="10019"/>
+  <tag k="route_master" v="bus"/>
+  <tag k="type" v="route_master"/>
+ </relation>
+</osm>

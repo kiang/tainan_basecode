@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.6.0 (13543 thorn-03.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <node id="1342056296" visible="true" version="2" changeset="18928108" timestamp="2013-11-16T07:43:39Z" user="wenchin" uid="121778" lat="23.0640369" lon="120.1737273"/>
+ <node id="1342056464" visible="true" version="2" changeset="18928108" timestamp="2013-11-16T07:43:39Z" user="wenchin" uid="121778" lat="23.0645515" lon="120.1720689"/>
+ <node id="1595270676" visible="true" version="3" changeset="18928108" timestamp="2013-11-16T07:43:47Z" user="wenchin" uid="121778" lat="23.0647040" lon="120.1716220"/>
+ <node id="1618539659" visible="true" version="5" changeset="42620135" timestamp="2016-10-04T05:27:09Z" user="pratikyadav" uid="2905914" lat="23.0626687" lon="120.1762827"/>
+ <node id="1618539660" visible="true" version="3" changeset="43067723" timestamp="2016-10-21T19:52:27Z" user="calfarome" uid="2511706" lat="23.0628885" lon="120.1762188"/>
+ <node id="1618539662" visible="true" version="3" changeset="43067723" timestamp="2016-10-21T19:52:27Z" user="calfarome" uid="2511706" lat="23.0630097" lon="120.1761794"/>
+ <node id="1618539664" visible="true" version="3" changeset="43067723" timestamp="2016-10-21T19:52:27Z" user="calfarome" uid="2511706" lat="23.0631166" lon="120.1761197"/>
+ <node id="1618539668" visible="true" version="4" changeset="43067723" timestamp="2016-10-21T19:52:27Z" user="calfarome" uid="2511706" lat="23.0632255" lon="120.1760498"/>
+ <node id="1618539669" visible="true" version="3" changeset="43067723" timestamp="2016-10-21T19:52:27Z" user="calfarome" uid="2511706" lat="23.0633717" lon="120.1759185"/>
+ <node id="1645970859" visible="true" version="2" changeset="18928108" timestamp="2013-11-16T07:43:52Z" user="wenchin" uid="121778" lat="23.0640103" lon="120.1738114"/>
+ <node id="1645970882" visible="true" version="2" changeset="18928108" timestamp="2013-11-16T07:43:52Z" user="wenchin" uid="121778" lat="23.0644573" lon="120.1723724"/>
+ <node id="1756938080" visible="true" version="4" changeset="43067723" timestamp="2016-10-21T19:52:28Z" user="calfarome" uid="2511706" lat="23.0635159" lon="120.1754190"/>
+ <node id="1756938083" visible="true" version="3" changeset="43067723" timestamp="2016-10-21T19:52:28Z" user="calfarome" uid="2511706" lat="23.0637064" lon="120.1748637"/>
+ <node id="1756938085" visible="true" version="3" changeset="43067723" timestamp="2016-10-21T19:52:28Z" user="calfarome" uid="2511706" lat="23.0637207" lon="120.1748184"/>
+ <node id="1756956443" visible="true" version="3" changeset="43067723" timestamp="2016-10-21T19:52:31Z" user="calfarome" uid="2511706" lat="23.0639517" lon="120.1740344"/>
+ <node id="2962824938" visible="true" version="1" changeset="24144021" timestamp="2014-07-14T16:31:20Z" user="YL Chen" uid="2185699" lat="23.0643131" lon="120.1728370"/>
+ <way id="148784630" visible="true" version="1" changeset="10590691" timestamp="2012-02-05T06:28:27Z" user="zinklink" uid="269097">
+  <nd ref="1618539669"/>
+  <nd ref="1618539668"/>
+  <nd ref="1618539664"/>
+  <nd ref="1618539662"/>
+  <nd ref="1618539660"/>
+  <nd ref="1618539659"/>
+  <tag k="highway" v="unclassified"/>
+  <tag k="oneway" v="yes"/>
+ </way>
+ <way id="299032753" visible="true" version="1" changeset="24884889" timestamp="2014-08-20T13:24:00Z" user="Kagami" uid="189328">
+  <nd ref="1618539669"/>
+  <nd ref="1756938080"/>
+  <nd ref="1756938083"/>
+  <nd ref="1756938085"/>
+  <nd ref="1756956443"/>
+  <nd ref="1645970859"/>
+  <nd ref="1342056296"/>
+  <nd ref="2962824938"/>
+  <nd ref="1645970882"/>
+  <nd ref="1342056464"/>
+  <nd ref="1595270676"/>
+  <tag k="highway" v="tertiary"/>
+  <tag k="name" v="海佃路四段"/>
+ </way>
+ <relation id="4064432" visible="true" version="3" changeset="36703153" timestamp="2016-01-20T15:17:26Z" user="Kagami" uid="189328">
+  <member type="way" ref="299032753" role=""/>
+  <member type="way" ref="148784630" role=""/>
+  <tag k="from" v="十二佃"/>
+  <tag k="name" v="7路(不繞駛十二佃_返程)"/>
+  <tag k="public_transport:version" v="2"/>
+  <tag k="ref" v="7"/>
+  <tag k="route" v="bus"/>
+  <tag k="to" v="十二佃"/>
+  <tag k="type" v="route"/>
+ </relation>
+</osm>

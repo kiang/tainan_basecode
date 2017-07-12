@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.6.0 (21384 thorn-03.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <node id="1882458648" visible="true" version="1" changeset="12855570" timestamp="2012-08-25T13:46:26Z" user="wenchin" uid="121778" lat="23.2343747" lon="120.3704022"/>
+ <node id="1887970741" visible="true" version="2" changeset="42671082" timestamp="2016-10-05T22:43:33Z" user="Rub21" uid="510836" lat="23.2301185" lon="120.3695833"/>
+ <node id="1887970780" visible="true" version="2" changeset="42671082" timestamp="2016-10-05T22:43:33Z" user="Rub21" uid="510836" lat="23.2302889" lon="120.3695227"/>
+ <node id="1887970807" visible="true" version="2" changeset="38352062" timestamp="2016-04-06T14:02:09Z" user="Kagami" uid="189328" lat="23.2304197" lon="120.3694645">
+  <tag k="barrier" v="gate"/>
+ </node>
+ <node id="1887970834" visible="true" version="2" changeset="42671082" timestamp="2016-10-05T22:43:33Z" user="Rub21" uid="510836" lat="23.2305487" lon="120.3694484"/>
+ <node id="1887970883" visible="true" version="3" changeset="42671082" timestamp="2016-10-05T22:43:33Z" user="Rub21" uid="510836" lat="23.2312469" lon="120.3698051"/>
+ <node id="1887970898" visible="true" version="3" changeset="42669852" timestamp="2016-10-05T21:34:06Z" user="Rub21" uid="510836" lat="23.2314021" lon="120.3698245"/>
+ <node id="1887970906" visible="true" version="2" changeset="42669852" timestamp="2016-10-05T21:34:06Z" user="Rub21" uid="510836" lat="23.2315119" lon="120.3697989"/>
+ <node id="1887970912" visible="true" version="2" changeset="42669852" timestamp="2016-10-05T21:34:06Z" user="Rub21" uid="510836" lat="23.2315616" lon="120.3697515"/>
+ <node id="1887970919" visible="true" version="2" changeset="42669852" timestamp="2016-10-05T21:34:06Z" user="Rub21" uid="510836" lat="23.2317294" lon="120.3696771"/>
+ <node id="1887970928" visible="true" version="2" changeset="42669852" timestamp="2016-10-05T21:34:06Z" user="Rub21" uid="510836" lat="23.2318785" lon="120.3696771"/>
+ <node id="1887970935" visible="true" version="2" changeset="42669852" timestamp="2016-10-05T21:34:06Z" user="Rub21" uid="510836" lat="23.2320028" lon="120.3696839"/>
+ <node id="1887970943" visible="true" version="2" changeset="42669852" timestamp="2016-10-05T21:34:06Z" user="Rub21" uid="510836" lat="23.2321706" lon="120.3697583"/>
+ <node id="1887970953" visible="true" version="2" changeset="42669852" timestamp="2016-10-05T21:34:06Z" user="Rub21" uid="510836" lat="23.2324068" lon="120.3697650"/>
+ <node id="1887970965" visible="true" version="2" changeset="42669852" timestamp="2016-10-05T21:34:06Z" user="Rub21" uid="510836" lat="23.2326544" lon="120.3695244"/>
+ <node id="2520831963" visible="true" version="2" changeset="42669852" timestamp="2016-10-05T21:34:06Z" user="Rub21" uid="510836" lat="23.2361703" lon="120.3712575"/>
+ <node id="2967762843" visible="true" version="3" changeset="42669852" timestamp="2016-10-05T21:34:06Z" user="Rub21" uid="510836" lat="23.2325879" lon="120.3696076"/>
+ <node id="3074364434" visible="true" version="3" changeset="42669852" timestamp="2016-10-05T21:34:06Z" user="Rub21" uid="510836" lat="23.2365780" lon="120.3714228"/>
+ <node id="4102527257" visible="true" version="1" changeset="38352062" timestamp="2016-04-06T14:01:56Z" user="Kagami" uid="189328" lat="23.2302046" lon="120.3696321">
+  <tag k="bus" v="yes"/>
+  <tag k="highway" v="bus_stop"/>
+  <tag k="name" v="工研院台南分院"/>
+  <tag k="network" v="臺南市公車"/>
+  <tag k="note" v="返程"/>
+  <tag k="operator" v="臺南市公車"/>
+  <tag k="public_transport" v="platform"/>
+  <tag k="ref" v="8953"/>
+ </node>
+ <way id="178446893" visible="true" version="4" changeset="48924690" timestamp="2017-05-23T18:24:37Z" user="happychang" uid="5644877">
+  <nd ref="1887970965"/>
+  <nd ref="2967762843"/>
+  <nd ref="1887970953"/>
+  <nd ref="1887970943"/>
+  <nd ref="1887970935"/>
+  <nd ref="1887970928"/>
+  <nd ref="1887970919"/>
+  <nd ref="1887970912"/>
+  <nd ref="1887970906"/>
+  <nd ref="1887970898"/>
+  <nd ref="1887970883"/>
+  <tag k="highway" v="service"/>
+ </way>
+ <way id="408296259" visible="true" version="2" changeset="48924690" timestamp="2017-05-23T18:24:37Z" user="happychang" uid="5644877">
+  <nd ref="1887970834"/>
+  <nd ref="1887970807"/>
+  <tag k="highway" v="service"/>
+ </way>
+ <way id="408296262" visible="true" version="2" changeset="48924690" timestamp="2017-05-23T18:24:37Z" user="happychang" uid="5644877">
+  <nd ref="1887970807"/>
+  <nd ref="1887970780"/>
+  <nd ref="1887970741"/>
+  <tag k="access" v="private"/>
+  <tag k="highway" v="service"/>
+ </way>
+ <way id="408296269" visible="true" version="1" changeset="38352062" timestamp="2016-04-06T14:01:59Z" user="Kagami" uid="189328">
+  <nd ref="1887970965"/>
+  <nd ref="1882458648"/>
+  <nd ref="2520831963"/>
+  <nd ref="3074364434"/>
+  <tag k="highway" v="unclassified"/>
+  <tag k="name" v="工研路"/>
+ </way>
+ <way id="408296270" visible="true" version="3" changeset="48924690" timestamp="2017-05-23T18:24:37Z" user="happychang" uid="5644877">
+  <nd ref="1887970883"/>
+  <nd ref="1887970834"/>
+  <tag k="bridge" v="yes"/>
+  <tag k="highway" v="service"/>
+  <tag k="layer" v="1"/>
+  <tag k="name" v="竹子坑橋"/>
+ </way>
+ <relation id="6112686" visible="true" version="1" changeset="38352062" timestamp="2016-04-06T14:02:00Z" user="Kagami" uid="189328">
+  <member type="way" ref="408296262" role=""/>
+  <member type="way" ref="408296259" role=""/>
+  <member type="way" ref="408296270" role=""/>
+  <member type="way" ref="178446893" role=""/>
+  <member type="way" ref="408296269" role=""/>
+  <member type="node" ref="4102527257" role="platform"/>
+  <tag k="from" v="新營"/>
+  <tag k="name" v="黃2(繞駛工研院_返程)"/>
+  <tag k="public_transport:version" v="2"/>
+  <tag k="ref" v="黃2"/>
+  <tag k="route" v="bus"/>
+  <tag k="to" v="番仔坑"/>
+  <tag k="type" v="route"/>
+ </relation>
+</osm>

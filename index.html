@@ -127,6 +127,13 @@
         radius: parseInt(radius.value, 10)
       });
 
+      var bus = new ol.layer.Vector({
+        source: new ol.source.Vector({
+          url: 'bus.json',
+          format: new ol.format.GeoJSON()
+        })
+      });
+
       var lineLayer = new ol.layer.Vector({
           source: new ol.source.Vector({
               url: 'doc.kml',
@@ -135,7 +142,7 @@
       });
 
       var map = new ol.Map({
-        layers: [baseLayer, vector, lineLayer],
+        layers: [baseLayer, vector, lineLayer, bus],
         overlays: [popup],
         target: 'map',
         view: new ol.View({

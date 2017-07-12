@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.6.0 (2672 thorn-02.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <node id="1240288637" visible="true" version="2" changeset="18580757" timestamp="2013-10-28T09:27:21Z" user="wenchin" uid="121778" lat="22.9774517" lon="120.1976052"/>
+ <node id="2135744563" visible="true" version="4" changeset="22938518" timestamp="2014-06-15T07:02:59Z" user="Kagami" uid="189328" lat="22.9755605" lon="120.1976268"/>
+ <node id="2135744580" visible="true" version="4" changeset="37189010" timestamp="2016-02-13T15:43:21Z" user="Kagami" uid="189328" lat="22.9766963" lon="120.1976039">
+  <tag k="highway" v="traffic_signals"/>
+ </node>
+ <node id="2135744600" visible="true" version="5" changeset="43067901" timestamp="2016-10-21T19:59:19Z" user="karitotp" uid="2748195" lat="22.9777341" lon="120.1976010">
+  <tag k="highway" v="traffic_signals"/>
+ </node>
+ <node id="2139757073" visible="true" version="5" changeset="26231124" timestamp="2014-10-21T10:05:21Z" user="Kagami" uid="189328" lat="22.9742788" lon="120.1976323"/>
+ <node id="2470222163" visible="true" version="3" changeset="26231124" timestamp="2014-10-21T10:05:21Z" user="Kagami" uid="189328" lat="22.9734898" lon="120.1977219"/>
+ <node id="2835799551" visible="true" version="2" changeset="26231124" timestamp="2014-10-21T10:05:22Z" user="Kagami" uid="189328" lat="22.9734896" lon="120.1976502"/>
+ <node id="2916982276" visible="true" version="3" changeset="38291108" timestamp="2016-04-04T13:29:05Z" user="Kagami" uid="189328" lat="22.9749766" lon="120.1976286">
+  <tag k="highway" v="traffic_signals"/>
+ </node>
+ <node id="2966300346" visible="true" version="1" changeset="24185053" timestamp="2014-07-16T16:32:37Z" user="Kagami" uid="189328" lat="22.9772118" lon="120.1976072"/>
+ <way id="229039646" visible="true" version="11" changeset="48921730" timestamp="2017-05-23T16:23:27Z" user="Supaplex" uid="274857">
+  <nd ref="2135744600"/>
+  <nd ref="1240288637"/>
+  <nd ref="2966300346"/>
+  <nd ref="2135744580"/>
+  <nd ref="2135744563"/>
+  <nd ref="2916982276"/>
+  <tag k="highway" v="tertiary"/>
+  <tag k="name" v="西門路一段"/>
+  <tag k="name:en" v="Section 1 , Simen Road"/>
+  <tag k="name:zh" v="西門路一段"/>
+  <tag k="oneway" v="yes"/>
+  <tag k="sidewalk" v="no"/>
+ </way>
+ <way id="239211830" visible="true" version="2" changeset="22125721" timestamp="2014-05-04T13:43:10Z" user="Kagami" uid="189328">
+  <nd ref="2835799551"/>
+  <nd ref="2470222163"/>
+  <tag k="highway" v="service"/>
+ </way>
+ <way id="298271099" visible="true" version="4" changeset="48921730" timestamp="2017-05-23T16:23:51Z" user="Supaplex" uid="274857">
+  <nd ref="2916982276"/>
+  <nd ref="2139757073"/>
+  <nd ref="2835799551"/>
+  <tag k="highway" v="tertiary"/>
+  <tag k="name" v="西門路一段"/>
+  <tag k="name:en" v="Section 1, Simen Road"/>
+  <tag k="name:zh" v="西門路一段"/>
+  <tag k="oneway" v="yes"/>
+  <tag k="sidewalk" v="no"/>
+ </way>
+ <relation id="4016605" visible="true" version="4" changeset="38291108" timestamp="2016-04-04T13:28:20Z" user="Kagami" uid="189328">
+  <member type="way" ref="229039646" role=""/>
+  <member type="way" ref="298271099" role=""/>
+  <member type="way" ref="239211830" role=""/>
+  <tag k="from" v="大成國中"/>
+  <tag k="name" v="15路(延駛大成路口_往程)"/>
+  <tag k="public_transport:version" v="2"/>
+  <tag k="ref" v="15"/>
+  <tag k="route" v="bus"/>
+  <tag k="to" v="大成路口"/>
+  <tag k="type" v="route"/>
+ </relation>
+</osm>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.6.0 (6176 thorn-01.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <relation id="6072564" visible="true" version="1" changeset="37998839" timestamp="2016-03-22T13:13:54Z" user="Kagami" uid="189328">
+  <member type="relation" ref="6072560" role="forward"/>
+  <member type="relation" ref="6072561" role="backward"/>
+  <member type="relation" ref="6072562" role="forward"/>
+  <member type="relation" ref="6072563" role="backward"/>
+  <tag k="name" v="77路"/>
+  <tag k="network" v="臺南市公車"/>
+  <tag k="operator" v="四方客運"/>
+  <tag k="public_transport:version" v="2"/>
+  <tag k="ref" v="77"/>
+  <tag k="ref:category" v="CityBus"/>
+  <tag k="ref:querycode" v="1077"/>
+  <tag k="route_master" v="bus"/>
+  <tag k="type" v="route_master"/>
+ </relation>
+</osm>

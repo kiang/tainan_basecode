@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.6.0 (26026 thorn-01.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <relation id="4060903" visible="true" version="7" changeset="36568727" timestamp="2016-01-14T12:02:57Z" user="Kagami" uid="189328">
+  <member type="relation" ref="4060899" role="forward"/>
+  <member type="relation" ref="4060900" role="backward"/>
+  <member type="relation" ref="4060901" role="forward_extend"/>
+  <member type="relation" ref="4060902" role="backward_extend"/>
+  <member type="relation" ref="4060923" role="forward_extend"/>
+  <member type="relation" ref="4060924" role="backward_extend"/>
+  <tag k="name" v="綠16"/>
+  <tag k="network" v="臺南市公車"/>
+  <tag k="operator" v="興南客運"/>
+  <tag k="public_transport:version" v="2"/>
+  <tag k="ref" v="綠16"/>
+  <tag k="ref:category" v="Green"/>
+  <tag k="ref:querycode" v="1116"/>
+  <tag k="route_master" v="bus"/>
+  <tag k="type" v="route_master"/>
+ </relation>
+</osm>
