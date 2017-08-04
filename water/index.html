@@ -205,7 +205,7 @@
         }));
       });
 
-      $.getJSON('http://water.olc.tw/points/json', {}, function(r) {
+      $.getJSON('https://water.olc.tw/points/json', {}, function(r) {
         var icons = [];
         for(k in r) {
           icons.push(new ol.Feature({
