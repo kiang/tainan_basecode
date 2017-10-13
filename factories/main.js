@@ -154,7 +154,7 @@ var geolocation = new ol.Geolocation({
 geolocation.setTracking(true);
 
 geolocation.on('error', function(error) {
-        alert(error.message);
+        console.log(error.message);
       });
 
 var positionFeature = new ol.Feature();
