@@ -1,3 +1,29 @@
+window.app = {};
+var app = window.app;
+
+app.Button = function(opt_options) {
+  var options = opt_options || {};
+  var button = document.createElement('button');
+  button.innerHTML = options.bText;
+  var this_ = this;
+  var handleButtonClick = function() {
+    window.open(options.bHref);
+  };
+
+  button.addEventListener('click', handleButtonClick, false);
+  button.addEventListener('touchstart', handleButtonClick, false);
+
+  var element = document.createElement('div');
+  element.className = options.bClassName + ' ol-unselectable ol-control';
+  element.appendChild(button);
+
+  ol.control.Control.call(this, {
+    element: element,
+    target: options.target
+  });
+}
+ol.inherits(app.Button, ol.control.Control);
+
 var layerRed = new ol.style.Style({
     stroke: new ol.style.Stroke({
         color: 'rgba(255,0,0,0.6)',
@@ -104,7 +130,19 @@ var map = new ol.Map({
   view: new ol.View({
     center: ol.proj.fromLonLat([120.301507, 23.124694]),
     zoom: 11
-  })
+  }),
+  controls: ol.control.defaults().extend([
+    new app.Button({
+      bClassName: 'app-button1',
+      bText: '原',
+      bHref: 'https://github.com/kiang/tainan_basecode/tree/gh-pages/factories'
+    }),
+    new app.Button({
+      bClassName: 'app-button2',
+      bText: '力',
+      bHref: 'https://npptw.org/tainan'
+    })
+  ])
 });
 
 /**
