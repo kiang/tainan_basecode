@@ -123,14 +123,16 @@ var zones = new ol.layer.Vector({
     style: layerYellow
 });
 
+var appView = new ol.View({
+  center: ol.proj.fromLonLat([120.301507, 23.124694]),
+  zoom: 11
+});
+
 var map = new ol.Map({
   layers: [baseLayer, factories, ia, zones],
   overlays: [popup],
   target: 'map',
-  view: new ol.View({
-    center: ol.proj.fromLonLat([120.301507, 23.124694]),
-    zoom: 11
-  }),
+  view: appView,
   controls: ol.control.defaults().extend([
     new app.Button({
       bClassName: 'app-button1',
@@ -145,6 +147,41 @@ var map = new ol.Map({
   ])
 });
 
+var geolocation = new ol.Geolocation({
+  projection: appView.getProjection()
+});
+
+geolocation.on('error', function(error) {
+        alert(error.message);
+      });
+
+var positionFeature = new ol.Feature();
+
+positionFeature.setStyle(new ol.style.Style({
+  image: new ol.style.Circle({
+    radius: 6,
+    fill: new ol.style.Fill({
+      color: '#3399CC'
+    }),
+    stroke: new ol.style.Stroke({
+      color: '#fff',
+      width: 2
+    })
+  })
+}));
+
+geolocation.on('change:position', function() {
+  var coordinates = geolocation.getPosition();
+  positionFeature.setGeometry(coordinates ?
+          new ol.geom.Point(coordinates) : null);
+      });
+
+      new ol.layer.Vector({
+        map: map,
+        source: new ol.source.Vector({
+          features: [positionFeature]
+        })
+      });
 /**
  * Add a click handler to the map to render the popup.
  */
