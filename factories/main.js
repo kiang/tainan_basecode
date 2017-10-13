@@ -151,6 +151,8 @@ var geolocation = new ol.Geolocation({
   projection: appView.getProjection()
 });
 
+geolocation.setTracking(true);
+
 geolocation.on('error', function(error) {
         alert(error.message);
       });
