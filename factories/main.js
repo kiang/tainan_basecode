@@ -129,7 +129,9 @@ var appView = new ol.View({
 });
 
 var map = new ol.Map({
-  layers: [baseLayer, factories, ia, zones],
+  layers: [new ol.layer.Tile({
+            source: new ol.source.OSM()
+          }), factories, ia, zones],
   overlays: [popup],
   target: 'map',
   view: appView,
