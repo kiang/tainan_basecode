@@ -159,8 +159,8 @@ var geolocation = new ol.Geolocation({
 geolocation.setTracking(true);
 
 geolocation.on('error', function(error) {
-        console.log(error.message);
-      });
+  console.log(error.message);
+});
 
 var positionFeature = new ol.Feature();
 
@@ -214,3 +214,68 @@ map.on('singleclick', function(evt) {
   }
 
 });
+
+$(function() {
+  //s_d0：PM2.5
+  $.getJSON('https://data.lass-net.org/data/last-all-airbox.json', {}, function(d) {
+    var airbox = [];
+    for(k in d.feeds) {
+      var box = new ol.Feature({
+        geometry: new ol.geom.Point(ol.proj.fromLonLat([d.feeds[k].gps_lon, d.feeds[k].gps_lat])),
+        pm25: d.feeds[k].s_d0
+      });
+      airbox.push(box);
+    }
+    var airboxLayer = new ol.layer.Vector({
+      map: map,
+      source: new ol.source.Vector({
+        features: airbox
+      }),
+      style: function(f) {
+        var p = f.getProperties();
+        var boxColor = '';
+        if(p.pm25 < 12) {
+          boxColor = '#8cdd8f';
+        } else if(p.pm25 < 24) {
+          boxColor = '#36dd12';
+        } else if(p.pm25 < 36) {
+          boxColor = '#36b712';
+        } else if(p.pm25 < 42) {
+          boxColor = '#dbdd12';
+        } else if(p.pm25 < 48) {
+          boxColor = '#dbb712';
+        } else if(p.pm25 < 54) {
+          boxColor = '#db8d12';
+        } else if(p.pm25 < 59) {
+          boxColor = '#db6162';
+        } else if(p.pm25 < 65) {
+          boxColor = '#db1112';
+        } else if(p.pm25 < 71) {
+          boxColor = '#8a1112';
+        } else {
+          boxColor = '#b438de';
+        }
+
+        var boxStyle = new ol.style.Style({
+          image: new ol.style.Circle({
+            radius: 15,
+            stroke: new ol.style.Stroke({
+              color: '#fff'
+            }),
+            fill: new ol.style.Fill({
+              color: boxColor
+            })
+          }),
+          text: new ol.style.Text({
+            text: p.pm25.toString(),
+            fill: new ol.style.Fill({
+              color: '#fff'
+            })
+          })
+        });
+        return boxStyle;
+      }
+    });
+    map.addLayer(airboxLayer);
+  });
+})
