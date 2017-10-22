@@ -85,7 +85,7 @@ var baseLayer = new ol.layer.Tile({
     source: new ol.source.WMTS({
         matrixSet: 'EPSG:3857',
         format: 'image/png',
-        url: 'http://wmts.nlsc.gov.tw/wmts',
+        url: 'https://wmts.nlsc.gov.tw/wmts',
         layer: 'EMAP',
         tileGrid: new ol.tilegrid.WMTS({
             origin: ol.extent.getTopLeft(projectionExtent),
@@ -128,10 +128,13 @@ var appView = new ol.View({
   zoom: 11
 });
 
+/*
+new ol.layer.Tile({
+          source: new ol.source.OSM()
+        })
+*/
 var map = new ol.Map({
-  layers: [new ol.layer.Tile({
-            source: new ol.source.OSM()
-          }), factories, ia, zones],
+  layers: [baseLayer, factories, ia, zones],
   overlays: [popup],
   target: 'map',
   view: appView,
