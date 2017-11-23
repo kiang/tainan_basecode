@@ -142,12 +142,12 @@ var map = new ol.Map({
     new app.Button({
       bClassName: 'app-button1',
       bText: '原',
-      bHref: 'https://github.com/kiang/tainan_basecode/tree/gh-pages/factories'
+      bHref: 'https://github.com/kiang/tainan_basecode/'
     }),
     new app.Button({
       bClassName: 'app-button2',
-      bText: '力',
-      bHref: 'https://npptw.org/tainan'
+      bText: '江',
+      bHref: 'http://k.olc.tw/'
     })
   ])
 });
