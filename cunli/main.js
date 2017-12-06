@@ -1,3 +1,43 @@
+var areaCode = {
+  '﻿新營區': '01',
+  '鹽水區': '02',
+  '白河區': '03',
+  '柳營區': '04',
+  '後壁區': '05',
+  '東山區': '06',
+  '麻豆區': '07',
+  '下營區': '08',
+  '六甲區': '09',
+  '官田區': '10',
+  '大內區': '11',
+  '佳里區': '12',
+  '學甲區': '13',
+  '西港區': '14',
+  '七股區': '15',
+  '將軍區': '16',
+  '北門區': '17',
+  '新化區': '18',
+  '善化區': '19',
+  '新市區': '20',
+  '安定區': '21',
+  '山上區': '22',
+  '玉井區': '23',
+  '楠西區': '24',
+  '南化區': '25',
+  '左鎮區': '26',
+  '仁德區': '27',
+  '歸仁區': '28',
+  '關廟區': '29',
+  '龍崎區': '30',
+  '永康區': '31',
+  '東區': '32',
+  '南區': '33',
+  '北區': '34',
+  '中西區': '35',
+  '安南區': '36',
+  '安平區': '37'
+};
+var pdfUrl = 'http://village.tainan.gov.tw/assets/pdf/';
 window.app = {};
 var app = window.app;
 
@@ -207,7 +247,10 @@ map.on('singleclick', function(evt) {
       var p = feature.getProperties();
       if(false === featureFound && p.VILLCODE) {
         featureFound = true;
-        message += '<h3>' + p.VILLNAME + '</h3>';
+        message += '<h3>' + p.VILLNAME + '</h3><ul>';
+        message += '<li><a href="' + pdfUrl + areaCode[p.TOWNNAME] + '_1.pdf" target="_blank">' + p.TOWNNAME + '調整情形一覽表</a></li>';
+        message += '<li><a href="' + pdfUrl + areaCode[p.TOWNNAME] + '_2.pdf" target="_blank">' + p.TOWNNAME + '調整示意圖</a></li>';
+        message += '</ul>';
         if(cunliData[p.VILLCODE]) {
           message += '<table boarded="1"><tr><th>區別</th><th>調整後里別</th><th>調整前里別</th><th>實施日期</th></tr>';
           for(k in cunliData[p.VILLCODE]) {
