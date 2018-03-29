@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<osm version="0.6" generator="CGImap 0.6.0 (2742 thorn-02.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
- <relation id="4096850" visible="true" version="7" changeset="41615949" timestamp="2016-08-22T14:25:37Z" user="Kagami" uid="189328">
+<osm version="0.6" generator="CGImap 0.6.0 (9688 thorn-01.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <relation id="4096850" visible="true" version="8" changeset="53656536" timestamp="2017-11-10T04:16:45Z" user="s88239" uid="5406836">
   <member type="relation" ref="4096848" role="forward"/>
   <member type="relation" ref="4096849" role="backward"/>
   <member type="relation" ref="4096958" role="forward_extend"/>
   <member type="relation" ref="4096957" role="backward_extend"/>
   <member type="relation" ref="6522194" role="forward_extend"/>
   <member type="relation" ref="6522195" role="backward_extend"/>
+  <member type="relation" ref="7722624" role="forward_extend"/>
+  <member type="relation" ref="7722623" role="backward_extend"/>
   <tag k="name" v="黃11"/>
   <tag k="network" v="臺南市公車"/>
   <tag k="operator" v="新營客運"/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<osm version="0.6" generator="CGImap 0.6.0 (7557 thorn-03.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<osm version="0.6" generator="CGImap 0.6.0 (22513 thorn-02.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
  <node id="1195186493" visible="true" version="2" changeset="25386586" timestamp="2014-09-12T10:06:13Z" user="Kagami" uid="189328" lat="23.2613758" lon="120.2074853"/>
  <node id="1195186548" visible="true" version="2" changeset="25385110" timestamp="2014-09-12T08:54:09Z" user="Kagami" uid="189328" lat="23.2561878" lon="120.2044688"/>
  <node id="1195186670" visible="true" version="2" changeset="25385110" timestamp="2014-09-12T08:54:09Z" user="Kagami" uid="189328" lat="23.2543734" lon="120.2038786"/>
@@ -35,11 +35,11 @@
  <node id="1364288440" visible="true" version="2" changeset="25385977" timestamp="2014-09-12T09:35:33Z" user="Kagami" uid="189328" lat="23.2330170" lon="120.1800215"/>
  <node id="1364288454" visible="true" version="3" changeset="43020047" timestamp="2016-10-19T21:16:16Z" user="dannykath" uid="2226712" lat="23.2338012" lon="120.1801800"/>
  <node id="1364288463" visible="true" version="4" changeset="42637221" timestamp="2016-10-04T17:45:45Z" user="karitotp" uid="2748195" lat="23.2344779" lon="120.1811875"/>
- <node id="1364288479" visible="true" version="2" changeset="25388951" timestamp="2014-09-12T12:10:57Z" user="Kagami" uid="189328" lat="23.2355884" lon="120.1829333"/>
- <node id="1364288490" visible="true" version="2" changeset="25385977" timestamp="2014-09-12T09:35:33Z" user="Kagami" uid="189328" lat="23.2364022" lon="120.1815539"/>
+ <node id="1364288479" visible="true" version="3" changeset="55953696" timestamp="2018-02-01T03:30:48Z" user="SHCat" uid="4641415" lat="23.2355884" lon="120.1829500"/>
+ <node id="1364288490" visible="true" version="3" changeset="55953696" timestamp="2018-02-01T03:30:48Z" user="SHCat" uid="4641415" lat="23.2364137" lon="120.1815790"/>
  <node id="1364288498" visible="true" version="2" changeset="25385977" timestamp="2014-09-12T09:35:33Z" user="Kagami" uid="189328" lat="23.2371376" lon="120.1823646"/>
  <node id="1364288516" visible="true" version="2" changeset="25385977" timestamp="2014-09-12T09:35:34Z" user="Kagami" uid="189328" lat="23.2382459" lon="120.1836084"/>
- <node id="1584083331" visible="true" version="3" changeset="42637221" timestamp="2016-10-04T17:45:47Z" user="karitotp" uid="2748195" lat="23.2316829" lon="120.1784885"/>
+ <node id="1584083331" visible="true" version="4" changeset="55405624" timestamp="2018-01-13T12:39:47Z" user="SHCat" uid="4641415" lat="23.2316829" lon="120.1784887"/>
  <node id="1587349578" visible="true" version="3" changeset="42635462" timestamp="2016-10-04T16:37:28Z" user="karitotp" uid="2748195" lat="23.2559905" lon="120.2044330"/>
  <node id="1587350643" visible="true" version="4" changeset="42635462" timestamp="2016-10-04T16:37:29Z" user="karitotp" uid="2748195" lat="23.2587537" lon="120.2051287">
   <tag k="highway" v="traffic_signals"/>
@@ -49,7 +49,7 @@
  </node>
  <node id="1588326837" visible="true" version="3" changeset="42635462" timestamp="2016-10-04T16:37:29Z" user="karitotp" uid="2748195" lat="23.2567496" lon="120.2045463"/>
  <node id="1588651177" visible="true" version="4" changeset="48309493" timestamp="2017-05-01T14:44:39Z" user="happychang" uid="5644877" lat="23.2793859" lon="120.1930006"/>
- <node id="1588651534" visible="true" version="3" changeset="42637221" timestamp="2016-10-04T17:45:48Z" user="karitotp" uid="2748195" lat="23.2360269" lon="120.1822060"/>
+ <node id="1588651534" visible="true" version="4" changeset="55953696" timestamp="2018-02-01T03:30:48Z" user="SHCat" uid="4641415" lat="23.2360335" lon="120.1822107"/>
  <node id="1588651587" visible="true" version="4" changeset="25388951" timestamp="2014-09-12T12:10:59Z" user="Kagami" uid="189328" lat="23.2343990" lon="120.1816192"/>
  <node id="1589102963" visible="true" version="2" changeset="16959030" timestamp="2013-07-15T08:58:10Z" user="Kagami" uid="189328" lat="23.2740434" lon="120.1997429"/>
  <node id="1589102992" visible="true" version="2" changeset="16959030" timestamp="2013-07-15T08:58:10Z" user="Kagami" uid="189328" lat="23.2742463" lon="120.1997130"/>
@@ -390,13 +390,15 @@
   <tag k="ref:en" v="Provincial Highway 19"/>
   <tag k="ref:zh" v="台19線"/>
  </way>
- <way id="303015954" visible="true" version="1" changeset="25385977" timestamp="2014-09-12T09:35:15Z" user="Kagami" uid="189328">
+ <way id="303015954" visible="true" version="2" changeset="57535961" timestamp="2018-03-26T13:41:40Z" user="Modern Chan" uid="5072781">
   <nd ref="1364273359"/>
   <nd ref="1588651587"/>
   <nd ref="1364288463"/>
   <nd ref="1364273364"/>
   <tag k="highway" v="secondary"/>
   <tag k="name" v="中山路"/>
+  <tag k="name:en" v="Zhongshan Road"/>
+  <tag k="name:zh" v="中山路"/>
   <tag k="ref" v="174"/>
  </way>
  <way id="303034249" visible="true" version="2" changeset="42637221" timestamp="2016-10-04T17:45:42Z" user="karitotp" uid="2748195">
@@ -415,10 +417,10 @@
   <tag k="highway" v="residential"/>
   <tag k="name" v="新生路"/>
  </way>
- <way id="303034252" visible="true" version="3" changeset="48976113" timestamp="2017-05-25T14:40:14Z" user="happychang" uid="5644877">
+ <way id="303034252" visible="true" version="4" changeset="55405624" timestamp="2018-01-13T12:39:50Z" user="SHCat" uid="4641415">
   <nd ref="1584083331"/>
   <nd ref="1364288414"/>
-  <tag k="highway" v="service"/>
+  <tag k="highway" v="residential"/>
   <tag k="name" v="民權路"/>
  </way>
  <way id="303034254" visible="true" version="1" changeset="25388951" timestamp="2014-09-12T12:10:51Z" user="Kagami" uid="189328">

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<osm version="0.6" generator="CGImap 0.6.0 (27425 thorn-01.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<osm version="0.6" generator="CGImap 0.6.0 (9700 thorn-01.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
  <node id="257739935" visible="true" version="4" changeset="42381926" timestamp="2016-09-23T17:42:17Z" user="piligab" uid="3877019" lat="23.0644494" lon="120.2185952"/>
  <node id="257739936" visible="true" version="5" changeset="42464357" timestamp="2016-09-27T08:42:53Z" user="nikhilprabhakar" uid="2835928" lat="23.0652808" lon="120.2184187"/>
  <node id="257739937" visible="true" version="5" changeset="42464357" timestamp="2016-09-27T08:42:53Z" user="nikhilprabhakar" uid="2835928" lat="23.0656362" lon="120.2182779"/>
@@ -161,7 +161,7 @@
   <tag k="operator" v="臺南市公車"/>
   <tag k="public_transport" v="platform"/>
  </node>
- <node id="3022681756" visible="true" version="3" changeset="28581750" timestamp="2015-02-03T04:55:30Z" user="Supaplex" uid="274857" lat="23.0643777" lon="120.2232322">
+ <node id="3022681756" visible="true" version="4" changeset="52643066" timestamp="2017-10-05T04:34:24Z" user="s88239" uid="5406836" lat="23.0645270" lon="120.2232094">
   <tag k="bus" v="yes"/>
   <tag k="highway" v="bus_stop"/>
   <tag k="name" v="安南醫院"/>
@@ -320,12 +320,14 @@
  <node id="4826618174" visible="true" version="1" changeset="48275977" timestamp="2017-04-30T08:55:40Z" user="happychang" uid="5644877" lat="23.0741840" lon="120.2137443"/>
  <node id="4826618175" visible="true" version="1" changeset="48275977" timestamp="2017-04-30T08:55:40Z" user="happychang" uid="5644877" lat="23.0786054" lon="120.2117641"/>
  <node id="4826618177" visible="true" version="1" changeset="48275977" timestamp="2017-04-30T08:55:40Z" user="happychang" uid="5644877" lat="23.0782686" lon="120.2119040"/>
- <way id="142150998" visible="true" version="19" changeset="48181610" timestamp="2017-04-27T04:28:32Z" user="happychang" uid="5644877">
+ <way id="142150998" visible="true" version="21" changeset="56217621" timestamp="2018-02-09T14:07:02Z" user="s88239" uid="5406836">
   <nd ref="4818412151"/>
   <nd ref="4819328868"/>
   <nd ref="4819328869"/>
   <tag k="highway" v="primary"/>
   <tag k="name" v="安和路六段"/>
+  <tag k="name:en" v="Anhe Road Section 6"/>
+  <tag k="name:zh" v="安和路六段"/>
   <tag k="ref" v="19"/>
   <tag k="ref:en" v="Provincial Highway 19"/>
   <tag k="ref:zh" v="台19線"/>
@@ -400,14 +402,16 @@
   <tag k="ref:en" v="Provincial Highway 19"/>
   <tag k="ref:zh" v="台19線"/>
  </way>
- <way id="148937475" visible="true" version="8" changeset="42464357" timestamp="2016-09-27T08:42:52Z" user="nikhilprabhakar" uid="2835928">
+ <way id="148937475" visible="true" version="10" changeset="56232850" timestamp="2018-02-10T04:29:39Z" user="s88239" uid="5406836">
   <nd ref="1590028949"/>
   <nd ref="1637807096"/>
   <nd ref="1590028915"/>
-  <tag k="highway" v="tertiary"/>
+  <tag k="highway" v="residential"/>
   <tag k="name" v="長和路二段"/>
+  <tag k="name:en" v="Changhe Road Section 2"/>
+  <tag k="name:zh" v="長和路二段"/>
  </way>
- <way id="294174228" visible="true" version="4" changeset="42464357" timestamp="2016-09-27T08:42:51Z" user="nikhilprabhakar" uid="2835928">
+ <way id="294174228" visible="true" version="6" changeset="56217621" timestamp="2018-02-09T14:07:02Z" user="s88239" uid="5406836">
   <nd ref="1590028949"/>
   <nd ref="4420042087"/>
   <nd ref="4420042492"/>
@@ -427,6 +431,8 @@
   <nd ref="1590028936"/>
   <tag k="highway" v="primary"/>
   <tag k="name" v="安和路五段"/>
+  <tag k="name:en" v="Anhe Road Section 5"/>
+  <tag k="name:zh" v="安和路五段"/>
   <tag k="ref" v="19"/>
   <tag k="ref:en" v="Provincial Highway 19"/>
   <tag k="ref:zh" v="台19線"/>
@@ -445,16 +451,18 @@
   <tag k="highway" v="service"/>
   <tag k="oneway" v="yes"/>
  </way>
- <way id="298346881" visible="true" version="3" changeset="48167938" timestamp="2017-04-26T16:16:04Z" user="happychang" uid="5644877">
+ <way id="298346881" visible="true" version="5" changeset="56217621" timestamp="2018-02-09T14:07:03Z" user="s88239" uid="5406836">
   <nd ref="1590028936"/>
   <nd ref="4818412154"/>
   <tag k="highway" v="primary"/>
   <tag k="name" v="安和路五段"/>
+  <tag k="name:en" v="Anhe Road Section 5"/>
+  <tag k="name:zh" v="安和路五段"/>
   <tag k="ref" v="19"/>
   <tag k="ref:en" v="Provincial Highway 19"/>
   <tag k="ref:zh" v="台19線"/>
  </way>
- <way id="298346890" visible="true" version="4" changeset="42523059" timestamp="2016-09-29T16:20:43Z" user="calfarome" uid="2511706">
+ <way id="298346890" visible="true" version="6" changeset="56232850" timestamp="2018-02-10T04:29:56Z" user="s88239" uid="5406836">
   <nd ref="3021855451"/>
   <nd ref="1590028941"/>
   <nd ref="3799677731"/>
@@ -466,8 +474,10 @@
   <nd ref="4420042085"/>
   <nd ref="1590028948"/>
   <nd ref="1590028915"/>
-  <tag k="highway" v="tertiary"/>
+  <tag k="highway" v="residential"/>
   <tag k="name" v="長和路二段"/>
+  <tag k="name:en" v="Changhe Road Section 2"/>
+  <tag k="name:zh" v="長和路二段"/>
  </way>
  <way id="305214697" visible="true" version="4" changeset="48216178" timestamp="2017-04-28T05:23:42Z" user="happychang" uid="5644877">
   <nd ref="4817260709"/>
@@ -630,12 +640,14 @@
   <tag k="oneway" v="yes"/>
   <tag k="ref" v="178"/>
  </way>
- <way id="489614469" visible="true" version="2" changeset="48181610" timestamp="2017-04-27T04:28:32Z" user="happychang" uid="5644877">
+ <way id="489614469" visible="true" version="4" changeset="56217621" timestamp="2018-02-09T14:07:03Z" user="s88239" uid="5406836">
   <nd ref="4818412154"/>
   <nd ref="4819328867"/>
   <nd ref="4818412151"/>
   <tag k="highway" v="primary"/>
   <tag k="name" v="安和路六段"/>
+  <tag k="name:en" v="Anhe Road Section 6"/>
+  <tag k="name:zh" v="安和路六段"/>
   <tag k="ref" v="19"/>
   <tag k="ref:en" v="Provincial Highway 19"/>
   <tag k="ref:zh" v="台19線"/>

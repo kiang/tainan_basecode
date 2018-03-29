@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<osm version="0.6" generator="CGImap 0.6.0 (13632 thorn-03.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<osm version="0.6" generator="CGImap 0.6.0 (22503 thorn-02.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
  <node id="1343321170" visible="true" version="5" changeset="42384565" timestamp="2016-09-23T19:25:03Z" user="RichRico" uid="2219338" lat="22.9963031" lon="120.1448269"/>
  <node id="1343321222" visible="true" version="3" changeset="42384565" timestamp="2016-09-23T19:25:03Z" user="RichRico" uid="2219338" lat="22.9961401" lon="120.1446459"/>
  <node id="1343321350" visible="true" version="9" changeset="42619388" timestamp="2016-10-04T03:47:51Z" user="BharataHS" uid="706170" lat="22.9971030" lon="120.1466821"/>
@@ -23,51 +23,82 @@
  <node id="1752516363" visible="true" version="3" changeset="42619326" timestamp="2016-10-04T03:38:36Z" user="BharataHS" uid="706170" lat="23.0150852" lon="120.1266281"/>
  <node id="1752516364" visible="true" version="3" changeset="42619326" timestamp="2016-10-04T03:38:36Z" user="BharataHS" uid="706170" lat="23.0151658" lon="120.1267056"/>
  <node id="1752516370" visible="true" version="3" changeset="43068505" timestamp="2016-10-21T20:31:41Z" user="karitotp" uid="2748195" lat="23.0168160" lon="120.1283690"/>
- <node id="1753745683" visible="true" version="4" changeset="42511149" timestamp="2016-09-29T07:02:39Z" user="pratikyadav" uid="2905914" lat="23.0022819" lon="120.1355467"/>
+ <node id="1753745683" visible="true" version="5" changeset="57568773" timestamp="2018-03-27T13:59:41Z" user="Littlebtc" uid="1439333" lat="23.0022819" lon="120.1355467">
+  <tag k="highway" v="traffic_signals"/>
+ </node>
  <node id="1753745821" visible="true" version="3" changeset="42619999" timestamp="2016-10-04T05:12:41Z" user="pratikyadav" uid="2905914" lat="23.0128489" lon="120.1300678"/>
  <node id="2091758656" visible="true" version="3" changeset="42384565" timestamp="2016-09-23T19:25:03Z" user="RichRico" uid="2219338" lat="22.9948204" lon="120.1433007"/>
  <node id="2858328200" visible="true" version="3" changeset="42384565" timestamp="2016-09-23T19:25:03Z" user="RichRico" uid="2219338" lat="22.9945537" lon="120.1428971"/>
  <node id="3004903691" visible="true" version="1" changeset="24616105" timestamp="2014-08-08T13:49:08Z" user="Kagami" uid="189328" lat="22.9949031" lon="120.1425088"/>
+ <node id="3004903713" visible="true" version="5" changeset="36680625" timestamp="2016-01-19T14:34:06Z" user="Kagami" uid="189328" lat="23.0169328" lon="120.1283773">
+  <tag k="bus" v="yes"/>
+  <tag k="highway" v="bus_stop"/>
+  <tag k="name" v="四草"/>
+  <tag k="network" v="臺南市公車"/>
+  <tag k="operator" v="臺南市公車"/>
+  <tag k="public_transport" v="platform"/>
+ </node>
  <node id="3121632717" visible="true" version="2" changeset="42511149" timestamp="2016-09-29T07:02:39Z" user="pratikyadav" uid="2905914" lat="23.0017498" lon="120.1357532"/>
- <way id="157373304" visible="true" version="2" changeset="24616105" timestamp="2014-08-08T13:49:13Z" user="Kagami" uid="189328">
+ <node id="3121632720" visible="true" version="4" changeset="52707027" timestamp="2017-10-07T12:39:16Z" user="s88239" uid="5406836" lat="23.0016541" lon="120.1356642">
+  <tag k="bus" v="yes"/>
+  <tag k="highway" v="bus_stop"/>
+  <tag k="name" v="台江國家公園管理處"/>
+  <tag k="network" v="臺南市公車"/>
+  <tag k="note" v="臺灣好行"/>
+  <tag k="operator" v="臺南市公車"/>
+  <tag k="public_transport" v="platform"/>
+  <tag k="ref" v="9909"/>
+ </node>
+ <node id="5402794602" visible="true" version="1" changeset="56232850" timestamp="2018-02-10T04:29:29Z" user="s88239" uid="5406836" lat="23.0106996" lon="120.1325545"/>
+ <node id="5402794603" visible="true" version="1" changeset="56232850" timestamp="2018-02-10T04:29:29Z" user="s88239" uid="5406836" lat="22.9945774" lon="120.1430462"/>
+ <way id="157373304" visible="true" version="4" changeset="56232850" timestamp="2018-02-10T04:29:44Z" user="s88239" uid="5406836">
   <nd ref="1695933077"/>
   <nd ref="1695933061"/>
   <nd ref="1695933033"/>
   <nd ref="1695933028"/>
   <nd ref="1695933026"/>
   <nd ref="1695933024"/>
-  <tag k="highway" v="unclassified"/>
+  <nd ref="5402794602"/>
+  <tag k="highway" v="tertiary_link"/>
   <tag k="name" v="北汕尾一路"/>
+  <tag k="name:en" v="Beishanwei 1st Road"/>
+  <tag k="name:zh" v="北汕尾一路"/>
   <tag k="oneway" v="yes"/>
  </way>
- <way id="157373322" visible="true" version="6" changeset="42867329" timestamp="2016-10-13T14:00:09Z" user="karitotp" uid="2748195">
+ <way id="157373322" visible="true" version="10" changeset="56232850" timestamp="2018-02-10T04:29:45Z" user="s88239" uid="5406836">
   <nd ref="1695932900"/>
   <nd ref="3004903691"/>
   <tag k="bridge" v="yes"/>
-  <tag k="highway" v="unclassified"/>
+  <tag k="highway" v="tertiary"/>
   <tag k="lanes" v="2"/>
   <tag k="layer" v="1"/>
   <tag k="name" v="四草大橋"/>
+  <tag k="name:en" v="Sicao Bridge"/>
+  <tag k="name:zh" v="四草大橋"/>
   <tag k="oneway" v="yes"/>
  </way>
- <way id="296679628" visible="true" version="1" changeset="24616105" timestamp="2014-08-08T13:49:09Z" user="Kagami" uid="189328">
+ <way id="296679628" visible="true" version="4" changeset="56232850" timestamp="2018-02-10T04:29:53Z" user="s88239" uid="5406836">
   <nd ref="1752516363"/>
   <nd ref="1753745821"/>
   <nd ref="1695933077"/>
-  <tag k="highway" v="unclassified"/>
+  <tag k="highway" v="tertiary"/>
   <tag k="name" v="北汕尾一路"/>
+  <tag k="name:en" v="Beishanwei 1st Road"/>
+  <tag k="name:zh" v="北汕尾一路"/>
   <tag k="oneway" v="yes"/>
  </way>
- <way id="296679633" visible="true" version="1" changeset="24616105" timestamp="2014-08-08T13:49:10Z" user="Kagami" uid="189328">
+ <way id="296679633" visible="true" version="5" changeset="56232850" timestamp="2018-02-10T04:29:53Z" user="s88239" uid="5406836">
   <nd ref="3004903691"/>
   <nd ref="2858328200"/>
   <nd ref="1695932866"/>
-  <tag k="highway" v="residential"/>
+  <tag k="highway" v="tertiary"/>
   <tag k="lanes" v="2"/>
-  <tag k="name" v="四草大橋"/>
+  <tag k="name" v="四草大道"/>
+  <tag k="name:en" v="Sicao Boulevard"/>
+  <tag k="name:zh" v="四草大道"/>
   <tag k="oneway" v="yes"/>
  </way>
- <way id="296679635" visible="true" version="2" changeset="25975301" timestamp="2014-10-10T05:33:43Z" user="Kagami" uid="189328">
+ <way id="296679635" visible="true" version="4" changeset="56232850" timestamp="2018-02-10T04:29:54Z" user="s88239" uid="5406836">
   <nd ref="1695933024"/>
   <nd ref="1695933006"/>
   <nd ref="1695932994"/>
@@ -78,12 +109,15 @@
   <nd ref="1695932931"/>
   <nd ref="1695932907"/>
   <nd ref="1695932900"/>
-  <tag k="highway" v="unclassified"/>
+  <tag k="highway" v="service"/>
   <tag k="name" v="四草大道"/>
+  <tag k="name:en" v="Sicao Boulevard"/>
+  <tag k="name:zh" v="四草大道"/>
   <tag k="oneway" v="yes"/>
  </way>
- <way id="296679641" visible="true" version="2" changeset="38353452" timestamp="2016-04-06T14:48:33Z" user="Kagami" uid="189328">
+ <way id="296679641" visible="true" version="6" changeset="56232850" timestamp="2018-02-10T04:29:54Z" user="s88239" uid="5406836">
   <nd ref="1695932866"/>
+  <nd ref="5402794603"/>
   <nd ref="2091758656"/>
   <nd ref="1343321376"/>
   <nd ref="1718418230"/>
@@ -93,16 +127,20 @@
   <nd ref="1343321350"/>
   <tag k="highway" v="tertiary"/>
   <tag k="name" v="安北路"/>
+  <tag k="name:en" v="Anbei Road"/>
+  <tag k="name:zh" v="安北路"/>
   <tag k="oneway" v="yes"/>
  </way>
- <way id="299518468" visible="true" version="2" changeset="48600786" timestamp="2017-05-11T18:12:58Z" user="happychang" uid="5644877">
+ <way id="299518468" visible="true" version="3" changeset="51751608" timestamp="2017-09-05T13:48:38Z" user="SHCat" uid="4641415">
   <nd ref="1752516370"/>
   <nd ref="1752516364"/>
   <nd ref="1752516363"/>
   <tag k="highway" v="residential"/>
-  <tag k="name" v="大眾街"/>
+  <tag k="name" v="大眾路"/>
  </way>
- <relation id="4062718" visible="true" version="3" changeset="38353452" timestamp="2016-04-06T14:48:21Z" user="Kagami" uid="189328">
+ <relation id="4062718" visible="true" version="4" changeset="53467472" timestamp="2017-11-03T03:02:02Z" user="s88239" uid="5406836">
+  <member type="node" ref="3004903713" role="platform"/>
+  <member type="node" ref="3121632720" role="platform"/>
   <member type="way" ref="299518468" role=""/>
   <member type="way" ref="296679628" role=""/>
   <member type="way" ref="157373304" role=""/>

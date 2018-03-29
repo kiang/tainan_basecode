@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<osm version="0.6" generator="CGImap 0.6.0 (7566 thorn-03.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
- <node id="265766479" visible="true" version="10" changeset="49016637" timestamp="2017-05-27T05:05:26Z" user="WayneChang" uid="4641415" lat="22.9825149" lon="120.2113710"/>
+<osm version="0.6" generator="CGImap 0.6.0 (24526 thorn-02.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <node id="265766479" visible="true" version="10" changeset="49016637" timestamp="2017-05-27T05:05:26Z" user="SHCat" uid="4641415" lat="22.9825149" lon="120.2113710"/>
  <node id="265766490" visible="true" version="5" changeset="42382100" timestamp="2016-09-23T17:47:17Z" user="calfarome" uid="2511706" lat="22.9832634" lon="120.2111512"/>
  <node id="296968787" visible="true" version="4" changeset="18580757" timestamp="2013-10-28T09:35:44Z" user="wenchin" uid="121778" lat="22.9811610" lon="120.2120924"/>
- <node id="459517099" visible="true" version="10" changeset="49029608" timestamp="2017-05-27T17:24:58Z" user="WayneChang" uid="4641415" lat="22.9847687" lon="120.2111676">
+ <node id="459517099" visible="true" version="10" changeset="49029608" timestamp="2017-05-27T17:24:58Z" user="SHCat" uid="4641415" lat="22.9847687" lon="120.2111676">
   <tag k="highway" v="traffic_signals"/>
  </node>
  <node id="1240617938" visible="true" version="7" changeset="42523994" timestamp="2016-09-29T17:12:41Z" user="Luis36995" uid="1829683" lat="22.9809708" lon="120.2121818"/>
@@ -14,11 +14,11 @@
  <node id="1727367541" visible="true" version="3" changeset="25958327" timestamp="2014-10-09T11:00:50Z" user="Kagami" uid="189328" lat="22.9812099" lon="120.2120706"/>
  <node id="1727367544" visible="true" version="3" changeset="25958327" timestamp="2014-10-09T11:00:51Z" user="Kagami" uid="189328" lat="22.9812761" lon="120.2120267"/>
  <node id="1728838472" visible="true" version="3" changeset="42470483" timestamp="2016-09-27T13:24:30Z" user="nammala" uid="3479270" lat="22.9814188" lon="120.2119448"/>
- <node id="1728838482" visible="true" version="7" changeset="43004890" timestamp="2016-10-19T10:14:49Z" user="Maanya" uid="3572302" lat="22.9816855" lon="120.2118138"/>
- <node id="1728838502" visible="true" version="5" changeset="43004890" timestamp="2016-10-19T10:14:49Z" user="Maanya" uid="3572302" lat="22.9819448" lon="120.2116703"/>
+ <node id="1728838482" visible="true" version="8" changeset="57116929" timestamp="2018-03-12T16:42:38Z" user="SHCat" uid="4641415" lat="22.9816581" lon="120.2118223"/>
+ <node id="1728838502" visible="true" version="6" changeset="57116929" timestamp="2018-03-12T16:42:38Z" user="SHCat" uid="4641415" lat="22.9819801" lon="120.2116533"/>
  <node id="1728838513" visible="true" version="4" changeset="42382100" timestamp="2016-09-23T17:47:17Z" user="calfarome" uid="2511706" lat="22.9823967" lon="120.2114289"/>
  <node id="1728838553" visible="true" version="5" changeset="42523994" timestamp="2016-09-29T17:12:42Z" user="Luis36995" uid="1829683" lat="22.9830889" lon="120.2111639"/>
- <way id="227913938" visible="true" version="8" changeset="48921730" timestamp="2017-05-23T16:23:24Z" user="Supaplex" uid="274857">
+ <way id="227913938" visible="true" version="10" changeset="57198215" timestamp="2018-03-15T04:50:45Z" user="s88239" uid="5406836">
   <nd ref="296968787"/>
   <nd ref="1727367541"/>
   <nd ref="1727367544"/>
@@ -36,16 +36,18 @@
   <nd ref="459517099"/>
   <tag k="highway" v="tertiary"/>
   <tag k="name" v="大同路一段"/>
-  <tag k="name:en" v="Section 1 , Datong Road"/>
+  <tag k="name:en" v="Datong Road Section 1"/>
   <tag k="name:zh" v="大同路一段"/>
+  <tag k="ref" v="25"/>
  </way>
- <way id="297896460" visible="true" version="5" changeset="48921730" timestamp="2017-05-23T16:23:50Z" user="Supaplex" uid="274857">
+ <way id="297896460" visible="true" version="7" changeset="57198215" timestamp="2018-03-15T04:50:53Z" user="s88239" uid="5406836">
   <nd ref="1240617938"/>
   <nd ref="296968787"/>
   <tag k="highway" v="tertiary"/>
   <tag k="name" v="大同路二段"/>
-  <tag k="name:en" v="Section 2 , Datong Road"/>
+  <tag k="name:en" v="Datong Road Section 2"/>
   <tag k="name:zh" v="大同路二段"/>
+  <tag k="ref" v="25"/>
  </way>
  <relation id="4099162" visible="true" version="2" changeset="36703153" timestamp="2016-01-20T15:17:28Z" user="Kagami" uid="189328">
   <member type="way" ref="297896460" role=""/>

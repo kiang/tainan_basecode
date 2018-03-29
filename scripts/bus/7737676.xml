@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.6.0 (10329 thorn-03.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <node id="1184411571" visible="true" version="3" changeset="42887440" timestamp="2016-10-14T06:22:00Z" user="pratikyadav" uid="2905914" lat="23.2168073" lon="120.0863268"/>
+ <node id="1184411686" visible="true" version="2" changeset="42887440" timestamp="2016-10-14T06:22:00Z" user="pratikyadav" uid="2905914" lat="23.2149953" lon="120.0893640"/>
+ <node id="1184411989" visible="true" version="2" changeset="28961605" timestamp="2015-02-19T17:56:47Z" user="JingGeocacher" uid="153500" lat="23.2153608" lon="120.0861188"/>
+ <node id="1184412373" visible="true" version="2" changeset="42887440" timestamp="2016-10-14T06:22:00Z" user="pratikyadav" uid="2905914" lat="23.2149562" lon="120.0896485"/>
+ <node id="1184412485" visible="true" version="3" changeset="42887440" timestamp="2016-10-14T06:22:00Z" user="pratikyadav" uid="2905914" lat="23.2169217" lon="120.0854348"/>
+ <node id="1184412588" visible="true" version="2" changeset="28961605" timestamp="2015-02-19T17:56:47Z" user="JingGeocacher" uid="153500" lat="23.2152860" lon="120.0867273"/>
+ <node id="1184412792" visible="true" version="2" changeset="42887440" timestamp="2016-10-14T06:22:00Z" user="pratikyadav" uid="2905914" lat="23.2131644" lon="120.0895953"/>
+ <node id="1184413603" visible="true" version="3" changeset="42887440" timestamp="2016-10-14T06:22:00Z" user="pratikyadav" uid="2905914" lat="23.2170426" lon="120.0845093"/>
+ <node id="1184413936" visible="true" version="1" changeset="7446236" timestamp="2011-03-03T14:45:34Z" user="zinklink" uid="269097" lat="23.2139423" lon="120.0896948"/>
+ <node id="1184414150" visible="true" version="2" changeset="42887440" timestamp="2016-10-14T06:22:00Z" user="pratikyadav" uid="2905914" lat="23.2152209" lon="120.0876679"/>
+ <node id="1184414192" visible="true" version="2" changeset="42887440" timestamp="2016-10-14T06:22:01Z" user="pratikyadav" uid="2905914" lat="23.2150905" lon="120.0886687"/>
+ <node id="1184414760" visible="true" version="2" changeset="42887440" timestamp="2016-10-14T06:22:01Z" user="pratikyadav" uid="2905914" lat="23.2146988" lon="120.0898412"/>
+ <node id="1184414774" visible="true" version="2" changeset="42887440" timestamp="2016-10-14T06:22:01Z" user="pratikyadav" uid="2905914" lat="23.2150202" lon="120.0892937"/>
+ <node id="1184414851" visible="true" version="2" changeset="28961605" timestamp="2015-02-19T17:56:47Z" user="JingGeocacher" uid="153500" lat="23.2164418" lon="120.0862686"/>
+ <node id="1184415104" visible="true" version="2" changeset="42887440" timestamp="2016-10-14T06:22:01Z" user="pratikyadav" uid="2905914" lat="23.2119342" lon="120.0894169"/>
+ <node id="1184415390" visible="true" version="2" changeset="42887440" timestamp="2016-10-14T06:22:01Z" user="pratikyadav" uid="2905914" lat="23.2149212" lon="120.0898681"/>
+ <node id="1684606650" visible="true" version="2" changeset="42887440" timestamp="2016-10-14T06:22:03Z" user="pratikyadav" uid="2905914" lat="23.2114797" lon="120.0893615"/>
+ <node id="1684606655" visible="true" version="2" changeset="42887440" timestamp="2016-10-14T06:22:03Z" user="pratikyadav" uid="2905914" lat="23.2117739" lon="120.0893973"/>
+ <node id="3106812207" visible="true" version="3" changeset="53834170" timestamp="2017-11-16T09:04:54Z" user="s88239" uid="5406836" lat="23.2169092" lon="120.0845964">
+  <tag k="bus" v="yes"/>
+  <tag k="highway" v="bus_stop"/>
+  <tag k="name" v="馬沙溝遊憩區"/>
+  <tag k="network" v="臺南市公車"/>
+  <tag k="operator" v="臺南市公車"/>
+  <tag k="public_transport" v="platform"/>
+  <tag k="ref" v="3153"/>
+ </node>
+ <node id="3359924603" visible="true" version="2" changeset="42887440" timestamp="2016-10-14T06:22:06Z" user="pratikyadav" uid="2905914" lat="23.2112128" lon="120.0892997"/>
+ <way id="305962912" visible="true" version="4" changeset="53834170" timestamp="2017-11-16T09:04:55Z" user="s88239" uid="5406836">
+  <nd ref="3359924603"/>
+  <nd ref="1684606650"/>
+  <nd ref="1684606655"/>
+  <nd ref="1184415104"/>
+  <nd ref="1184412792"/>
+  <nd ref="1184413936"/>
+  <nd ref="1184414760"/>
+  <nd ref="1184415390"/>
+  <nd ref="1184412373"/>
+  <nd ref="1184411686"/>
+  <nd ref="1184414774"/>
+  <nd ref="1184414192"/>
+  <nd ref="1184414150"/>
+  <nd ref="1184412588"/>
+  <nd ref="1184411989"/>
+  <tag k="highway" v="unclassified"/>
+ </way>
+ <way id="305962920" visible="true" version="1" changeset="25807680" timestamp="2014-10-02T10:53:40Z" user="Kagami" uid="189328">
+  <nd ref="1184411989"/>
+  <nd ref="1184414851"/>
+  <nd ref="1184411571"/>
+  <nd ref="1184412485"/>
+  <nd ref="1184413603"/>
+  <tag k="highway" v="unclassified"/>
+ </way>
+ <relation id="7737676" visible="true" version="1" changeset="53834170" timestamp="2017-11-16T09:04:54Z" user="s88239" uid="5406836">
+  <member type="way" ref="305962912" role=""/>
+  <member type="way" ref="305962920" role=""/>
+  <member type="node" ref="3106812207" role="platform"/>
+  <tag k="from" v="佳里"/>
+  <tag k="name" v="藍10(延駛馬沙溝遊憩區_往程)"/>
+  <tag k="public_transport:version" v="2"/>
+  <tag k="ref" v="藍10"/>
+  <tag k="route" v="bus"/>
+  <tag k="to" v="馬沙溝遊憩區"/>
+  <tag k="type" v="route"/>
+ </relation>
+</osm>

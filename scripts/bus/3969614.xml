@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<osm version="0.6" generator="CGImap 0.6.0 (24084 thorn-02.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<osm version="0.6" generator="CGImap 0.6.0 (9689 thorn-01.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
  <node id="1236235024" visible="true" version="4" changeset="42616872" timestamp="2016-10-03T22:27:29Z" user="karitotp" uid="2748195" lat="22.9590509" lon="120.1760630">
   <tag k="highway" v="traffic_signals"/>
  </node>
  <node id="1236235091" visible="true" version="3" changeset="32461739" timestamp="2015-07-07T01:08:32Z" user="Kagami" uid="189328" lat="22.9595674" lon="120.1705026"/>
- <node id="1236235101" visible="true" version="8" changeset="42616872" timestamp="2016-10-03T22:27:29Z" user="karitotp" uid="2748195" lat="22.9617709" lon="120.1839013">
+ <node id="1236235101" visible="true" version="9" changeset="51305417" timestamp="2017-08-21T13:07:38Z" user="SHCat" uid="4641415" lat="22.9617709" lon="120.1838884">
   <tag k="highway" v="traffic_signals"/>
  </node>
  <node id="1236235230" visible="true" version="3" changeset="42616872" timestamp="2016-10-03T22:27:29Z" user="karitotp" uid="2748195" lat="22.9616787" lon="120.1829231"/>
- <node id="1236235332" visible="true" version="6" changeset="42616872" timestamp="2016-10-03T22:27:30Z" user="karitotp" uid="2748195" lat="22.9617644" lon="120.1837682">
+ <node id="1236235332" visible="true" version="8" changeset="51781555" timestamp="2017-09-06T13:04:58Z" user="SHCat" uid="4641415" lat="22.9617703" lon="120.1837724">
   <tag k="highway" v="traffic_signals"/>
  </node>
  <node id="1236235424" visible="true" version="3" changeset="32461739" timestamp="2015-07-07T01:08:32Z" user="Kagami" uid="189328" lat="22.9594625" lon="120.1706046"/>
@@ -73,7 +73,7 @@
   <tag k="public_transport" v="platform"/>
  </node>
  <node id="3858843457" visible="true" version="2" changeset="42616872" timestamp="2016-10-03T22:27:38Z" user="karitotp" uid="2748195" lat="22.9591355" lon="120.1729701"/>
- <way id="185577189" visible="true" version="6" changeset="48921730" timestamp="2017-05-23T16:23:15Z" user="Supaplex" uid="274857">
+ <way id="185577189" visible="true" version="7" changeset="51781555" timestamp="2017-09-06T13:05:05Z" user="SHCat" uid="4641415">
   <nd ref="1236235332"/>
   <nd ref="1236235599"/>
   <nd ref="1236235230"/>
@@ -82,22 +82,24 @@
   <nd ref="1236235024"/>
   <tag k="highway" v="tertiary"/>
   <tag k="name" v="清水路"/>
-  <tag k="name:en" v="CingShuei Road"/>
+  <tag k="name:en" v="Cingshuei Road"/>
   <tag k="name:zh" v="清水路"/>
   <tag k="oneway" v="yes"/>
+  <tag k="ref" v="28"/>
   <tag k="sidewalk" v="right"/>
  </way>
- <way id="274022825" visible="true" version="4" changeset="48921730" timestamp="2017-05-23T16:23:35Z" user="Supaplex" uid="274857">
+ <way id="274022825" visible="true" version="6" changeset="57198215" timestamp="2018-03-15T04:50:49Z" user="s88239" uid="5406836">
   <nd ref="1236235101"/>
   <nd ref="1236235332"/>
   <tag k="highway" v="tertiary"/>
   <tag k="name" v="中華南路二段"/>
-  <tag k="name:en" v="Section 2, JhongHua South Road"/>
+  <tag k="name:en" v="Jhonghua South Road Section 2"/>
   <tag k="name:zh" v="中華南路二段"/>
   <tag k="oneway" v="yes"/>
+  <tag k="ref" v="28"/>
   <tag k="sidewalk" v="right"/>
  </way>
- <way id="298591333" visible="true" version="2" changeset="35570411" timestamp="2015-11-25T12:53:01Z" user="Kagami" uid="189328">
+ <way id="298591333" visible="true" version="4" changeset="52187387" timestamp="2017-09-19T17:01:08Z" user="Kagami" uid="189328">
   <nd ref="1236235024"/>
   <nd ref="1962303923"/>
   <nd ref="3858843457"/>
@@ -115,8 +117,10 @@
   <nd ref="1971250176"/>
   <nd ref="1962304042"/>
   <nd ref="1971250206"/>
-  <tag k="highway" v="tertiary"/>
+  <tag k="highway" v="residential"/>
   <tag k="name" v="鯤鯓路"/>
+  <tag k="name:en" v="KunShen Road"/>
+  <tag k="name:zh" v="鯤鯓路"/>
  </way>
  <relation id="3969614" visible="true" version="3" changeset="36703153" timestamp="2016-01-20T15:17:22Z" user="Kagami" uid="189328">
   <member type="node" ref="2601099304" role="platform"/>

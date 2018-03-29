@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<osm version="0.6" generator="CGImap 0.6.0 (3976 thorn-02.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
- <relation id="4094323" visible="true" version="5" changeset="36568727" timestamp="2016-01-14T12:03:04Z" user="Kagami" uid="189328">
+<osm version="0.6" generator="CGImap 0.6.0 (22505 thorn-02.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <relation id="4094323" visible="true" version="6" changeset="52642715" timestamp="2017-10-05T03:58:27Z" user="s88239" uid="5406836">
   <member type="relation" ref="4094321" role="forward"/>
   <member type="relation" ref="4094322" role="backward"/>
+  <member type="relation" ref="7628684" role="forward_extend"/>
+  <member type="relation" ref="7628683" role="backward_extend"/>
   <tag k="name" v="黃15"/>
   <tag k="network" v="臺南市公車"/>
   <tag k="operator" v="新營客運"/>

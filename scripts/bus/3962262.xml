@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<osm version="0.6" generator="CGImap 0.6.0 (4834 thorn-03.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
- <relation id="3962262" visible="true" version="7" changeset="36568727" timestamp="2016-01-14T12:02:49Z" user="Kagami" uid="189328">
+<osm version="0.6" generator="CGImap 0.6.0 (10350 thorn-03.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <relation id="3962262" visible="true" version="9" changeset="55093342" timestamp="2018-01-02T07:46:49Z" user="s88239" uid="5406836">
   <member type="relation" ref="3044696" role="backward"/>
   <member type="relation" ref="4064410" role="forward"/>
   <member type="relation" ref="3962260" role="forward"/>
   <member type="relation" ref="4064409" role="backward"/>
   <member type="relation" ref="3962345" role="forward_extend"/>
   <member type="relation" ref="4064408" role="backward_extend"/>
-  <member type="relation" ref="3962261" role="backward_extend"/>
-  <member type="relation" ref="4064411" role="forward_extend"/>
   <tag k="name" v="5路"/>
   <tag k="network" v="臺南市公車"/>
   <tag k="operator" v="府城客運"/>

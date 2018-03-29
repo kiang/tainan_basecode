@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.6.0 (3303 thorn-01.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <node id="529941955" visible="true" version="5" changeset="42958566" timestamp="2016-10-17T12:24:27Z" user="samely" uid="2512300" lat="22.9387528" lon="120.1809400"/>
+ <node id="1940355877" visible="true" version="3" changeset="42620056" timestamp="2016-10-04T05:19:20Z" user="ramyaragupathy" uid="2823295" lat="22.9362645" lon="120.1811192"/>
+ <node id="1940355891" visible="true" version="4" changeset="42620286" timestamp="2016-10-04T05:40:06Z" user="ramyaragupathy" uid="2823295" lat="22.9366790" lon="120.1809885"/>
+ <node id="1940355919" visible="true" version="3" changeset="42620056" timestamp="2016-10-04T05:19:20Z" user="ramyaragupathy" uid="2823295" lat="22.9369824" lon="120.1809225"/>
+ <node id="1940355926" visible="true" version="3" changeset="42620056" timestamp="2016-10-04T05:19:20Z" user="ramyaragupathy" uid="2823295" lat="22.9373520" lon="120.1808621"/>
+ <node id="1940355928" visible="true" version="4" changeset="42620056" timestamp="2016-10-04T05:19:20Z" user="ramyaragupathy" uid="2823295" lat="22.9376526" lon="120.1808372"/>
+ <node id="1940355930" visible="true" version="4" changeset="42620056" timestamp="2016-10-04T05:19:20Z" user="ramyaragupathy" uid="2823295" lat="22.9379324" lon="120.1808315"/>
+ <node id="1940355934" visible="true" version="4" changeset="42958566" timestamp="2016-10-17T12:24:26Z" user="samely" uid="2512300" lat="22.9382030" lon="120.1808563"/>
+ <node id="1940355942" visible="true" version="4" changeset="42958566" timestamp="2016-10-17T12:24:27Z" user="samely" uid="2512300" lat="22.9384512" lon="120.1808854"/>
+ <node id="1957490989" visible="true" version="4" changeset="42619902" timestamp="2016-10-04T04:59:59Z" user="ramyaragupathy" uid="2823295" lat="22.9337663" lon="120.1801106"/>
+ <node id="1957490994" visible="true" version="5" changeset="42620542" timestamp="2016-10-04T06:01:33Z" user="ramyaragupathy" uid="2823295" lat="22.9342872" lon="120.1818725"/>
+ <node id="1958100335" visible="true" version="4" changeset="42616400" timestamp="2016-10-03T21:56:11Z" user="karitotp" uid="2748195" lat="22.9384682" lon="120.1785780"/>
+ <node id="2577042518" visible="true" version="5" changeset="42620590" timestamp="2016-10-04T06:06:14Z" user="ramyaragupathy" uid="2823295" lat="22.9354625" lon="120.1814134"/>
+ <node id="2577042529" visible="true" version="4" changeset="42620542" timestamp="2016-10-04T06:01:34Z" user="ramyaragupathy" uid="2823295" lat="22.9357503" lon="120.1813122"/>
+ <node id="4430230286" visible="true" version="1" changeset="42620056" timestamp="2016-10-04T05:19:18Z" user="ramyaragupathy" uid="2823295" lat="22.9345513" lon="120.1817751"/>
+ <node id="4430230288" visible="true" version="2" changeset="42620590" timestamp="2016-10-04T06:06:14Z" user="ramyaragupathy" uid="2823295" lat="22.9348613" lon="120.1816491"/>
+ <node id="4430231691" visible="true" version="1" changeset="42620056" timestamp="2016-10-04T05:19:18Z" user="ramyaragupathy" uid="2823295" lat="22.9360174" lon="120.1812092"/>
+ <node id="5098609454" visible="true" version="1" changeset="51949335" timestamp="2017-09-11T17:37:55Z" user="Kagami" uid="189328" lat="22.9388155" lon="120.1802386"/>
+ <node id="5098609455" visible="true" version="1" changeset="51949335" timestamp="2017-09-11T17:37:55Z" user="Kagami" uid="189328" lat="22.9388179" lon="120.1803731"/>
+ <node id="5098609456" visible="true" version="1" changeset="51949335" timestamp="2017-09-11T17:37:55Z" user="Kagami" uid="189328" lat="22.9388009" lon="120.1800762"/>
+ <node id="5098609457" visible="true" version="1" changeset="51949335" timestamp="2017-09-11T17:37:55Z" user="Kagami" uid="189328" lat="22.9388068" lon="120.1805940"/>
+ <node id="5278765044" visible="true" version="1" changeset="54554471" timestamp="2017-12-12T01:43:24Z" user="s88239" uid="5406836" lat="22.9387821" lon="120.1802520">
+  <tag k="bus" v="yes"/>
+  <tag k="highway" v="bus_stop"/>
+  <tag k="name" v="喜東里"/>
+  <tag k="network" v="臺南市公車"/>
+  <tag k="operator" v="臺南市公車"/>
+  <tag k="public_transport" v="platform"/>
+  <tag k="ref" v="1486"/>
+ </node>
+ <way id="183629134" visible="true" version="12" changeset="54554471" timestamp="2017-12-12T01:43:26Z" user="s88239" uid="5406836">
+  <nd ref="529941955"/>
+  <nd ref="1940355942"/>
+  <nd ref="1940355934"/>
+  <nd ref="1940355930"/>
+  <nd ref="1940355928"/>
+  <nd ref="1940355926"/>
+  <nd ref="1940355919"/>
+  <nd ref="1940355891"/>
+  <nd ref="1940355877"/>
+  <nd ref="4430231691"/>
+  <nd ref="2577042529"/>
+  <nd ref="2577042518"/>
+  <nd ref="4430230288"/>
+  <nd ref="4430230286"/>
+  <nd ref="1957490994"/>
+  <tag k="highway" v="primary"/>
+  <tag k="name" v="明興路"/>
+  <tag k="oneway" v="yes"/>
+  <tag k="ref" v="17甲"/>
+  <tag k="ref:en" v="Provincial Highway 17A"/>
+  <tag k="ref:zh" v="台17甲線"/>
+ </way>
+ <way id="523812669" visible="true" version="2" changeset="54554471" timestamp="2017-12-12T01:43:26Z" user="s88239" uid="5406836">
+  <nd ref="529941955"/>
+  <nd ref="5098609457"/>
+  <nd ref="5098609455"/>
+  <nd ref="5098609454"/>
+  <nd ref="5098609456"/>
+  <nd ref="1958100335"/>
+  <tag k="highway" v="residential"/>
+  <tag k="name" v="喜樂路"/>
+ </way>
+ <way id="546228334" visible="true" version="1" changeset="54554471" timestamp="2017-12-12T01:43:24Z" user="s88239" uid="5406836">
+  <nd ref="1957490989"/>
+  <nd ref="1957490994"/>
+  <tag k="highway" v="service"/>
+  <tag k="name" v="灣裡路62巷"/>
+  <tag k="service" v="alley"/>
+ </way>
+ <relation id="7801996" visible="true" version="1" changeset="54554471" timestamp="2017-12-12T01:43:25Z" user="s88239" uid="5406836">
+  <member type="node" ref="5278765044" role="platform"/>
+  <member type="way" ref="523812669" role=""/>
+  <member type="way" ref="183629134" role=""/>
+  <member type="way" ref="546228334" role=""/>
+  <tag k="from" v="台南火車站"/>
+  <tag k="name" v="1路(繞駛喜東里_往程)"/>
+  <tag k="public_transport:version" v="2"/>
+  <tag k="ref" v="1"/>
+  <tag k="route" v="bus"/>
+  <tag k="to" v="茄萣"/>
+  <tag k="type" v="route"/>
+ </relation>
+</osm>

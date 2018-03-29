@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<osm version="0.6" generator="CGImap 0.6.0 (26020 thorn-01.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<osm version="0.6" generator="CGImap 0.6.0 (9700 thorn-01.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
  <node id="1642737148" visible="true" version="2" changeset="42653429" timestamp="2016-10-05T10:17:05Z" user="pratikyadav" uid="2905914" lat="23.3537937" lon="120.4182116"/>
  <node id="1642737149" visible="true" version="2" changeset="42653429" timestamp="2016-10-05T10:17:05Z" user="pratikyadav" uid="2905914" lat="23.3543760" lon="120.4186602"/>
  <node id="1642737165" visible="true" version="1" changeset="10756007" timestamp="2012-02-22T05:21:54Z" user="zinklink" uid="269097" lat="23.3563616" lon="120.4202093"/>
@@ -7,10 +7,11 @@
  <node id="1642737167" visible="true" version="1" changeset="10756007" timestamp="2012-02-22T05:21:54Z" user="zinklink" uid="269097" lat="23.3590414" lon="120.4221984"/>
  <node id="1642737168" visible="true" version="1" changeset="10756007" timestamp="2012-02-22T05:21:54Z" user="zinklink" uid="269097" lat="23.3604285" lon="120.4232250"/>
  <node id="1642737169" visible="true" version="1" changeset="10756007" timestamp="2012-02-22T05:21:54Z" user="zinklink" uid="269097" lat="23.3616260" lon="120.4241035"/>
- <node id="2117634828" visible="true" version="2" changeset="42653429" timestamp="2016-10-05T10:17:05Z" user="pratikyadav" uid="2905914" lat="23.3539226" lon="120.4183143"/>
+ <node id="2117634828" visible="true" version="3" changeset="55053086" timestamp="2017-12-31T09:14:40Z" user="Supaplex" uid="274857" lat="23.3539226" lon="120.4183143">
+  <tag k="highway" v="traffic_signals"/>
+ </node>
  <node id="2117634829" visible="true" version="3" changeset="42653429" timestamp="2016-10-05T10:17:06Z" user="pratikyadav" uid="2905914" lat="23.3527677" lon="120.4174695"/>
  <node id="2125164802" visible="true" version="2" changeset="42660097" timestamp="2016-10-05T15:06:49Z" user="andygol" uid="94578" lat="23.3614696" lon="120.4239992"/>
- <node id="2126016731" visible="true" version="4" changeset="48289896" timestamp="2017-04-30T19:02:36Z" user="happychang" uid="5644877" lat="23.3632603" lon="120.4253195"/>
  <node id="2129307031" visible="true" version="1" changeset="14793571" timestamp="2013-01-26T15:02:09Z" user="Kagami" uid="189328" lat="23.3592374" lon="120.4223435"/>
  <node id="2129307038" visible="true" version="1" changeset="14793571" timestamp="2013-01-26T15:02:09Z" user="Kagami" uid="189328" lat="23.3600374" lon="120.4229355"/>
  <node id="2129307040" visible="true" version="1" changeset="14793571" timestamp="2013-01-26T15:02:09Z" user="Kagami" uid="189328" lat="23.3603300" lon="120.4231521"/>
@@ -19,20 +20,22 @@
  <node id="2132441569" visible="true" version="1" changeset="14822952" timestamp="2013-01-28T14:43:36Z" user="Kagami" uid="189328" lat="23.3612007" lon="120.4237915"/>
  <node id="2132441601" visible="true" version="2" changeset="18483168" timestamp="2013-10-22T09:49:04Z" user="egret" uid="521877" lat="23.3620175" lon="120.4243803"/>
  <node id="2132443199" visible="true" version="1" changeset="14822990" timestamp="2013-01-28T14:46:21Z" user="Kagami" uid="189328" lat="23.3583684" lon="120.4216917"/>
- <node id="2504775404" visible="true" version="1" changeset="18483168" timestamp="2013-10-22T09:47:35Z" user="egret" uid="521877" lat="23.3631931" lon="120.4252628"/>
  <node id="3029762419" visible="true" version="2" changeset="42653290" timestamp="2016-10-05T10:12:13Z" user="pratikyadav" uid="2905914" lat="23.3552848" lon="120.4193548"/>
- <node id="3076654664" visible="true" version="3" changeset="28581750" timestamp="2015-02-03T04:57:37Z" user="Supaplex" uid="274857" lat="23.3555659" lon="120.4197160">
+ <node id="3076654664" visible="true" version="4" changeset="55648994" timestamp="2018-01-22T09:21:20Z" user="s88239" uid="5406836" lat="23.3555043" lon="120.4196650">
   <tag k="bus" v="yes"/>
   <tag k="highway" v="bus_stop"/>
   <tag k="name" v="舊地政"/>
   <tag k="network" v="臺南市公車"/>
   <tag k="operator" v="臺南市公車"/>
   <tag k="public_transport" v="platform"/>
+  <tag k="ref" v="7001"/>
  </node>
- <node id="3116031421" visible="true" version="3" changeset="35659834" timestamp="2015-11-30T07:06:00Z" user="Kagami" uid="189328" lat="23.3618853" lon="120.4243677">
+ <node id="3116031421" visible="true" version="4" changeset="55648994" timestamp="2018-01-22T09:21:20Z" user="s88239" uid="5406836" lat="23.3618065" lon="120.4243275">
   <tag k="bus" v="yes"/>
   <tag k="highway" v="bus_stop"/>
   <tag k="name" v="白河國中"/>
+  <tag k="name:en" v="Baihe Junior High School"/>
+  <tag k="name:zh" v="白河國中"/>
   <tag k="network" v="臺南市公車"/>
   <tag k="operator" v="臺南市公車"/>
   <tag k="public_transport" v="platform"/>
@@ -58,7 +61,7 @@
   <tag k="name" v="中山路"/>
   <tag k="ref" v="165"/>
  </way>
- <way id="299789685" visible="true" version="3" changeset="29214013" timestamp="2015-03-03T04:21:11Z" user="Supaplex" uid="274857">
+ <way id="299789685" visible="true" version="4" changeset="55648994" timestamp="2018-01-22T09:21:26Z" user="s88239" uid="5406836">
   <nd ref="2117634829"/>
   <nd ref="1642737148"/>
   <nd ref="2117634828"/>
@@ -66,12 +69,10 @@
   <nd ref="3029762419"/>
   <tag k="highway" v="residential"/>
   <tag k="name" v="中山路"/>
-  <tag k="name:en" v="Zh?ngsh?n Road"/>
+  <tag k="name:en" v="Zhongshan Road"/>
   <tag k="name:zh" v="中山路"/>
  </way>
- <way id="306632169" visible="true" version="3" changeset="48289896" timestamp="2017-04-30T19:02:37Z" user="happychang" uid="5644877">
-  <nd ref="2126016731"/>
-  <nd ref="2504775404"/>
+ <way id="306632169" visible="true" version="4" changeset="55648994" timestamp="2018-01-22T09:21:27Z" user="s88239" uid="5406836">
   <nd ref="2132441601"/>
   <nd ref="3771973916"/>
   <nd ref="1642737169"/>
@@ -80,7 +81,7 @@
   <tag k="highway" v="secondary"/>
   <tag k="ref" v="165"/>
  </way>
- <relation id="4096662" visible="true" version="2" changeset="36703153" timestamp="2016-01-20T15:18:55Z" user="Kagami" uid="189328">
+ <relation id="4096662" visible="true" version="3" changeset="55648994" timestamp="2018-01-22T09:21:32Z" user="s88239" uid="5406836">
   <member type="way" ref="299789685" role=""/>
   <member type="way" ref="204095373" role=""/>
   <member type="way" ref="306632169" role=""/>

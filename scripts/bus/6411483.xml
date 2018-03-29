@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<osm version="0.6" generator="CGImap 0.6.0 (23926 thorn-02.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<osm version="0.6" generator="CGImap 0.6.0 (10340 thorn-03.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
  <node id="2123776896" visible="true" version="2" changeset="42656235" timestamp="2016-10-05T12:26:19Z" user="nammala" uid="3479270" lat="23.3045253" lon="120.4720319"/>
  <node id="2123776898" visible="true" version="2" changeset="42656235" timestamp="2016-10-05T12:26:19Z" user="nammala" uid="3479270" lat="23.3045795" lon="120.4718549"/>
  <node id="2123776903" visible="true" version="2" changeset="42656235" timestamp="2016-10-05T12:26:19Z" user="nammala" uid="3479270" lat="23.3047643" lon="120.4715371"/>
@@ -134,10 +134,10 @@
   <tag k="public_transport" v="platform"/>
   <tag k="ref" v="1281"/>
  </node>
- <node id="4301831475" visible="true" version="1" changeset="40734073" timestamp="2016-07-14T08:50:05Z" user="Kagami" uid="189328" lat="23.3054327" lon="120.4731011">
+ <node id="4301831475" visible="true" version="2" changeset="55648994" timestamp="2018-01-22T09:21:21Z" user="s88239" uid="5406836" lat="23.3054327" lon="120.4731011">
   <tag k="bus" v="yes"/>
   <tag k="highway" v="bus_stop"/>
-  <tag k="name" v="崁下"/>
+  <tag k="name" v="崁下仔"/>
   <tag k="network" v="臺南市公車"/>
   <tag k="operator" v="臺南市公車"/>
   <tag k="public_transport" v="platform"/>
@@ -167,7 +167,17 @@
  <node id="4432597466" visible="true" version="1" changeset="42656235" timestamp="2016-10-05T12:26:15Z" user="nammala" uid="3479270" lat="23.3069049" lon="120.4710408"/>
  <node id="4432597467" visible="true" version="1" changeset="42656235" timestamp="2016-10-05T12:26:15Z" user="nammala" uid="3479270" lat="23.3072830" lon="120.4713131"/>
  <node id="4432597470" visible="true" version="1" changeset="42656235" timestamp="2016-10-05T12:26:15Z" user="nammala" uid="3479270" lat="23.3102328" lon="120.4727045"/>
- <way id="202408132" visible="true" version="5" changeset="49021251" timestamp="2017-05-27T10:26:02Z" user="happychang" uid="5644877">
+ <node id="5101136266" visible="true" version="1" changeset="51977290" timestamp="2017-09-12T15:36:11Z" user="愛台玩" uid="3682557" lat="23.3135758" lon="120.4656775"/>
+ <node id="5354197497" visible="true" version="1" changeset="55648994" timestamp="2018-01-22T09:21:17Z" user="s88239" uid="5406836" lat="23.3122742" lon="120.4720174">
+  <tag k="bus" v="yes"/>
+  <tag k="highway" v="bus_stop"/>
+  <tag k="name" v="鹽水坑"/>
+  <tag k="network" v="臺南市公車"/>
+  <tag k="operator" v="臺南市公車"/>
+  <tag k="public_transport" v="platform"/>
+  <tag k="ref" v="1469"/>
+ </node>
+ <way id="202408132" visible="true" version="6" changeset="51977290" timestamp="2017-09-12T15:36:15Z" user="愛台玩" uid="3682557">
   <nd ref="2123777061"/>
   <nd ref="2123782669"/>
   <nd ref="2123782670"/>
@@ -210,6 +220,7 @@
   <nd ref="2123782782"/>
   <nd ref="2123782783"/>
   <nd ref="2123782781"/>
+  <nd ref="5101136266"/>
   <nd ref="2123782773"/>
   <nd ref="2123782765"/>
   <nd ref="2123782762"/>
@@ -335,7 +346,7 @@
   <tag k="highway" v="service"/>
   <tag k="name" v="產業道路"/>
  </way>
- <relation id="6411483" visible="true" version="1" changeset="40734073" timestamp="2016-07-14T08:50:08Z" user="Kagami" uid="189328">
+ <relation id="6411483" visible="true" version="2" changeset="55648994" timestamp="2018-01-22T09:21:36Z" user="s88239" uid="5406836">
   <member type="way" ref="430926059" role=""/>
   <member type="way" ref="205936782" role=""/>
   <member type="way" ref="430926060" role=""/>
@@ -346,6 +357,7 @@
   <member type="node" ref="4301831470" role="platform"/>
   <member type="node" ref="4301831475" role="platform"/>
   <member type="node" ref="4301831476" role="platform"/>
+  <member type="node" ref="5354197497" role="platform"/>
   <member type="node" ref="4301831477" role="platform"/>
   <tag k="from" v="後壁"/>
   <tag k="name" v="黃10(循環線_往程)"/>

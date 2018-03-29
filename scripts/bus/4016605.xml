@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<osm version="0.6" generator="CGImap 0.6.0 (2672 thorn-02.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<osm version="0.6" generator="CGImap 0.6.0 (10340 thorn-03.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
  <node id="1240288637" visible="true" version="2" changeset="18580757" timestamp="2013-10-28T09:27:21Z" user="wenchin" uid="121778" lat="22.9774517" lon="120.1976052"/>
  <node id="2135744563" visible="true" version="4" changeset="22938518" timestamp="2014-06-15T07:02:59Z" user="Kagami" uid="189328" lat="22.9755605" lon="120.1976268"/>
  <node id="2135744580" visible="true" version="4" changeset="37189010" timestamp="2016-02-13T15:43:21Z" user="Kagami" uid="189328" lat="22.9766963" lon="120.1976039">
@@ -15,7 +15,7 @@
   <tag k="highway" v="traffic_signals"/>
  </node>
  <node id="2966300346" visible="true" version="1" changeset="24185053" timestamp="2014-07-16T16:32:37Z" user="Kagami" uid="189328" lat="22.9772118" lon="120.1976072"/>
- <way id="229039646" visible="true" version="11" changeset="48921730" timestamp="2017-05-23T16:23:27Z" user="Supaplex" uid="274857">
+ <way id="229039646" visible="true" version="12" changeset="51771785" timestamp="2017-09-06T07:27:14Z" user="SHCat" uid="4641415">
   <nd ref="2135744600"/>
   <nd ref="1240288637"/>
   <nd ref="2966300346"/>
@@ -24,9 +24,10 @@
   <nd ref="2916982276"/>
   <tag k="highway" v="tertiary"/>
   <tag k="name" v="西門路一段"/>
-  <tag k="name:en" v="Section 1 , Simen Road"/>
+  <tag k="name:en" v="Simen Road Sec. 1"/>
   <tag k="name:zh" v="西門路一段"/>
   <tag k="oneway" v="yes"/>
+  <tag k="ref" v="21"/>
   <tag k="sidewalk" v="no"/>
  </way>
  <way id="239211830" visible="true" version="2" changeset="22125721" timestamp="2014-05-04T13:43:10Z" user="Kagami" uid="189328">
@@ -34,15 +35,16 @@
   <nd ref="2470222163"/>
   <tag k="highway" v="service"/>
  </way>
- <way id="298271099" visible="true" version="4" changeset="48921730" timestamp="2017-05-23T16:23:51Z" user="Supaplex" uid="274857">
+ <way id="298271099" visible="true" version="5" changeset="51771785" timestamp="2017-09-06T07:27:13Z" user="SHCat" uid="4641415">
   <nd ref="2916982276"/>
   <nd ref="2139757073"/>
   <nd ref="2835799551"/>
   <tag k="highway" v="tertiary"/>
   <tag k="name" v="西門路一段"/>
-  <tag k="name:en" v="Section 1, Simen Road"/>
+  <tag k="name:en" v="Simen Road Sec. 1"/>
   <tag k="name:zh" v="西門路一段"/>
   <tag k="oneway" v="yes"/>
+  <tag k="ref" v="21"/>
   <tag k="sidewalk" v="no"/>
  </way>
  <relation id="4016605" visible="true" version="4" changeset="38291108" timestamp="2016-04-04T13:28:20Z" user="Kagami" uid="189328">

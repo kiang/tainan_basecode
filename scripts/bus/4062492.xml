@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<osm version="0.6" generator="CGImap 0.6.0 (15934 thorn-02.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<osm version="0.6" generator="CGImap 0.6.0 (10336 thorn-03.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
  <node id="333698462" visible="true" version="6" changeset="42511466" timestamp="2016-09-29T07:21:33Z" user="BharataHS" uid="706170" lat="22.8861580" lon="120.1861581"/>
  <node id="333698466" visible="true" version="3" changeset="42381205" timestamp="2016-09-23T17:19:24Z" user="dannykath" uid="2226712" lat="22.8825743" lon="120.1872444"/>
  <node id="333698552" visible="true" version="5" changeset="42619461" timestamp="2016-10-04T03:56:31Z" user="ramyaragupathy" uid="2823295" lat="22.8807419" lon="120.1880826"/>
@@ -17,7 +17,10 @@
  <node id="333698811" visible="true" version="3" changeset="42382251" timestamp="2016-09-23T17:51:23Z" user="dannykath" uid="2226712" lat="22.8806023" lon="120.2138744"/>
  <node id="333698812" visible="true" version="3" changeset="42382251" timestamp="2016-09-23T17:51:23Z" user="dannykath" uid="2226712" lat="22.8804713" lon="120.2139656"/>
  <node id="333698813" visible="true" version="3" changeset="42382251" timestamp="2016-09-23T17:51:23Z" user="dannykath" uid="2226712" lat="22.8802230" lon="120.2139884"/>
- <node id="333698815" visible="true" version="4" changeset="42622066" timestamp="2016-10-04T07:45:57Z" user="ramyaragupathy" uid="2823295" lat="22.8760825" lon="120.2140542"/>
+ <node id="333698815" visible="true" version="5" changeset="53711537" timestamp="2017-11-12T12:34:11Z" user="DAN121837" uid="6421776" lat="22.8760825" lon="120.2140542">
+  <tag k="highway" v="traffic_signals"/>
+  <tag k="traffic_signals" v="signal"/>
+ </node>
  <node id="529941913" visible="true" version="8" changeset="42511466" timestamp="2016-09-29T07:21:33Z" user="BharataHS" uid="706170" lat="22.8861894" lon="120.1862433"/>
  <node id="2082947285" visible="true" version="4" changeset="42620761" timestamp="2016-10-04T06:21:34Z" user="manoharuss" uid="3769434" lat="22.8773759" lon="120.2025912"/>
  <node id="2082947287" visible="true" version="5" changeset="42382251" timestamp="2016-09-23T17:51:23Z" user="dannykath" uid="2226712" lat="22.8774944" lon="120.2027449"/>
@@ -32,8 +35,14 @@
  <node id="2504045807" visible="true" version="4" changeset="42511370" timestamp="2016-09-29T07:19:01Z" user="upendrakarukonda" uid="4007051" lat="22.8753472" lon="120.1963885"/>
  <node id="2504045831" visible="true" version="4" changeset="42619869" timestamp="2016-10-04T04:56:03Z" user="Jothirnadh" uid="2015224" lat="22.8756422" lon="120.1978709"/>
  <node id="2504045863" visible="true" version="7" changeset="42958695" timestamp="2016-10-17T12:31:10Z" user="samely" uid="2512300" lat="22.8757623" lon="120.2003312"/>
- <node id="2504045884" visible="true" version="3" changeset="42622066" timestamp="2016-10-04T07:45:57Z" user="ramyaragupathy" uid="2823295" lat="22.8760980" lon="120.2142558"/>
- <node id="2504045891" visible="true" version="3" changeset="42622066" timestamp="2016-10-04T07:45:57Z" user="ramyaragupathy" uid="2823295" lat="22.8762145" lon="120.2140552"/>
+ <node id="2504045884" visible="true" version="4" changeset="53711537" timestamp="2017-11-12T12:34:11Z" user="DAN121837" uid="6421776" lat="22.8760980" lon="120.2142558">
+  <tag k="highway" v="traffic_signals"/>
+  <tag k="traffic_signals" v="signal"/>
+ </node>
+ <node id="2504045891" visible="true" version="4" changeset="53711537" timestamp="2017-11-12T12:34:11Z" user="DAN121837" uid="6421776" lat="22.8762145" lon="120.2140552">
+  <tag k="highway" v="traffic_signals"/>
+  <tag k="traffic_signals" v="signal"/>
+ </node>
  <node id="2504045920" visible="true" version="3" changeset="42381710" timestamp="2016-09-23T17:34:58Z" user="dannykath" uid="2226712" lat="22.8765112" lon="120.1894652"/>
  <node id="2504045942" visible="true" version="4" changeset="42619869" timestamp="2016-10-04T04:56:03Z" user="Jothirnadh" uid="2015224" lat="22.8772321" lon="120.2024246"/>
  <node id="2504045945" visible="true" version="7" changeset="42619530" timestamp="2016-10-04T04:05:33Z" user="ramyaragupathy" uid="2823295" lat="22.8773273" lon="120.1891307"/>
@@ -43,13 +52,15 @@
  <node id="2504046045" visible="true" version="3" changeset="42511636" timestamp="2016-09-29T07:31:14Z" user="BharataHS" uid="706170" lat="22.8806379" lon="120.2122882"/>
  <node id="3008800235" visible="true" version="4" changeset="45183020" timestamp="2017-01-15T04:07:23Z" user="Kagami" uid="189328" lat="22.8870852" lon="120.1867824"/>
  <node id="3008800236" visible="true" version="5" changeset="45183020" timestamp="2017-01-15T04:07:23Z" user="Kagami" uid="189328" lat="22.8878191" lon="120.1871284"/>
- <node id="3059462972" visible="true" version="3" changeset="28682138" timestamp="2015-02-07T16:13:39Z" user="Supaplex" uid="274857" lat="22.8794598" lon="120.2138646">
+ <node id="3059462972" visible="true" version="4" changeset="53711537" timestamp="2017-11-12T12:34:12Z" user="DAN121837" uid="6421776" lat="22.8794598" lon="120.2138646">
+  <tag k="bench" v="yes"/>
   <tag k="bus" v="yes"/>
   <tag k="highway" v="bus_stop"/>
   <tag k="name" v="假日市集"/>
   <tag k="network" v="臺南市公車"/>
   <tag k="operator" v="臺南市公車"/>
   <tag k="public_transport" v="platform"/>
+  <tag k="shelter" v="yes"/>
  </node>
  <node id="3059462974" visible="true" version="3" changeset="28682138" timestamp="2015-02-07T16:13:54Z" user="Supaplex" uid="274857" lat="22.8797610" lon="120.1882054">
   <tag k="bus" v="yes"/>
@@ -107,13 +118,14 @@
   <tag k="operator" v="臺南市公車"/>
   <tag k="public_transport" v="platform"/>
  </node>
- <node id="3059462995" visible="true" version="3" changeset="28682138" timestamp="2015-02-07T16:16:37Z" user="Supaplex" uid="274857" lat="22.8760569" lon="120.2010625">
+ <node id="3059462995" visible="true" version="4" changeset="54554471" timestamp="2017-12-12T01:43:25Z" user="s88239" uid="5406836" lat="22.8760569" lon="120.2010625">
   <tag k="bus" v="yes"/>
   <tag k="highway" v="bus_stop"/>
-  <tag k="name" v="興達港海巡署基地"/>
+  <tag k="name" v="海巡基地站"/>
   <tag k="network" v="臺南市公車"/>
   <tag k="operator" v="臺南市公車"/>
   <tag k="public_transport" v="platform"/>
+  <tag k="ref" v="9179"/>
  </node>
  <node id="3059463000" visible="true" version="3" changeset="28682138" timestamp="2015-02-07T16:16:38Z" user="Supaplex" uid="274857" lat="22.8769053" lon="120.2142563">
   <tag k="bus" v="yes"/>

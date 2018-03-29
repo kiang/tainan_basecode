@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<osm version="0.6" generator="CGImap 0.6.0 (7561 thorn-03.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<osm version="0.6" generator="CGImap 0.6.0 (10345 thorn-03.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
  <node id="2096803659" visible="true" version="3" changeset="42650496" timestamp="2016-10-05T08:12:41Z" user="srividya_c" uid="2115749" lat="23.2448548" lon="120.5373317"/>
  <node id="2096803660" visible="true" version="2" changeset="17357657" timestamp="2013-08-15T10:42:50Z" user="ezjerry" uid="1595400" lat="23.2457136" lon="120.5375806"/>
  <node id="2096803661" visible="true" version="1" changeset="14540304" timestamp="2013-01-05T19:26:24Z" user="Supaplex" uid="274857" lat="23.2460288" lon="120.5371856"/>
@@ -310,7 +310,7 @@
  <node id="4452001703" visible="true" version="1" changeset="42961487" timestamp="2016-10-17T14:50:58Z" user="dannykath" uid="2226712" lat="23.2433957" lon="120.5366301"/>
  <node id="4452001704" visible="true" version="1" changeset="42961487" timestamp="2016-10-17T14:50:58Z" user="dannykath" uid="2226712" lat="23.2434980" lon="120.5366180"/>
  <node id="4538816755" visible="true" version="1" changeset="44170575" timestamp="2016-12-05T02:37:05Z" user="c23508" uid="2088626" lat="23.2518054" lon="120.5304234"/>
- <way id="307667185" visible="true" version="3" changeset="42652371" timestamp="2016-10-05T09:31:45Z" user="oini" uid="3057995">
+ <way id="307667185" visible="true" version="4" changeset="57608622" timestamp="2018-03-28T17:30:37Z" user="Littlebtc" uid="1439333">
   <nd ref="2096803907"/>
   <nd ref="2096803906"/>
   <nd ref="2096803904"/>
@@ -325,10 +325,11 @@
   <nd ref="3128715849"/>
   <nd ref="2096803726"/>
   <tag k="highway" v="unclassified"/>
+  <tag k="maxspeed" v="40"/>
   <tag k="name" v="曾庫公路"/>
   <tag k="source" v="Bing"/>
  </way>
- <way id="307667189" visible="true" version="7" changeset="49045699" timestamp="2017-05-28T13:22:20Z" user="happychang" uid="5644877">
+ <way id="307667189" visible="true" version="8" changeset="57608622" timestamp="2018-03-28T17:30:37Z" user="Littlebtc" uid="1439333">
   <nd ref="2096803731"/>
   <nd ref="2096803870"/>
   <nd ref="3128715853"/>
@@ -411,10 +412,11 @@
   <nd ref="2096803803"/>
   <nd ref="2419688458"/>
   <tag k="highway" v="residential"/>
+  <tag k="maxspeed" v="40"/>
   <tag k="name" v="曾庫公路"/>
   <tag k="source" v="Bing"/>
  </way>
- <way id="307667190" visible="true" version="2" changeset="42652371" timestamp="2016-10-05T09:31:45Z" user="oini" uid="3057995">
+ <way id="307667190" visible="true" version="3" changeset="57608622" timestamp="2018-03-28T17:30:37Z" user="Littlebtc" uid="1439333">
   <nd ref="2096803775"/>
   <nd ref="2449443981"/>
   <nd ref="2096803776"/>
@@ -446,37 +448,41 @@
   <nd ref="2096803908"/>
   <nd ref="2096803909"/>
   <tag k="highway" v="unclassified"/>
+  <tag k="maxspeed" v="40"/>
   <tag k="name" v="曾庫公路"/>
   <tag k="source" v="Bing"/>
  </way>
- <way id="307667191" visible="true" version="1" changeset="26063806" timestamp="2014-10-14T03:58:44Z" user="Kagami" uid="189328">
+ <way id="307667191" visible="true" version="2" changeset="57608622" timestamp="2018-03-28T17:30:38Z" user="Littlebtc" uid="1439333">
   <nd ref="2096803909"/>
   <nd ref="2096803907"/>
   <tag k="bridge" v="yes"/>
   <tag k="highway" v="unclassified"/>
   <tag k="layer" v="1"/>
+  <tag k="maxspeed" v="40"/>
   <tag k="name" v="曾庫公路"/>
   <tag k="source" v="Bing"/>
  </way>
- <way id="307667192" visible="true" version="1" changeset="26063806" timestamp="2014-10-14T03:58:44Z" user="Kagami" uid="189328">
+ <way id="307667192" visible="true" version="2" changeset="57608622" timestamp="2018-03-28T17:30:38Z" user="Littlebtc" uid="1439333">
   <nd ref="3128715852"/>
   <nd ref="2096803731"/>
   <tag k="bridge" v="yes"/>
   <tag k="highway" v="unclassified"/>
   <tag k="layer" v="1"/>
+  <tag k="maxspeed" v="40"/>
   <tag k="name" v="曾庫公路"/>
   <tag k="source" v="Bing"/>
  </way>
- <way id="307667193" visible="true" version="1" changeset="26063806" timestamp="2014-10-14T03:58:44Z" user="Kagami" uid="189328">
+ <way id="307667193" visible="true" version="2" changeset="57608622" timestamp="2018-03-28T17:30:38Z" user="Littlebtc" uid="1439333">
   <nd ref="2096803726"/>
   <nd ref="2096803730"/>
   <tag k="bridge" v="yes"/>
   <tag k="highway" v="unclassified"/>
   <tag k="layer" v="1"/>
+  <tag k="maxspeed" v="40"/>
   <tag k="name" v="曾庫公路"/>
   <tag k="source" v="Bing"/>
  </way>
- <way id="307667194" visible="true" version="3" changeset="49023608" timestamp="2017-05-27T12:20:33Z" user="happychang" uid="5644877">
+ <way id="307667194" visible="true" version="4" changeset="57608622" timestamp="2018-03-28T17:30:38Z" user="Littlebtc" uid="1439333">
   <nd ref="2096803778"/>
   <nd ref="2096803777"/>
   <nd ref="4432363458"/>
@@ -484,10 +490,11 @@
   <tag k="bridge" v="yes"/>
   <tag k="highway" v="residential"/>
   <tag k="layer" v="1"/>
-  <tag k="name" v="曾庫公路"/>
+  <tag k="maxspeed" v="40"/>
+  <tag k="name" v="曾文三橋"/>
   <tag k="source" v="Bing"/>
  </way>
- <way id="307667196" visible="true" version="4" changeset="49023608" timestamp="2017-05-27T12:20:33Z" user="happychang" uid="5644877">
+ <way id="307667196" visible="true" version="5" changeset="57608622" timestamp="2018-03-28T17:30:38Z" user="Littlebtc" uid="1439333">
   <nd ref="2096803762"/>
   <nd ref="3455663170"/>
   <nd ref="2096803788"/>
@@ -497,11 +504,12 @@
   <nd ref="4432363454"/>
   <nd ref="2096803787"/>
   <tag k="highway" v="residential"/>
+  <tag k="maxspeed" v="40"/>
   <tag k="name" v="曾庫公路"/>
   <tag k="oneway" v="yes"/>
   <tag k="source" v="Bing"/>
  </way>
- <way id="307667198" visible="true" version="2" changeset="42652371" timestamp="2016-10-05T09:31:46Z" user="oini" uid="3057995">
+ <way id="307667198" visible="true" version="3" changeset="57608622" timestamp="2018-03-28T17:30:38Z" user="Littlebtc" uid="1439333">
   <nd ref="2096803730"/>
   <nd ref="2096803725"/>
   <nd ref="2096803723"/>
@@ -511,10 +519,11 @@
   <nd ref="2096803722"/>
   <nd ref="3128715852"/>
   <tag k="highway" v="unclassified"/>
+  <tag k="maxspeed" v="40"/>
   <tag k="name" v="曾庫公路"/>
   <tag k="source" v="Bing"/>
  </way>
- <way id="307667199" visible="true" version="3" changeset="49023608" timestamp="2017-05-27T12:20:33Z" user="happychang" uid="5644877">
+ <way id="307667199" visible="true" version="4" changeset="57608622" timestamp="2018-03-28T17:30:39Z" user="Littlebtc" uid="1439333">
   <nd ref="2096803787"/>
   <nd ref="2096803783"/>
   <nd ref="2096803784"/>
@@ -526,6 +535,7 @@
   <nd ref="3128715842"/>
   <nd ref="2096803778"/>
   <tag k="highway" v="residential"/>
+  <tag k="maxspeed" v="40"/>
   <tag k="name" v="曾庫公路"/>
   <tag k="source" v="Bing"/>
  </way>

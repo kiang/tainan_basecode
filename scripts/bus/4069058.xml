@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<osm version="0.6" generator="CGImap 0.6.0 (23935 thorn-02.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<osm version="0.6" generator="CGImap 0.6.0 (9707 thorn-01.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
  <node id="310212062" visible="true" version="4" changeset="45615694" timestamp="2017-01-29T10:12:10Z" user="Proximus Locati" uid="2715913" lat="23.2168675" lon="120.2704419">
   <tag k="highway" v="traffic_signals"/>
  </node>
@@ -172,21 +172,23 @@
  <node id="2749860949" visible="true" version="2" changeset="42642494" timestamp="2016-10-04T20:41:54Z" user="Luis36995" uid="1829683" lat="23.1902600" lon="120.2439827"/>
  <node id="2749860950" visible="true" version="2" changeset="42642494" timestamp="2016-10-04T20:41:54Z" user="Luis36995" uid="1829683" lat="23.1904018" lon="120.2411503"/>
  <node id="2749860951" visible="true" version="2" changeset="42642494" timestamp="2016-10-04T20:41:54Z" user="Luis36995" uid="1829683" lat="23.1904178" lon="120.2412509"/>
- <node id="2982664241" visible="true" version="3" changeset="28581750" timestamp="2015-02-03T04:55:40Z" user="Supaplex" uid="274857" lat="23.1896780" lon="120.2323679">
+ <node id="2982664241" visible="true" version="4" changeset="52798258" timestamp="2017-10-10T15:48:16Z" user="s88239" uid="5406836" lat="23.1896780" lon="120.2323679">
   <tag k="bus" v="yes"/>
   <tag k="highway" v="bus_stop"/>
   <tag k="name" v="小埤頭"/>
   <tag k="network" v="臺南市公車"/>
   <tag k="operator" v="臺南市公車"/>
   <tag k="public_transport" v="platform"/>
+  <tag k="ref" v="7299"/>
  </node>
- <node id="2982664248" visible="true" version="3" changeset="28581750" timestamp="2015-02-03T04:56:17Z" user="Supaplex" uid="274857" lat="23.1810216" lon="120.2326215">
+ <node id="2982664248" visible="true" version="4" changeset="52798258" timestamp="2017-10-10T15:48:17Z" user="s88239" uid="5406836" lat="23.1810216" lon="120.2326215">
   <tag k="bus" v="yes"/>
   <tag k="highway" v="bus_stop"/>
   <tag k="name" v="新樓醫院"/>
   <tag k="network" v="臺南市公車"/>
   <tag k="operator" v="臺南市公車"/>
   <tag k="public_transport" v="platform"/>
+  <tag k="ref" v="7945"/>
  </node>
  <node id="2982664267" visible="true" version="3" changeset="28581750" timestamp="2015-02-03T04:58:18Z" user="Supaplex" uid="274857" lat="23.1897694" lon="120.2489683">
   <tag k="bus" v="yes"/>

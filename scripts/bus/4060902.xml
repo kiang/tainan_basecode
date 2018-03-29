@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<osm version="0.6" generator="CGImap 0.6.0 (15502 thorn-03.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<osm version="0.6" generator="CGImap 0.6.0 (22497 thorn-02.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
  <node id="1133821974" visible="true" version="3" changeset="42379979" timestamp="2016-09-23T16:40:46Z" user="karitotp" uid="2748195" lat="23.0357785" lon="120.3032815"/>
  <node id="1133822093" visible="true" version="3" changeset="42379979" timestamp="2016-09-23T16:40:46Z" user="karitotp" uid="2748195" lat="23.0358254" lon="120.3060616"/>
  <node id="1133822121" visible="true" version="5" changeset="42514804" timestamp="2016-09-29T10:07:01Z" user="poornibadrinath" uid="1597155" lat="23.0357489" lon="120.3049308"/>
@@ -101,7 +101,7 @@
  <node id="4420512040" visible="true" version="1" changeset="42471763" timestamp="2016-09-27T14:26:20Z" user="dannykath" uid="2226712" lat="23.0228008" lon="120.2995770"/>
  <node id="4423526021" visible="true" version="1" changeset="42516671" timestamp="2016-09-29T11:40:05Z" user="poornibadrinath" uid="1597155" lat="23.0294170" lon="120.2944772"/>
  <node id="4423564177" visible="true" version="1" changeset="42517025" timestamp="2016-09-29T11:56:42Z" user="poornibadrinath" uid="1597155" lat="23.0289785" lon="120.2940958"/>
- <way id="165807664" visible="true" version="11" changeset="48245461" timestamp="2017-04-29T04:32:08Z" user="happychang" uid="5644877">
+ <way id="165807664" visible="true" version="12" changeset="53531747" timestamp="2017-11-05T15:49:04Z" user="Vintagejhan" uid="1224430">
   <nd ref="1133822171"/>
   <nd ref="3789933261"/>
   <nd ref="1773322126"/>
@@ -115,7 +115,7 @@
   <nd ref="1762060907"/>
   <nd ref="1836843065"/>
   <nd ref="1762378877"/>
-  <tag k="highway" v="residential"/>
+  <tag k="highway" v="tertiary"/>
   <tag k="name" v="中山路"/>
  </way>
  <way id="304646949" visible="true" version="6" changeset="42471763" timestamp="2016-09-27T14:26:20Z" user="dannykath" uid="2226712">

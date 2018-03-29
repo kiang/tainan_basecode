@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<osm version="0.6" generator="CGImap 0.6.0 (24103 thorn-02.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
- <relation id="4094977" visible="true" version="7" changeset="41112283" timestamp="2016-07-29T15:30:11Z" user="Kagami" uid="189328">
+<osm version="0.6" generator="CGImap 0.6.0 (10331 thorn-03.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <relation id="4094977" visible="true" version="8" changeset="54136885" timestamp="2017-11-28T01:30:45Z" user="s88239" uid="5406836">
   <member type="relation" ref="4094972" role="forward"/>
   <member type="relation" ref="4094973" role="backward"/>
-  <member type="relation" ref="4095010" role="forward_extend"/>
-  <member type="relation" ref="4095011" role="backward_extend"/>
   <member type="relation" ref="6446355" role="forward_extend"/>
   <member type="relation" ref="6446356" role="backward_extend"/>
   <tag k="name" v="黃3"/>

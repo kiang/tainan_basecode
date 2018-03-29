@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<osm version="0.6" generator="CGImap 0.6.0 (31181 thorn-02.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<osm version="0.6" generator="CGImap 0.6.0 (10358 thorn-03.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
  <node id="1240288842" visible="true" version="6" changeset="26206049" timestamp="2014-10-20T05:26:43Z" user="Kagami" uid="189328" lat="22.9777389" lon="120.1976644">
   <tag k="highway" v="traffic_signals"/>
  </node>
  <node id="1715120124" visible="true" version="5" changeset="26206049" timestamp="2014-10-20T05:26:44Z" user="Kagami" uid="189328" lat="22.9760116" lon="120.1976832"/>
- <node id="2089443242" visible="true" version="7" changeset="49029608" timestamp="2017-05-27T17:24:59Z" user="WayneChang" uid="4641415" lat="22.9766973" lon="120.1976751">
+ <node id="2089443242" visible="true" version="7" changeset="49029608" timestamp="2017-05-27T17:24:59Z" user="SHCat" uid="4641415" lat="22.9766973" lon="120.1976751">
   <tag k="highway" v="traffic_signals"/>
  </node>
  <node id="2372895117" visible="true" version="6" changeset="28581750" timestamp="2015-02-03T04:55:13Z" user="Supaplex" uid="274857" lat="22.9744506" lon="120.1978094">
@@ -19,26 +19,28 @@
  <node id="2916982277" visible="true" version="3" changeset="38291108" timestamp="2016-04-04T13:29:05Z" user="Kagami" uid="189328" lat="22.9749734" lon="120.1976994">
   <tag k="highway" v="traffic_signals"/>
  </node>
- <way id="229039643" visible="true" version="14" changeset="48921730" timestamp="2017-05-23T16:23:26Z" user="Supaplex" uid="274857">
+ <way id="229039643" visible="true" version="17" changeset="54109339" timestamp="2017-11-27T01:58:02Z" user="Tzu Han Hsieh" uid="7074861">
   <nd ref="2470222163"/>
   <nd ref="2916982277"/>
   <tag k="highway" v="tertiary"/>
   <tag k="name" v="西門路一段"/>
-  <tag k="name:en" v="Section 1 , Simen Road"/>
+  <tag k="name:en" v="Simen Road Sec. 1"/>
   <tag k="name:zh" v="西門路一段"/>
   <tag k="oneway" v="yes"/>
+  <tag k="ref" v="21"/>
   <tag k="sidewalk" v="no"/>
  </way>
- <way id="298271101" visible="true" version="6" changeset="48921730" timestamp="2017-05-23T16:23:52Z" user="Supaplex" uid="274857">
+ <way id="298271101" visible="true" version="7" changeset="51771785" timestamp="2017-09-06T07:27:13Z" user="SHCat" uid="4641415">
   <nd ref="2916982277"/>
   <nd ref="1715120124"/>
   <nd ref="2089443242"/>
   <nd ref="1240288842"/>
   <tag k="highway" v="tertiary"/>
   <tag k="name" v="西門路一段"/>
-  <tag k="name:en" v="Section 1, Simen Road"/>
+  <tag k="name:en" v="Simen Road Sec. 1"/>
   <tag k="name:zh" v="西門路一段"/>
   <tag k="oneway" v="yes"/>
+  <tag k="ref" v="21"/>
   <tag k="sidewalk" v="no"/>
  </way>
  <relation id="4064964" visible="true" version="3" changeset="38291108" timestamp="2016-04-04T13:28:21Z" user="Kagami" uid="189328">

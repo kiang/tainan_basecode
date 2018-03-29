@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<osm version="0.6" generator="CGImap 0.6.0 (11567 thorn-03.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<osm version="0.6" generator="CGImap 0.6.0 (22505 thorn-02.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
  <node id="263253847" visible="true" version="4" changeset="42621377" timestamp="2016-10-04T07:05:00Z" user="ramyaragupathy" uid="2823295" lat="23.1589145" lon="120.3414083"/>
  <node id="263253848" visible="true" version="3" changeset="12825361" timestamp="2012-08-22T20:08:33Z" user="wenchin" uid="121778" lat="23.1584802" lon="120.3416065"/>
  <node id="263253854" visible="true" version="2" changeset="12825361" timestamp="2012-08-22T20:08:33Z" user="wenchin" uid="121778" lat="23.1576583" lon="120.3419892"/>
@@ -48,7 +48,7 @@
  <node id="1376885253" visible="true" version="3" changeset="32091850" timestamp="2015-06-20T07:51:56Z" user="Proximus Locati" uid="2715913" lat="23.1326547" lon="120.2883447">
   <tag k="highway" v="traffic_signals"/>
  </node>
- <node id="1376885257" visible="true" version="7" changeset="43068292" timestamp="2016-10-21T20:19:22Z" user="yurasi" uid="3526564" lat="23.1327551" lon="120.3030089">
+ <node id="1376885257" visible="true" version="8" changeset="55412478" timestamp="2018-01-13T17:56:38Z" user="SHCat" uid="4641415" lat="23.1327559" lon="120.3030146">
   <tag k="highway" v="traffic_signals"/>
  </node>
  <node id="1376885269" visible="true" version="6" changeset="43068292" timestamp="2016-10-21T20:19:22Z" user="yurasi" uid="3526564" lat="23.1330570" lon="120.3029614">
@@ -112,23 +112,23 @@
  <node id="1532053215" visible="true" version="2" changeset="25682458" timestamp="2014-09-26T10:22:45Z" user="Kagami" uid="189328" lat="23.1433429" lon="120.2686850"/>
  <node id="1532053234" visible="true" version="3" changeset="42958462" timestamp="2016-10-17T12:19:13Z" user="samely" uid="2512300" lat="23.1425291" lon="120.2734201"/>
  <node id="1532053249" visible="true" version="3" changeset="42624797" timestamp="2016-10-04T09:42:43Z" user="pratikyadav" uid="2905914" lat="23.1416766" lon="120.2692407"/>
- <node id="1533820857" visible="true" version="7" changeset="43068292" timestamp="2016-10-21T20:19:22Z" user="yurasi" uid="3526564" lat="23.1323851" lon="120.3004919">
+ <node id="1533820857" visible="true" version="8" changeset="55412478" timestamp="2018-01-13T17:56:37Z" user="SHCat" uid="4641415" lat="23.1323851" lon="120.3004919">
   <tag k="highway" v="traffic_signals"/>
  </node>
  <node id="1533820859" visible="true" version="6" changeset="43068292" timestamp="2016-10-21T20:19:23Z" user="yurasi" uid="3526564" lat="23.1331202" lon="120.3033835">
   <tag k="highway" v="traffic_signals"/>
  </node>
- <node id="1533820883" visible="true" version="2" changeset="25682458" timestamp="2014-09-26T10:22:46Z" user="Kagami" uid="189328" lat="23.1320671" lon="120.2950875"/>
- <node id="1533820893" visible="true" version="7" changeset="43068292" timestamp="2016-10-21T20:19:23Z" user="yurasi" uid="3526564" lat="23.1326792" lon="120.3004392">
+ <node id="1533820883" visible="true" version="3" changeset="55412478" timestamp="2018-01-13T17:56:37Z" user="SHCat" uid="4641415" lat="23.1320662" lon="120.2951098"/>
+ <node id="1533820893" visible="true" version="8" changeset="55412478" timestamp="2018-01-13T17:56:37Z" user="SHCat" uid="4641415" lat="23.1326792" lon="120.3004392">
   <tag k="highway" v="traffic_signals"/>
  </node>
- <node id="1533820894" visible="true" version="8" changeset="43068969" timestamp="2016-10-21T20:58:12Z" user="yurasi" uid="3526564" lat="23.1322972" lon="120.2978891">
+ <node id="1533820894" visible="true" version="9" changeset="50308583" timestamp="2017-07-15T16:06:32Z" user="SHCat" uid="4641415" lat="23.1322972" lon="120.2978892">
   <tag k="highway" v="traffic_signals"/>
  </node>
- <node id="1533842343" visible="true" version="8" changeset="43068969" timestamp="2016-10-21T20:58:12Z" user="yurasi" uid="3526564" lat="23.1307019" lon="120.2994868">
+ <node id="1533842343" visible="true" version="9" changeset="50308583" timestamp="2017-07-15T16:06:32Z" user="SHCat" uid="4641415" lat="23.1307000" lon="120.2994738">
   <tag k="highway" v="traffic_signals"/>
  </node>
- <node id="1533842371" visible="true" version="6" changeset="42617032" timestamp="2016-10-03T22:43:46Z" user="RichRico" uid="2219338" lat="23.1314492" lon="120.2993224">
+ <node id="1533842371" visible="true" version="7" changeset="50308583" timestamp="2017-07-15T16:06:32Z" user="SHCat" uid="4641415" lat="23.1314523" lon="120.2993439">
   <tag k="highway" v="traffic_signals"/>
  </node>
  <node id="1533842378" visible="true" version="4" changeset="43068292" timestamp="2016-10-21T20:19:23Z" user="yurasi" uid="3526564" lat="23.1330518" lon="120.3050258"/>
@@ -141,7 +141,7 @@
  <node id="1533842393" visible="true" version="7" changeset="43068292" timestamp="2016-10-21T20:19:23Z" user="yurasi" uid="3526564" lat="23.1324875" lon="120.2991610">
   <tag k="highway" v="traffic_signals"/>
  </node>
- <node id="1533842402" visible="true" version="7" changeset="43068292" timestamp="2016-10-21T20:19:23Z" user="yurasi" uid="3526564" lat="23.1329450" lon="120.3043002">
+ <node id="1533842402" visible="true" version="8" changeset="55412478" timestamp="2018-01-13T17:56:38Z" user="SHCat" uid="4641415" lat="23.1329531" lon="120.3043557">
   <tag k="highway" v="traffic_signals"/>
  </node>
  <node id="1533842461" visible="true" version="7" changeset="42617032" timestamp="2016-10-03T22:43:46Z" user="RichRico" uid="2219338" lat="23.1321978" lon="120.2992151">
@@ -152,17 +152,14 @@
  </node>
  <node id="1533867408" visible="true" version="4" changeset="42617032" timestamp="2016-10-03T22:43:46Z" user="RichRico" uid="2219338" lat="23.1333824" lon="120.2885265"/>
  <node id="1533867412" visible="true" version="3" changeset="32091827" timestamp="2015-06-20T07:50:37Z" user="Proximus Locati" uid="2715913" lat="23.1324374" lon="120.2899258"/>
- <node id="1533867442" visible="true" version="4" changeset="32091850" timestamp="2015-06-20T07:51:56Z" user="Proximus Locati" uid="2715913" lat="23.1325012" lon="120.2894071">
-  <tag k="highway" v="traffic_signals"/>
- </node>
  <node id="1534409052" visible="true" version="4" changeset="42617032" timestamp="2016-10-03T22:43:47Z" user="RichRico" uid="2219338" lat="23.1322675" lon="120.2914501"/>
  <node id="1534409282" visible="true" version="4" changeset="32110257" timestamp="2015-06-21T06:19:34Z" user="Proximus Locati" uid="2715913" lat="23.1347799" lon="120.2892005"/>
  <node id="1534409306" visible="true" version="2" changeset="25682458" timestamp="2014-09-26T10:22:48Z" user="Kagami" uid="189328" lat="23.1343300" lon="120.2889824"/>
- <node id="1543890248" visible="true" version="5" changeset="42629149" timestamp="2016-10-04T12:46:27Z" user="nammala" uid="3479270" lat="23.1303081" lon="120.3021431"/>
- <node id="1543890285" visible="true" version="4" changeset="42629149" timestamp="2016-10-04T12:46:27Z" user="nammala" uid="3479270" lat="23.1304750" lon="120.3033536">
+ <node id="1543890248" visible="true" version="6" changeset="55412478" timestamp="2018-01-13T17:56:38Z" user="SHCat" uid="4641415" lat="23.1302987" lon="120.3021431"/>
+ <node id="1543890285" visible="true" version="5" changeset="55412478" timestamp="2018-01-13T17:56:38Z" user="SHCat" uid="4641415" lat="23.1304750" lon="120.3034046">
   <tag k="highway" v="traffic_signals"/>
  </node>
- <node id="1543890290" visible="true" version="6" changeset="42628643" timestamp="2016-10-04T12:27:42Z" user="nammala" uid="3479270" lat="23.1301194" lon="120.3008986">
+ <node id="1543890290" visible="true" version="7" changeset="56479375" timestamp="2018-02-19T04:19:15Z" user="SHCat" uid="4641415" lat="23.1301089" lon="120.3009005">
   <tag k="highway" v="traffic_signals"/>
  </node>
  <node id="1543890343" visible="true" version="3" changeset="42629149" timestamp="2016-10-04T12:46:27Z" user="nammala" uid="3479270" lat="23.1299305" lon="120.3085788"/>
@@ -171,6 +168,7 @@
  <node id="1546278808" visible="true" version="4" changeset="42629149" timestamp="2016-10-04T12:46:27Z" user="nammala" uid="3479270" lat="23.1291173" lon="120.3115016"/>
  <node id="1547818768" visible="true" version="5" changeset="43039419" timestamp="2016-10-20T17:06:04Z" user="yurasi" uid="3526564" lat="23.1355116" lon="120.3220549"/>
  <node id="1548372916" visible="true" version="4" changeset="42629149" timestamp="2016-10-04T12:46:28Z" user="nammala" uid="3479270" lat="23.1297054" lon="120.3093988"/>
+ <node id="1548372999" visible="true" version="3" changeset="56479375" timestamp="2018-02-19T04:19:16Z" user="SHCat" uid="4641415" lat="23.1299618" lon="120.2999379"/>
  <node id="1560896524" visible="true" version="3" changeset="42958462" timestamp="2016-10-17T12:19:13Z" user="samely" uid="2512300" lat="23.1419872" lon="120.2707637"/>
  <node id="1566775369" visible="true" version="3" changeset="42624797" timestamp="2016-10-04T09:42:44Z" user="pratikyadav" uid="2905914" lat="23.1445212" lon="120.2731025"/>
  <node id="1566775391" visible="true" version="3" changeset="42624866" timestamp="2016-10-04T09:45:36Z" user="pratikyadav" uid="2905914" lat="23.1447497" lon="120.2734545"/>
@@ -266,14 +264,16 @@
  <node id="2982715744" visible="true" version="4" changeset="45616039" timestamp="2017-01-29T10:26:55Z" user="Proximus Locati" uid="2715913" lat="23.1388947" lon="120.2882757">
   <tag k="highway" v="traffic_signals"/>
  </node>
- <node id="2982715755" visible="true" version="4" changeset="28581750" timestamp="2015-02-03T04:54:52Z" user="Supaplex" uid="274857" lat="23.1321400" lon="120.2972680">
+ <node id="2982715755" visible="true" version="5" changeset="55481286" timestamp="2018-01-16T04:32:10Z" user="s88239" uid="5406836" lat="23.1321400" lon="120.2972680">
   <tag k="bus" v="yes"/>
   <tag k="highway" v="bus_stop"/>
-  <tag k="name" v="善化區公所"/>
+  <tag k="name" v="善化公所"/>
+  <tag k="name:en" v="Shanhua District Office"/>
+  <tag k="name:zh" v="善化公所"/>
   <tag k="network" v="臺南市公車"/>
-  <tag k="note" v="興南客運"/>
   <tag k="operator" v="臺南市公車"/>
   <tag k="public_transport" v="platform"/>
+  <tag k="ref" v="3012"/>
  </node>
  <node id="2982715759" visible="true" version="3" changeset="28581750" timestamp="2015-02-03T04:54:53Z" user="Supaplex" uid="274857" lat="23.1359302" lon="120.2889250">
   <tag k="bus" v="yes"/>
@@ -293,14 +293,16 @@
   <tag k="operator" v="臺南市公車"/>
   <tag k="public_transport" v="platform"/>
  </node>
- <node id="2982715765" visible="true" version="3" changeset="28581750" timestamp="2015-02-03T04:54:53Z" user="Supaplex" uid="274857" lat="23.1299759" lon="120.3004359">
+ <node id="2982715765" visible="true" version="4" changeset="54450983" timestamp="2017-12-08T07:12:03Z" user="s88239" uid="5406836" lat="23.1299759" lon="120.3004359">
+  <tag k="bench" v="yes"/>
   <tag k="bus" v="yes"/>
   <tag k="highway" v="bus_stop"/>
   <tag k="name" v="善化高中"/>
   <tag k="network" v="臺南市公車"/>
-  <tag k="note" v="興南客運"/>
   <tag k="operator" v="臺南市公車"/>
   <tag k="public_transport" v="platform"/>
+  <tag k="ref" v="3430"/>
+  <tag k="shelter" v="yes"/>
  </node>
  <node id="2982715773" visible="true" version="3" changeset="28581750" timestamp="2015-02-03T04:55:13Z" user="Supaplex" uid="274857" lat="23.1303072" lon="120.3031004">
   <tag k="bus" v="yes"/>
@@ -428,7 +430,7 @@
   <tag k="operator" v="臺南市公車"/>
   <tag k="public_transport" v="platform"/>
  </node>
- <node id="3097020441" visible="true" version="2" changeset="28581750" timestamp="2015-02-03T04:56:11Z" user="Supaplex" uid="274857" lat="23.1589670" lon="120.3403753">
+ <node id="3097020441" visible="true" version="3" changeset="52795987" timestamp="2017-10-10T14:25:06Z" user="s88239" uid="5406836" lat="23.1589670" lon="120.3403753">
   <tag k="bus" v="yes"/>
   <tag k="highway" v="bus_stop"/>
   <tag k="name" v="新中"/>
@@ -436,6 +438,7 @@
   <tag k="note" v="興南客運"/>
   <tag k="operator" v="臺南市公車"/>
   <tag k="public_transport" v="platform"/>
+  <tag k="ref" v="3613"/>
  </node>
  <node id="3097020442" visible="true" version="2" changeset="28581750" timestamp="2015-02-03T04:56:20Z" user="Supaplex" uid="274857" lat="23.1532010" lon="120.3490797">
   <tag k="bus" v="yes"/>
@@ -455,7 +458,7 @@
   <tag k="operator" v="臺南市公車"/>
   <tag k="public_transport" v="platform"/>
  </node>
- <node id="3097020446" visible="true" version="2" changeset="28581750" timestamp="2015-02-03T04:57:32Z" user="Supaplex" uid="274857" lat="23.1490964" lon="120.3326523">
+ <node id="3097020446" visible="true" version="3" changeset="52795987" timestamp="2017-10-10T14:25:06Z" user="s88239" uid="5406836" lat="23.1490964" lon="120.3326523">
   <tag k="bus" v="yes"/>
   <tag k="highway" v="bus_stop"/>
   <tag k="name" v="肉品市場"/>
@@ -463,6 +466,7 @@
   <tag k="note" v="興南客運"/>
   <tag k="operator" v="臺南市公車"/>
   <tag k="public_transport" v="platform"/>
+  <tag k="ref" v="3612"/>
  </node>
  <node id="3097020448" visible="true" version="2" changeset="28581750" timestamp="2015-02-03T04:57:38Z" user="Supaplex" uid="274857" lat="23.1365065" lon="120.3225262">
   <tag k="bus" v="yes"/>
@@ -484,6 +488,19 @@
  </node>
  <node id="3217142776" visible="true" version="4" changeset="42628643" timestamp="2016-10-04T12:27:46Z" user="nammala" uid="3479270" lat="23.1331899" lon="120.3061270"/>
  <node id="3217142778" visible="true" version="4" changeset="42628643" timestamp="2016-10-04T12:27:46Z" user="nammala" uid="3479270" lat="23.1334144" lon="120.3062088"/>
+ <node id="3217142780" visible="true" version="5" changeset="55481286" timestamp="2018-01-16T04:32:10Z" user="s88239" uid="5406836" lat="23.1335145" lon="120.3060269">
+  <tag k="bench" v="yes"/>
+  <tag k="bus" v="yes"/>
+  <tag k="highway" v="bus_stop"/>
+  <tag k="name" v="善化轉運站"/>
+  <tag k="name:en" v="Shanhua Bus Station"/>
+  <tag k="name:zh" v="善化轉運站"/>
+  <tag k="network" v="臺南市公車"/>
+  <tag k="operator" v="臺南市公車"/>
+  <tag k="public_transport" v="platform"/>
+  <tag k="ref" v="7764"/>
+  <tag k="shelter" v="yes"/>
+ </node>
  <node id="3230803364" visible="true" version="2" changeset="42622860" timestamp="2016-10-04T08:25:31Z" user="pratikyadav" uid="2905914" lat="23.1523135" lon="120.3468422"/>
  <node id="3608366190" visible="true" version="3" changeset="42628643" timestamp="2016-10-04T12:27:46Z" user="nammala" uid="3479270" lat="23.1332676" lon="120.3062303"/>
  <node id="3608366192" visible="true" version="3" changeset="42628643" timestamp="2016-10-04T12:27:47Z" user="nammala" uid="3479270" lat="23.1334810" lon="120.3057985"/>
@@ -498,14 +515,14 @@
  <node id="3608385485" visible="true" version="1" changeset="32110257" timestamp="2015-06-21T06:19:34Z" user="Proximus Locati" uid="2715913" lat="23.1350516" lon="120.2892064">
   <tag k="highway" v="traffic_signals"/>
  </node>
- <node id="3685728728" visible="true" version="1" changeset="33182095" timestamp="2015-08-07T14:28:34Z" user="Kagami" uid="189328" lat="23.1320879" lon="120.2932433">
+ <node id="3685728728" visible="true" version="2" changeset="55481403" timestamp="2018-01-16T04:40:12Z" user="s88239" uid="5406836" lat="23.1320879" lon="120.2932433">
   <tag k="bus" v="yes"/>
   <tag k="highway" v="bus_stop"/>
   <tag k="name" v="移民署"/>
   <tag k="network" v="臺南市公車"/>
-  <tag k="note" v="興南客運"/>
   <tag k="operator" v="臺南市公車"/>
   <tag k="public_transport" v="platform"/>
+  <tag k="ref" v="1174"/>
  </node>
  <node id="3685734059" visible="true" version="1" changeset="33182350" timestamp="2015-08-07T14:38:49Z" user="Kagami" uid="189328" lat="23.1531273" lon="120.3458260">
   <tag k="bus" v="yes"/>
@@ -520,18 +537,6 @@
  <node id="3732370742" visible="true" version="2" changeset="42628643" timestamp="2016-10-04T12:27:47Z" user="nammala" uid="3479270" lat="23.1331628" lon="120.3059889"/>
  <node id="3732370743" visible="true" version="2" changeset="42628643" timestamp="2016-10-04T12:27:47Z" user="nammala" uid="3479270" lat="23.1332183" lon="120.3062021"/>
  <node id="3732370744" visible="true" version="2" changeset="42628643" timestamp="2016-10-04T12:27:47Z" user="nammala" uid="3479270" lat="23.1333798" lon="120.3062571"/>
- <node id="3732370749" visible="true" version="2" changeset="33845584" timestamp="2015-09-07T03:04:57Z" user="Kagami" uid="189328" lat="23.1335161" lon="120.3060235">
-  <tag k="bench" v="yes"/>
-  <tag k="bus" v="yes"/>
-  <tag k="highway" v="bus_stop"/>
-  <tag k="name" v="善化轉運站"/>
-  <tag k="network" v="臺南市公車"/>
-  <tag k="note" v="返程"/>
-  <tag k="operator" v="臺南市公車"/>
-  <tag k="public_transport" v="platform"/>
-  <tag k="ref" v="7769"/>
-  <tag k="shelter" v="yes"/>
- </node>
  <node id="4301766111" visible="true" version="1" changeset="40733078" timestamp="2016-07-14T07:58:35Z" user="Kagami" uid="189328" lat="23.1297885" lon="120.3198812">
   <tag k="bus" v="yes"/>
   <tag k="highway" v="bus_stop"/>
@@ -564,8 +569,12 @@
  <node id="4454824605" visible="true" version="1" changeset="43004612" timestamp="2016-10-19T10:02:07Z" user="Maanya" uid="3572302" lat="23.1459779" lon="120.2794217"/>
  <node id="4454824606" visible="true" version="1" changeset="43004612" timestamp="2016-10-19T10:02:07Z" user="Maanya" uid="3572302" lat="23.1460260" lon="120.2794405"/>
  <node id="4456542639" visible="true" version="1" changeset="43034011" timestamp="2016-10-20T14:42:50Z" user="ediyes" uid="1240849" lat="23.1418363" lon="120.3246739"/>
- <node id="4823668996" visible="true" version="1" changeset="48238571" timestamp="2017-04-28T19:57:52Z" user="happychang" uid="5644877" lat="23.1309788" lon="120.2994259"/>
+ <node id="4867683317" visible="true" version="3" changeset="50251219" timestamp="2017-07-13T08:41:05Z" user="happychang" uid="5644877" lat="23.1505988" lon="120.3340684"/>
  <node id="4867834816" visible="true" version="1" changeset="48860775" timestamp="2017-05-21T11:59:10Z" user="happychang" uid="5644877" lat="23.1526783" lon="120.3361007"/>
+ <node id="4967764100" visible="true" version="1" changeset="50251219" timestamp="2017-07-13T08:41:05Z" user="happychang" uid="5644877" lat="23.1504596" lon="120.3339193"/>
+ <node id="5337383844" visible="true" version="1" changeset="55412478" timestamp="2018-01-13T17:56:35Z" user="SHCat" uid="4641415" lat="23.1325012" lon="120.2894071">
+  <tag k="highway" v="traffic_signals"/>
+ </node>
  <way id="42449246" visible="true" version="4" changeset="27412773" timestamp="2014-12-12T01:40:28Z" user="ezjerry" uid="1595400">
   <nd ref="3230803364"/>
   <nd ref="529926121"/>
@@ -607,14 +616,14 @@
   <tag k="name" v="大成陸橋"/>
   <tag k="ref" v="178"/>
  </way>
- <way id="123480709" visible="true" version="9" changeset="48923156" timestamp="2017-05-23T17:25:54Z" user="happychang" uid="5644877">
+ <way id="123480709" visible="true" version="10" changeset="55412478" timestamp="2018-01-13T17:56:40Z" user="SHCat" uid="4641415">
   <nd ref="1376885272"/>
   <nd ref="1533842378"/>
   <nd ref="1533842402"/>
   <nd ref="3608385317"/>
   <nd ref="1376885257"/>
   <nd ref="1533842480"/>
-  <tag k="highway" v="service"/>
+  <tag k="highway" v="residential"/>
   <tag k="name" v="民族路"/>
  </way>
  <way id="136456407" visible="true" version="13" changeset="48196698" timestamp="2017-04-27T14:23:22Z" user="happychang" uid="5644877">
@@ -634,9 +643,9 @@
   <nd ref="1532053249"/>
   <tag k="highway" v="service"/>
  </way>
- <way id="140983545" visible="true" version="8" changeset="48245338" timestamp="2017-04-29T04:18:29Z" user="happychang" uid="5644877">
+ <way id="140983545" visible="true" version="9" changeset="55412478" timestamp="2018-01-13T17:56:39Z" user="SHCat" uid="4641415">
   <nd ref="1376885253"/>
-  <nd ref="1533867442"/>
+  <nd ref="5337383844"/>
   <nd ref="1533867412"/>
   <nd ref="1376885245"/>
   <nd ref="1376885244"/>
@@ -780,10 +789,8 @@
   <tag k="highway" v="residential"/>
   <tag k="name" v="信義路"/>
  </way>
- <way id="294678360" visible="true" version="4" changeset="48987052" timestamp="2017-05-26T00:48:33Z" user="happychang" uid="5644877">
-  <nd ref="1533842461"/>
+ <way id="294678360" visible="true" version="6" changeset="55481286" timestamp="2018-01-16T04:32:11Z" user="s88239" uid="5406836">
   <nd ref="1533842371"/>
-  <nd ref="4823668996"/>
   <nd ref="1533842343"/>
   <nd ref="1533842389"/>
   <tag k="highway" v="residential"/>
@@ -796,8 +803,9 @@
   <tag k="highway" v="residential"/>
   <tag k="name" v="光文路"/>
  </way>
- <way id="294678364" visible="true" version="2" changeset="25704145" timestamp="2014-09-27T11:47:19Z" user="Kagami" uid="189328">
+ <way id="294678364" visible="true" version="3" changeset="56479375" timestamp="2018-02-19T04:19:16Z" user="SHCat" uid="4641415">
   <nd ref="2982715733"/>
+  <nd ref="1548372999"/>
   <nd ref="1543890290"/>
   <nd ref="1543890248"/>
   <tag k="highway" v="secondary"/>
@@ -932,15 +940,11 @@
   <tag k="highway" v="tertiary"/>
   <tag k="ref" v="南181"/>
  </way>
- <way id="305123699" visible="true" version="3" changeset="48860775" timestamp="2017-05-21T11:59:11Z" user="happychang" uid="5644877">
+ <way id="305123699" visible="true" version="4" changeset="50251219" timestamp="2017-07-13T08:41:05Z" user="happychang" uid="5644877">
   <nd ref="1531123370"/>
   <nd ref="307352157"/>
   <nd ref="1895919759"/>
-  <nd ref="307352158"/>
-  <nd ref="307352159"/>
-  <nd ref="4867834816"/>
-  <nd ref="307352160"/>
-  <nd ref="1878288111"/>
+  <nd ref="4967764100"/>
   <tag k="cycleway:right" v="shared_lane"/>
   <tag k="highway" v="primary"/>
   <tag k="oneway" v="yes"/>
@@ -956,11 +960,11 @@
   <tag k="oneway" v="yes"/>
   <tag k="ref" v="178"/>
  </way>
- <way id="305251292" visible="true" version="2" changeset="48923156" timestamp="2017-05-23T17:25:54Z" user="happychang" uid="5644877">
+ <way id="305251292" visible="true" version="3" changeset="55412478" timestamp="2018-01-13T17:56:40Z" user="SHCat" uid="4641415">
   <nd ref="1533842480"/>
   <nd ref="1533820857"/>
   <nd ref="1533842461"/>
-  <tag k="highway" v="service"/>
+  <tag k="highway" v="residential"/>
   <tag k="name" v="民族路"/>
  </way>
  <way id="305365072" visible="true" version="4" changeset="43034011" timestamp="2016-10-20T14:42:50Z" user="ediyes" uid="1240849">
@@ -1054,7 +1058,37 @@
   <tag k="ref:en" v="Provincial Highway 19A"/>
   <tag k="ref:zh" v="台19甲線"/>
  </way>
- <relation id="4067506" visible="true" version="15" changeset="48194740" timestamp="2017-04-27T13:18:57Z" user="happychang" uid="5644877">
+ <way id="507228391" visible="true" version="1" changeset="50251219" timestamp="2017-07-13T08:41:05Z" user="happychang" uid="5644877">
+  <nd ref="4967764100"/>
+  <nd ref="4867683317"/>
+  <tag k="cycleway:right" v="shared_lane"/>
+  <tag k="highway" v="primary"/>
+  <tag k="oneway" v="yes"/>
+  <tag k="ref" v="1"/>
+  <tag k="ref:en" v="Provincial Highway 1"/>
+  <tag k="ref:zh" v="台1線"/>
+ </way>
+ <way id="507228392" visible="true" version="1" changeset="50251219" timestamp="2017-07-13T08:41:05Z" user="happychang" uid="5644877">
+  <nd ref="4867683317"/>
+  <nd ref="307352158"/>
+  <nd ref="307352159"/>
+  <nd ref="4867834816"/>
+  <nd ref="307352160"/>
+  <nd ref="1878288111"/>
+  <tag k="cycleway:right" v="shared_lane"/>
+  <tag k="highway" v="primary"/>
+  <tag k="oneway" v="yes"/>
+  <tag k="ref" v="1"/>
+  <tag k="ref:en" v="Provincial Highway 1"/>
+  <tag k="ref:zh" v="台1線"/>
+ </way>
+ <way id="553408129" visible="true" version="1" changeset="55481286" timestamp="2018-01-16T04:32:09Z" user="s88239" uid="5406836">
+  <nd ref="1533842461"/>
+  <nd ref="1533842371"/>
+  <tag k="highway" v="residential"/>
+  <tag k="name" v="信義路"/>
+ </way>
+ <relation id="4067506" visible="true" version="17" changeset="55481286" timestamp="2018-01-16T04:32:13Z" user="s88239" uid="5406836">
   <member type="way" ref="305119809" role=""/>
   <member type="way" ref="305119805" role=""/>
   <member type="way" ref="139808334" role=""/>
@@ -1071,6 +1105,7 @@
   <member type="way" ref="315587091" role=""/>
   <member type="way" ref="123480709" role=""/>
   <member type="way" ref="305251292" role=""/>
+  <member type="way" ref="553408129" role=""/>
   <member type="way" ref="294678360" role=""/>
   <member type="way" ref="294678359" role=""/>
   <member type="way" ref="294678364" role=""/>
@@ -1083,6 +1118,8 @@
   <member type="way" ref="307251233" role=""/>
   <member type="way" ref="305365072" role=""/>
   <member type="way" ref="305123699" role=""/>
+  <member type="way" ref="507228391" role=""/>
+  <member type="way" ref="507228392" role=""/>
   <member type="way" ref="177379913" role=""/>
   <member type="way" ref="177379915" role=""/>
   <member type="way" ref="42449247" role=""/>
@@ -1101,7 +1138,7 @@
   <member type="node" ref="3685728728" role="platform"/>
   <member type="node" ref="2982715755" role="platform"/>
   <member type="node" ref="2982715777" role="platform"/>
-  <member type="node" ref="3732370749" role="platform"/>
+  <member type="node" ref="3217142780" role="platform"/>
   <member type="node" ref="2982715765" role="platform"/>
   <member type="node" ref="2982715773" role="platform"/>
   <member type="node" ref="2982737688" role="platform"/>
