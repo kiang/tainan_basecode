@@ -41,7 +41,10 @@ while($line = fgetcsv($fh, 2048)) {
         'coordinates' => array((float)$query[0]->X, (float)$query[0]->Y),
       ),
     );
+  } else {
+    ++$count;
   }
 }
 
 file_put_contents(__DIR__ . '/result.json', json_encode($fc));
+echo $count;
