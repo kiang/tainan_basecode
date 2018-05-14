@@ -1,5 +1,6 @@
 var sidebar = new ol.control.Sidebar({ element: 'sidebar', position: 'right' });
 window.app = {};
+var cunliData = {};
 var app = window.app;
 
 app.Button = function(opt_options) {
@@ -25,7 +26,7 @@ app.Button = function(opt_options) {
 }
 ol.inherits(app.Button, ol.control.Control);
 
-var layerYellow = new ol.style.Style({
+var styleYellow = new ol.style.Style({
   stroke: new ol.style.Stroke({
       color: 'rgba(0,0,0,1)',
       width: 1
@@ -42,7 +43,7 @@ var layerYellow = new ol.style.Style({
   })
 });
 
-var layerRed = new ol.style.Style({
+var styleRed = new ol.style.Style({
   stroke: new ol.style.Stroke({
       color: 'rgba(0,0,0,1)',
       width: 1
@@ -58,6 +59,21 @@ var layerRed = new ol.style.Style({
     })
   })
 });
+
+var styleFunc = function(f) {
+  var zoom = appView.getZoom();
+  var styleTarget;
+  var vcode = f.get('VILLCODE');
+  if(cunliData[vcode] || !cunliBase[vcode]) {
+    styleTarget = styleRed.clone();
+  } else {
+    styleTarget = styleYellow.clone();
+  }
+  if(zoom > 13) {
+    styleTarget.getText().setText(f.get('TOWNNAME') + f.get('VILLNAME'));
+  }
+  return styleTarget;
+}
 
 var projection = ol.proj.get('EPSG:3857');
 var projectionExtent = projection.getExtent();
@@ -92,10 +108,7 @@ var cunliNewSource = new ol.source.Vector({
 });
 var cunliNew = new ol.layer.Vector({
   source: cunliNewSource,
-  style: function(f) {
-    layerYellow.getText().setText(f.get('TOWNNAME') + f.get('VILLNAME'));
-    return layerYellow;
-  }
+  style: styleFunc
 });
 
 var cunliNewList = {};
@@ -140,17 +153,16 @@ var cunliSource = new ol.source.Vector({
 });
 var cunli = new ol.layer.Vector({
   source: cunliSource,
-  style: function(f) {
-    layerYellow.getText().setText(f.get('TOWNNAME') + f.get('VILLNAME'));
-    return layerYellow;
-  }
+  style: styleFunc
 });
 var cunliList = {};
+var cunliBase = {};
 cunliSource.once('change', function() {
   if(cunliSource.getState() === 'ready') {
     cunliSource.forEachFeature(function(f) {
       var p = f.getProperties();
       f.setId(p.VILLCODE);
+      cunliBase[p.VILLCODE] = true;
       if(!cunliList[p.TOWNNAME]) {
         cunliList[p.TOWNNAME] = {};
       }
@@ -181,20 +193,12 @@ cunliSource.once('change', function() {
   }
 })
 
-var cunliData = {};
+
 setTimeout(function() {
   $.getJSON('data.json', {}, function(r) {
     cunliData = r;
-    cunliSource.forEachFeature(function(f) {
-      var layerTarget;
-      if(cunliData[f.get('VILLCODE')]) {
-        layerTarget = layerRed.clone();
-      } else {
-        layerTarget = layerYellow.clone();
-      }
-      layerTarget.getText().setText(f.get('TOWNNAME') + f.get('VILLNAME'));
-      f.setStyle(layerTarget);
-    });
+    cunliSource.refresh();
+    cunliNewSource.refresh();
   });
 }, 350);
 
