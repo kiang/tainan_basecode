@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <meta property="og:title" content="台南市里鄰編組及調整前後比較">
+    <meta property="og:description" content="台南市里鄰編組及調整前後比較">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://kiang.github.io/tainan_basecode/cunli/compare_og_image.png">
+    <title>台南市里鄰編組及調整前後比較</title>
+    <link rel="stylesheet" href="https://openlayers.org/en/v4.2.0/css/ol.css" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/ol3-sidebar.css" />
+    <style>
+      html, body {
+        width: 100%;
+        height: 100%;
+        padding: 0px;
+        margin: 0px;
+      }
+      .half-map {
+        float: left;
+        width:49%;
+        height:100%;
+        border: 1px solid red;
+      }
+      .ol-popup {
+        position: absolute;
+        background-color: white;
+        -webkit-filter: drop-shadow(0 1px 4px rgba(0,0,0,0.2));
+        filter: drop-shadow(0 1px 4px rgba(0,0,0,0.2));
+        padding: 15px;
+        border-radius: 10px;
+        border: 1px solid #cccccc;
+        bottom: 12px;
+        left: -50px;
+        min-width: 450px;
+      }
+      .ol-popup:after, .ol-popup:before {
+        top: 100%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+      }
+      .ol-popup:after {
+        border-top-color: white;
+        border-width: 10px;
+        left: 48px;
+        margin-left: -10px;
+      }
+      .ol-popup:before {
+        border-top-color: #cccccc;
+        border-width: 11px;
+        left: 48px;
+        margin-left: -11px;
+      }
+      .ol-popup-closer {
+        text-decoration: none;
+        position: absolute;
+        top: 2px;
+        right: 8px;
+      }
+      .ol-popup-closer:after {
+        content: "✖";
+      }
+    </style>
+  </head>
+  <body>
+    <div id="sidebar" class="sidebar collapsed">
+        <!-- Nav tabs -->
+        <div class="sidebar-tabs">
+            <ul role="tablist">
+                <li><a href="#home" role="tab"><i class="fa fa-bars"></i></a></li>
+                <li><a href="#fb" role="tab"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://github.com/kiang/tainan_basecode/tree/gh-pages/cunli" role="tab" target="_blank"><i class="fa fa-github"></i></a></li>
+            </ul>
+        </div>
+
+        <!-- Tab panes -->
+        <div class="sidebar-content">
+            <div class="sidebar-pane" id="home">
+                <h1 class="sidebar-header">
+                    台南市里鄰編組及調整前後比較
+                    <span class="sidebar-close"><i class="fa fa-caret-left"></i></span>
+                </h1>
+                異動前：
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="town">區</label>
+                    <select id="town" class="form-control"></select>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="cunli">里</label>
+                    <select id="cunli" class="form-control"></select>
+                  </div>
+                </div>
+                異動後：
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="townNew">區</label>
+                    <select id="townNew" class="form-control"></select>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="cunliNew">里</label>
+                    <select id="cunliNew" class="form-control"></select>
+                  </div>
+                </div>
+            </div>
+            <div class="sidebar-pane" id="fb">
+              <div class="fb-page" data-href="https://www.facebook.com/k.olc.tw/" data-tabs="timeline" data-width="380" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/k.olc.tw/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/k.olc.tw/">江明宗</a></blockquote></div>
+              <hr />#捐款支持明宗以科技監督台南
+<br />郵局劃撥： 31639415
+<br />收款戶名： 107年臺南市議員擬參選人江明宗政治獻金專戶
+<br />
+<br />更多資訊： <a href="https://bit.ly/2rcw1Jz" target="_blank">https://bit.ly/2rcw1Jz</a>
+            </div>
+        </div>
+    </div>
+    <div id="map2" class="half-map"></div>
+    <div id="map1" class="half-map"></div>
+    <div id="popup" class="ol-popup">
+      <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+      <div id="popup-content"></div>
+    </div>
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,URL"></script>
+    <script src="https://openlayers.org/en/v4.2.0/build/ol.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/ol3-sidebar.js"></script>
+    <script src="compare.js"></script>
+  </body>
+</html>
