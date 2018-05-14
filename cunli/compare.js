@@ -196,7 +196,7 @@ setTimeout(function() {
       f.setStyle(layerTarget);
     });
   });
-}, 200);
+}, 350);
 
 var baseLayer = new ol.layer.Tile({
     source: new ol.source.WMTS({
