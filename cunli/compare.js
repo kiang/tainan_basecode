@@ -200,7 +200,7 @@ setTimeout(function() {
     cunliSource.refresh();
     cunliNewSource.refresh();
   });
-}, 350);
+}, 500);
 
 var baseLayer = new ol.layer.Tile({
     source: new ol.source.WMTS({
