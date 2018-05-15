@@ -1,30 +1,6 @@
 var sidebar = new ol.control.Sidebar({ element: 'sidebar', position: 'right' });
 window.app = {};
 var cunliData = {};
-var app = window.app;
-
-app.Button = function(opt_options) {
-  var options = opt_options || {};
-  var button = document.createElement('button');
-  button.innerHTML = options.bText;
-  var this_ = this;
-  var handleButtonClick = function() {
-    window.open(options.bHref);
-  };
-
-  button.addEventListener('click', handleButtonClick, false);
-  button.addEventListener('touchstart', handleButtonClick, false);
-
-  var element = document.createElement('div');
-  element.className = options.bClassName + ' ol-unselectable ol-control';
-  element.appendChild(button);
-
-  ol.control.Control.call(this, {
-    element: element,
-    target: options.target
-  });
-}
-ol.inherits(app.Button, ol.control.Control);
 
 var styleYellow = new ol.style.Style({
   stroke: new ol.style.Stroke({
@@ -144,6 +120,9 @@ cunliNewSource.once('change', function() {
         map1.getView().fit(f.getGeometry().getExtent());
       }
     });
+
+    cunliSource.refresh();
+    cunliNewSource.refresh();
   }
 })
 
@@ -190,6 +169,9 @@ cunliSource.once('change', function() {
         map2.getView().fit(f.getGeometry().getExtent());
       }
     });
+
+    cunliSource.refresh();
+    cunliNewSource.refresh();
   }
 })
 
