@@ -2,37 +2,37 @@ var sidebar = new ol.control.Sidebar({ element: 'sidebar', position: 'right' });
 
 var style0 = new ol.style.Style({
   fill: new ol.style.Fill({
-    color: [72,209,204, 0.1]
+    color: [0, 102, 255, 0.1]
   })
 });
 
 var style1 = new ol.style.Style({
   fill: new ol.style.Fill({
-    color: [144,238,144, 0.7]
+    color: [154,205,50, 0.4]
   })
 });
 
 var style2 = new ol.style.Style({
   fill: new ol.style.Fill({
-    color: [144,238,144, 0.7]
+    color: [60,179,113, 0.4]
   })
 });
 
 var style3 = new ol.style.Style({
   fill: new ol.style.Fill({
-    color: [154,205,50, 0.7]
+    color: [46,139,87, 0.7]
   })
 });
 
 var style4 = new ol.style.Style({
   fill: new ol.style.Fill({
-    color: [107,142,35, 0.7]
+    color: [128,128,0, 0.7]
   })
 });
 
 var style5 = new ol.style.Style({
   fill: new ol.style.Fill({
-    color: [0, 100, 0, 0.7]
+    color: [85,107,47, 0.7]
   })
 });
 
@@ -171,21 +171,24 @@ new ol.layer.Vector({
 });
 
 map.on('singleclick', function(evt) {
-  map.getView().setZoom(17);
+  var clickTriggered = false;
   map.forEachFeatureAtPixel(evt.pixel, function (feature, layer) {
-    var p = feature.getProperties();
-    var message = '<div class="table-responsive"><table class="table">';
-    var fCenter = feature.getGeometry().getCoordinates();
-    for(k in p) {
-      if(k !== 'geometry') {
-        message += '<tr><td>' + k + '</td><td>' + p[k] + '</td></tr>';
+    if(false === clickTriggered) {
+      clickTriggered = true;
+      var p = feature.getProperties();
+      var message = '<div class="table-responsive"><table class="table">';
+      var fCenter = evt.coordinate;
+      for(k in p) {
+        if(k !== 'geometry') {
+          message += '<tr><td>' + k + '</td><td>' + p[k] + '</td></tr>';
+        }
       }
+      message += '</table></div>';
+      $('#sidebar-main-block').html(message);
+      sidebar.open('home');
+      content.innerHTML = $('#gridcode' + p['gridcode']).parent().html();
+      popup.setPosition(fCenter);
+      map.getView().setCenter(fCenter);
     }
-    message += '</table></div>';
-    $('#sidebar-main-block').html(message);
-    sidebar.open('home');
-    content.innerHTML = p['巷道名稱'];
-    popup.setPosition(fCenter);
-    map.getView().setCenter(fCenter);
   });
 });
