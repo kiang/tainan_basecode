@@ -177,9 +177,10 @@ map.on('singleclick', function(evt) {
         message += '<tr><td>可容納車輛</td><td>' + carCount + ' 輛</td></tr>';
         message += '<tr><td>車輛用路人</td><td>' + Math.round(carCount * 1.5) + ' 人</td></tr>';
         message += '<tr><td>一線車道改人行道，總用路人</td><td>' + (newCarCount + peopleCount) + ' 人</td></tr>';
-        message += '<tr><td>增加比例</td><td> 約 ' + Math.round((newCarCount + peopleCount) / Math.round(carCount * 1.5)) + ' 倍 </td></tr>';
+        message += '<tr><td>用路人增加比例</td><td> 約 ' + Math.round((newCarCount + peopleCount) / Math.round(carCount * 1.5)) + ' 倍 </td></tr>';
+        message += '<tr><td>減少車輛</td><td>' + (carCount - newCarCount) + ' 輛</td></tr>';
       } else {
-        message += '<tr><td>可容納人數</td><td>' + peopleCount + ' 人</td></tr>';
+        message += '<tr><td>可容納人數</td><td>' + Math.round(peopleCount * p['寬度'] / 3) + ' 人</td></tr>';
       }
     }
   });
