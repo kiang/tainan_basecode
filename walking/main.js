@@ -96,8 +96,8 @@ var baseLayer = new ol.layer.Tile({
 });
 
 var appView = new ol.View({
-  center: ol.proj.fromLonLat([120.301507, 23.124694]),
-  zoom: 11
+  center: ol.proj.fromLonLat([120.20047187805177, 22.997666465378202]),
+  zoom: 14
 });
 
 var map = new ol.Map({
@@ -156,21 +156,34 @@ new ol.layer.Vector({
 });
 
 map.on('singleclick', function(evt) {
-  map.getView().setZoom(17);
+  var message = '<div class="table-responsive"><table class="table">';
+  var roadFetched = false;
   map.forEachFeatureAtPixel(evt.pixel, function (feature, layer) {
+    if(false !== roadFetched) {
+      return;
+    }
     var p = feature.getProperties();
-    var message = '<div class="table-responsive"><table class="table">';
-    var fCenter = feature.getGeometry().getCoordinates();
-    for(k in p) {
-      if(k !== 'geometry') {
-        message += '<tr><td>' + k + '</td><td>' + p[k] + '</td></tr>';
+    if(p['區域']) {
+      roadFetched = true;
+      var roadLength = Math.round(p['長度']);
+      var peopleCount = Math.round(roadLength * 7.25);
+      var carCount = Math.round(roadLength * 0.129 * p['寬度'] / 3);
+      var newCarCount = Math.round(roadLength * 0.129 * (p['寬度'] - 3) / 3);
+      message += '<tr><td>區域</td><td>' + p['區域'] + '</td></tr>';
+      message += '<tr><td>路名</td><td>' + p['路名'] + '</td></tr>';
+      message += '<tr><td>寬度</td><td>' + p['寬度'] + ' 公尺</td></tr>';
+      message += '<tr><td>長度</td><td>' + roadLength + ' 公尺</td></tr>';
+      if(p['寬度'] > 5) {
+        message += '<tr><td>可容納車輛</td><td>' + carCount + ' 輛</td></tr>';
+        message += '<tr><td>車輛用路人</td><td>' + Math.round(carCount * 1.5) + ' 人</td></tr>';
+        message += '<tr><td>一線車道改人行道，總用路人</td><td>' + (newCarCount + peopleCount) + ' 人</td></tr>';
+        message += '<tr><td>增加比例</td><td> 約 ' + Math.round((newCarCount + peopleCount) / Math.round(carCount * 1.5)) + ' 倍 </td></tr>';
+      } else {
+        message += '<tr><td>可容納人數</td><td>' + peopleCount + ' 人</td></tr>';
       }
     }
-    message += '</table></div>';
-    $('#sidebar-main-block').html(message);
-    sidebar.open('home');
-    content.innerHTML = p['巷道名稱'];
-    popup.setPosition(fCenter);
-    map.getView().setCenter(fCenter);
   });
+  message += '</table></div>';
+  $('#sidebar-main-block').html(message);
+  sidebar.open('home');
 });
