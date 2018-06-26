@@ -20,6 +20,13 @@ var styleBlue = new ol.style.Style({
   })
 });
 
+var styleYellow = new ol.style.Style({
+  stroke: new ol.style.Stroke({
+    width: 5,
+    color: [255, 255, 0, 0.7]
+  })
+});
+
 var projection = ol.proj.get('EPSG:3857');
 var projectionExtent = projection.getExtent();
 var size = ol.extent.getWidth(projectionExtent) / 256;
@@ -155,6 +162,9 @@ new ol.layer.Vector({
   })
 });
 
+var lastFeature = false;
+var lastStyle;
+
 map.on('singleclick', function(evt) {
   var message = '<div class="table-responsive"><table class="table">';
   var roadFetched = false;
@@ -182,6 +192,13 @@ map.on('singleclick', function(evt) {
       } else {
         message += '<tr><td>可容納人數</td><td>' + Math.round(peopleCount * p['寬度'] / 3) + ' 人</td></tr>';
       }
+
+      if(false !== lastFeature) {
+        lastFeature.setStyle(lastStyle);
+      }
+      lastStyle = feature.getStyle();
+      feature.setStyle(styleYellow);
+      lastFeature = feature;
     }
   });
   message += '</table></div>';
