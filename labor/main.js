@@ -158,9 +158,12 @@ geolocation.on('change:position', function() {
   if(coordinates) {
     positionFeature.setGeometry(new ol.geom.Point(coordinates));
     if(false === changeTriggered) {
-      var mapView = map.getView();
-      mapView.setCenter(coordinates);
-      mapView.setZoom(17);
+      var lonLat = ol.proj.toLonLat(coordinates);
+      if(lonLat[0] >= 120.19962474795 && lonLat[0] <= 120.21603569449 && lonLat[1] >= 23.06772210296 && lonLat[1] <= 23.081301926211) {
+        var mapView = map.getView();
+        mapView.setCenter(coordinates);
+        mapView.setZoom(17);
+      }
       changeTriggered = true;
     }
   }
