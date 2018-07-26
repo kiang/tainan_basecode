@@ -73,6 +73,25 @@ var zone = new ol.layer.Vector({
   style: styleBrown
 });
 
+var blur = document.getElementById('blur');
+var radius = document.getElementById('radius');
+blur.addEventListener('input', function() {
+  population.setBlur(parseInt(blur.value, 10));
+});
+
+radius.addEventListener('input', function() {
+  population.setRadius(parseInt(radius.value, 10));
+});
+var population = new ol.layer.Heatmap({
+  source: new ol.source.Vector({
+    url: '../weight.json',
+    format: new ol.format.GeoJSON()
+  }),
+  blur: parseInt(blur.value, 10),
+  radius: parseInt(radius.value, 10),
+  opacity: 0.7
+});
+
 var baseLayer = new ol.layer.Tile({
     source: new ol.source.WMTS({
         matrixSet: 'EPSG:3857',
@@ -97,7 +116,7 @@ var appView = new ol.View({
 });
 
 var map = new ol.Map({
-  layers: [baseLayer, lines, zone],
+  layers: [baseLayer, population, lines, zone],
   overlays: [popup],
   target: 'map',
   view: appView
