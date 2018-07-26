@@ -3,12 +3,11 @@
   <Document>
     <name>台南捷運</name>
     <description/>
-    <Style id="icon-1603-0288D1-nodesc-normal">
+    <Style id="icon-1591-0288D1-nodesc-normal">
       <IconStyle>
-        <color>ffd18802</color>
         <scale>1</scale>
         <Icon>
-          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+          <href>images/icon-2.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
@@ -18,12 +17,11 @@
         <text><![CDATA[<h3>$[name]</h3>]]></text>
       </BalloonStyle>
     </Style>
-    <Style id="icon-1603-0288D1-nodesc-highlight">
+    <Style id="icon-1591-0288D1-nodesc-highlight">
       <IconStyle>
-        <color>ffd18802</color>
         <scale>1</scale>
         <Icon>
-          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+          <href>images/icon-2.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
@@ -33,22 +31,21 @@
         <text><![CDATA[<h3>$[name]</h3>]]></text>
       </BalloonStyle>
     </Style>
-    <StyleMap id="icon-1603-0288D1-nodesc">
+    <StyleMap id="icon-1591-0288D1-nodesc">
       <Pair>
         <key>normal</key>
-        <styleUrl>#icon-1603-0288D1-nodesc-normal</styleUrl>
+        <styleUrl>#icon-1591-0288D1-nodesc-normal</styleUrl>
       </Pair>
       <Pair>
         <key>highlight</key>
-        <styleUrl>#icon-1603-0288D1-nodesc-highlight</styleUrl>
+        <styleUrl>#icon-1591-0288D1-nodesc-highlight</styleUrl>
       </Pair>
     </StyleMap>
-    <Style id="icon-1603-7CB342-nodesc-normal">
+    <Style id="icon-1591-7CB342-nodesc-normal">
       <IconStyle>
-        <color>ff42b37c</color>
         <scale>1</scale>
         <Icon>
-          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+          <href>images/icon-4.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
@@ -58,12 +55,11 @@
         <text><![CDATA[<h3>$[name]</h3>]]></text>
       </BalloonStyle>
     </Style>
-    <Style id="icon-1603-7CB342-nodesc-highlight">
+    <Style id="icon-1591-7CB342-nodesc-highlight">
       <IconStyle>
-        <color>ff42b37c</color>
         <scale>1</scale>
         <Icon>
-          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+          <href>images/icon-4.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
@@ -73,22 +69,21 @@
         <text><![CDATA[<h3>$[name]</h3>]]></text>
       </BalloonStyle>
     </Style>
-    <StyleMap id="icon-1603-7CB342-nodesc">
+    <StyleMap id="icon-1591-7CB342-nodesc">
       <Pair>
         <key>normal</key>
-        <styleUrl>#icon-1603-7CB342-nodesc-normal</styleUrl>
+        <styleUrl>#icon-1591-7CB342-nodesc-normal</styleUrl>
       </Pair>
       <Pair>
         <key>highlight</key>
-        <styleUrl>#icon-1603-7CB342-nodesc-highlight</styleUrl>
+        <styleUrl>#icon-1591-7CB342-nodesc-highlight</styleUrl>
       </Pair>
     </StyleMap>
-    <Style id="icon-1603-C2185B-nodesc-normal">
+    <Style id="icon-1591-C2185B-nodesc-normal">
       <IconStyle>
-        <color>ff5b18c2</color>
         <scale>1</scale>
         <Icon>
-          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+          <href>images/icon-3.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
@@ -98,12 +93,11 @@
         <text><![CDATA[<h3>$[name]</h3>]]></text>
       </BalloonStyle>
     </Style>
-    <Style id="icon-1603-C2185B-nodesc-highlight">
+    <Style id="icon-1591-C2185B-nodesc-highlight">
       <IconStyle>
-        <color>ff5b18c2</color>
         <scale>1</scale>
         <Icon>
-          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+          <href>images/icon-3.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
@@ -113,22 +107,21 @@
         <text><![CDATA[<h3>$[name]</h3>]]></text>
       </BalloonStyle>
     </Style>
-    <StyleMap id="icon-1603-C2185B-nodesc">
+    <StyleMap id="icon-1591-C2185B-nodesc">
       <Pair>
         <key>normal</key>
-        <styleUrl>#icon-1603-C2185B-nodesc-normal</styleUrl>
+        <styleUrl>#icon-1591-C2185B-nodesc-normal</styleUrl>
       </Pair>
       <Pair>
         <key>highlight</key>
-        <styleUrl>#icon-1603-C2185B-nodesc-highlight</styleUrl>
+        <styleUrl>#icon-1591-C2185B-nodesc-highlight</styleUrl>
       </Pair>
     </StyleMap>
-    <Style id="icon-1603-FFEA00-nodesc-normal">
+    <Style id="icon-1591-FFEA00-nodesc-normal">
       <IconStyle>
-        <color>ff00eaff</color>
         <scale>1</scale>
         <Icon>
-          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+          <href>images/icon-1.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
@@ -138,12 +131,11 @@
         <text><![CDATA[<h3>$[name]</h3>]]></text>
       </BalloonStyle>
     </Style>
-    <Style id="icon-1603-FFEA00-nodesc-highlight">
+    <Style id="icon-1591-FFEA00-nodesc-highlight">
       <IconStyle>
-        <color>ff00eaff</color>
         <scale>1</scale>
         <Icon>
-          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+          <href>images/icon-1.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
@@ -153,24 +145,22 @@
         <text><![CDATA[<h3>$[name]</h3>]]></text>
       </BalloonStyle>
     </Style>
-    <StyleMap id="icon-1603-FFEA00-nodesc">
+    <StyleMap id="icon-1591-FFEA00-nodesc">
       <Pair>
         <key>normal</key>
-        <styleUrl>#icon-1603-FFEA00-nodesc-normal</styleUrl>
+        <styleUrl>#icon-1591-FFEA00-nodesc-normal</styleUrl>
       </Pair>
       <Pair>
         <key>highlight</key>
-        <styleUrl>#icon-1603-FFEA00-nodesc-highlight</styleUrl>
+        <styleUrl>#icon-1591-FFEA00-nodesc-highlight</styleUrl>
       </Pair>
     </StyleMap>
-    <Style id="icon-1899-0288D1-nodesc-normal">
+    <Style id="icon-1716-000000-nodesc-normal">
       <IconStyle>
-        <color>ffd18802</color>
         <scale>1</scale>
         <Icon>
-          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+          <href>images/icon-5.png</href>
         </Icon>
-        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
       </IconStyle>
       <LabelStyle>
         <scale>0</scale>
@@ -179,14 +169,12 @@
         <text><![CDATA[<h3>$[name]</h3>]]></text>
       </BalloonStyle>
     </Style>
-    <Style id="icon-1899-0288D1-nodesc-highlight">
+    <Style id="icon-1716-000000-nodesc-highlight">
       <IconStyle>
-        <color>ffd18802</color>
         <scale>1</scale>
         <Icon>
-          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+          <href>images/icon-5.png</href>
         </Icon>
-        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
       </IconStyle>
       <LabelStyle>
         <scale>1</scale>
@@ -195,14 +183,14 @@
         <text><![CDATA[<h3>$[name]</h3>]]></text>
       </BalloonStyle>
     </Style>
-    <StyleMap id="icon-1899-0288D1-nodesc">
+    <StyleMap id="icon-1716-000000-nodesc">
       <Pair>
         <key>normal</key>
-        <styleUrl>#icon-1899-0288D1-nodesc-normal</styleUrl>
+        <styleUrl>#icon-1716-000000-nodesc-normal</styleUrl>
       </Pair>
       <Pair>
         <key>highlight</key>
-        <styleUrl>#icon-1899-0288D1-nodesc-highlight</styleUrl>
+        <styleUrl>#icon-1716-000000-nodesc-highlight</styleUrl>
       </Pair>
     </StyleMap>
     <Style id="line-000000-4488-nodesc-normal">
@@ -233,144 +221,172 @@
         <styleUrl>#line-000000-4488-nodesc-highlight</styleUrl>
       </Pair>
     </StyleMap>
-    <Style id="line-0288D1-3519-nodesc-normal">
+    <Style id="line-0288D1-4875-nodesc-normal">
       <LineStyle>
         <color>ffd18802</color>
-        <width>3.519</width>
+        <width>4.875</width>
       </LineStyle>
       <BalloonStyle>
         <text><![CDATA[<h3>$[name]</h3>]]></text>
       </BalloonStyle>
     </Style>
-    <Style id="line-0288D1-3519-nodesc-highlight">
+    <Style id="line-0288D1-4875-nodesc-highlight">
       <LineStyle>
         <color>ffd18802</color>
-        <width>5.2785</width>
+        <width>7.3125</width>
       </LineStyle>
       <BalloonStyle>
         <text><![CDATA[<h3>$[name]</h3>]]></text>
       </BalloonStyle>
     </Style>
-    <StyleMap id="line-0288D1-3519-nodesc">
+    <StyleMap id="line-0288D1-4875-nodesc">
       <Pair>
         <key>normal</key>
-        <styleUrl>#line-0288D1-3519-nodesc-normal</styleUrl>
+        <styleUrl>#line-0288D1-4875-nodesc-normal</styleUrl>
       </Pair>
       <Pair>
         <key>highlight</key>
-        <styleUrl>#line-0288D1-3519-nodesc-highlight</styleUrl>
+        <styleUrl>#line-0288D1-4875-nodesc-highlight</styleUrl>
       </Pair>
     </StyleMap>
-    <Style id="line-558B2F-3713-nodesc-normal">
+    <Style id="line-558B2F-4875-nodesc-normal">
       <LineStyle>
         <color>ff2f8b55</color>
+        <width>4.875</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="line-558B2F-4875-nodesc-highlight">
+      <LineStyle>
+        <color>ff2f8b55</color>
+        <width>7.3125</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="line-558B2F-4875-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-558B2F-4875-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-558B2F-4875-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-9C27B0-3713-nodesc-normal">
+      <LineStyle>
+        <color>ffb0279c</color>
         <width>3.713</width>
       </LineStyle>
       <BalloonStyle>
         <text><![CDATA[<h3>$[name]</h3>]]></text>
       </BalloonStyle>
     </Style>
-    <Style id="line-558B2F-3713-nodesc-highlight">
+    <Style id="line-9C27B0-3713-nodesc-highlight">
       <LineStyle>
-        <color>ff2f8b55</color>
+        <color>ffb0279c</color>
         <width>5.5695</width>
       </LineStyle>
       <BalloonStyle>
         <text><![CDATA[<h3>$[name]</h3>]]></text>
       </BalloonStyle>
     </Style>
-    <StyleMap id="line-558B2F-3713-nodesc">
+    <StyleMap id="line-9C27B0-3713-nodesc">
       <Pair>
         <key>normal</key>
-        <styleUrl>#line-558B2F-3713-nodesc-normal</styleUrl>
+        <styleUrl>#line-9C27B0-3713-nodesc-normal</styleUrl>
       </Pair>
       <Pair>
         <key>highlight</key>
-        <styleUrl>#line-558B2F-3713-nodesc-highlight</styleUrl>
+        <styleUrl>#line-9C27B0-3713-nodesc-highlight</styleUrl>
       </Pair>
     </StyleMap>
-    <Style id="line-A1C2FA-3906-nodesc-normal">
+    <Style id="line-9C27B0-5069-nodesc-normal">
+      <LineStyle>
+        <color>ffb0279c</color>
+        <width>5.069</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="line-9C27B0-5069-nodesc-highlight">
+      <LineStyle>
+        <color>ffb0279c</color>
+        <width>7.6035</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="line-9C27B0-5069-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-9C27B0-5069-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-9C27B0-5069-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-A1C2FA-4875-nodesc-normal">
       <LineStyle>
         <color>fffac2a1</color>
-        <width>3.906</width>
+        <width>4.875</width>
       </LineStyle>
       <BalloonStyle>
         <text><![CDATA[<h3>$[name]</h3>]]></text>
       </BalloonStyle>
     </Style>
-    <Style id="line-A1C2FA-3906-nodesc-highlight">
+    <Style id="line-A1C2FA-4875-nodesc-highlight">
       <LineStyle>
         <color>fffac2a1</color>
-        <width>5.859</width>
+        <width>7.3125</width>
       </LineStyle>
       <BalloonStyle>
         <text><![CDATA[<h3>$[name]</h3>]]></text>
       </BalloonStyle>
     </Style>
-    <StyleMap id="line-A1C2FA-3906-nodesc">
+    <StyleMap id="line-A1C2FA-4875-nodesc">
       <Pair>
         <key>normal</key>
-        <styleUrl>#line-A1C2FA-3906-nodesc-normal</styleUrl>
+        <styleUrl>#line-A1C2FA-4875-nodesc-normal</styleUrl>
       </Pair>
       <Pair>
         <key>highlight</key>
-        <styleUrl>#line-A1C2FA-3906-nodesc-highlight</styleUrl>
+        <styleUrl>#line-A1C2FA-4875-nodesc-highlight</styleUrl>
       </Pair>
     </StyleMap>
-    <Style id="line-AFB42B-3906-nodesc-normal">
+    <Style id="line-C2185B-4875-nodesc-normal">
       <LineStyle>
-        <color>ff2bb4af</color>
-        <width>3.906</width>
+        <color>ff5b18c2</color>
+        <width>4.875</width>
       </LineStyle>
       <BalloonStyle>
         <text><![CDATA[<h3>$[name]</h3>]]></text>
       </BalloonStyle>
     </Style>
-    <Style id="line-AFB42B-3906-nodesc-highlight">
+    <Style id="line-C2185B-4875-nodesc-highlight">
       <LineStyle>
-        <color>ff2bb4af</color>
-        <width>5.859</width>
+        <color>ff5b18c2</color>
+        <width>7.3125</width>
       </LineStyle>
       <BalloonStyle>
         <text><![CDATA[<h3>$[name]</h3>]]></text>
       </BalloonStyle>
     </Style>
-    <StyleMap id="line-AFB42B-3906-nodesc">
+    <StyleMap id="line-C2185B-4875-nodesc">
       <Pair>
         <key>normal</key>
-        <styleUrl>#line-AFB42B-3906-nodesc-normal</styleUrl>
+        <styleUrl>#line-C2185B-4875-nodesc-normal</styleUrl>
       </Pair>
       <Pair>
         <key>highlight</key>
-        <styleUrl>#line-AFB42B-3906-nodesc-highlight</styleUrl>
-      </Pair>
-    </StyleMap>
-    <Style id="line-C2185B-3906-nodesc-normal">
-      <LineStyle>
-        <color>ff5b18c2</color>
-        <width>3.906</width>
-      </LineStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
-    </Style>
-    <Style id="line-C2185B-3906-nodesc-highlight">
-      <LineStyle>
-        <color>ff5b18c2</color>
-        <width>5.859</width>
-      </LineStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
-    </Style>
-    <StyleMap id="line-C2185B-3906-nodesc">
-      <Pair>
-        <key>normal</key>
-        <styleUrl>#line-C2185B-3906-nodesc-normal</styleUrl>
-      </Pair>
-      <Pair>
-        <key>highlight</key>
-        <styleUrl>#line-C2185B-3906-nodesc-highlight</styleUrl>
+        <styleUrl>#line-C2185B-4875-nodesc-highlight</styleUrl>
       </Pair>
     </StyleMap>
     <Style id="line-F48FB1-3906-nodesc-normal">
@@ -401,81 +417,147 @@
         <styleUrl>#line-F48FB1-3906-nodesc-highlight</styleUrl>
       </Pair>
     </StyleMap>
-    <Style id="line-FFEA00-3519-nodesc-normal">
+    <Style id="line-FFEA00-4875-nodesc-normal">
       <LineStyle>
         <color>ff00eaff</color>
-        <width>3.519</width>
+        <width>4.875</width>
       </LineStyle>
       <BalloonStyle>
         <text><![CDATA[<h3>$[name]</h3>]]></text>
       </BalloonStyle>
     </Style>
-    <Style id="line-FFEA00-3519-nodesc-highlight">
+    <Style id="line-FFEA00-4875-nodesc-highlight">
       <LineStyle>
         <color>ff00eaff</color>
-        <width>5.2785</width>
+        <width>7.3125</width>
       </LineStyle>
       <BalloonStyle>
         <text><![CDATA[<h3>$[name]</h3>]]></text>
       </BalloonStyle>
     </Style>
-    <StyleMap id="line-FFEA00-3519-nodesc">
+    <StyleMap id="line-FFEA00-4875-nodesc">
       <Pair>
         <key>normal</key>
-        <styleUrl>#line-FFEA00-3519-nodesc-normal</styleUrl>
+        <styleUrl>#line-FFEA00-4875-nodesc-normal</styleUrl>
       </Pair>
       <Pair>
         <key>highlight</key>
-        <styleUrl>#line-FFEA00-3519-nodesc-highlight</styleUrl>
+        <styleUrl>#line-FFEA00-4875-nodesc-highlight</styleUrl>
       </Pair>
     </StyleMap>
-    <Style id="poly-F57C00-3701-0-nodesc-normal">
+    <Style id="line-FFFF8D-4875-nodesc-normal">
       <LineStyle>
-        <color>ff007cf5</color>
-        <width>3.701</width>
+        <color>ff8dffff</color>
+        <width>4.875</width>
       </LineStyle>
-      <PolyStyle>
-        <color>00007cf5</color>
-        <fill>1</fill>
-        <outline>1</outline>
-      </PolyStyle>
       <BalloonStyle>
         <text><![CDATA[<h3>$[name]</h3>]]></text>
       </BalloonStyle>
     </Style>
-    <Style id="poly-F57C00-3701-0-nodesc-highlight">
+    <Style id="line-FFFF8D-4875-nodesc-highlight">
       <LineStyle>
-        <color>ff007cf5</color>
-        <width>5.5515</width>
+        <color>ff8dffff</color>
+        <width>7.3125</width>
       </LineStyle>
-      <PolyStyle>
-        <color>00007cf5</color>
-        <fill>1</fill>
-        <outline>1</outline>
-      </PolyStyle>
       <BalloonStyle>
         <text><![CDATA[<h3>$[name]</h3>]]></text>
       </BalloonStyle>
     </Style>
-    <StyleMap id="poly-F57C00-3701-0-nodesc">
+    <StyleMap id="line-FFFF8D-4875-nodesc">
       <Pair>
         <key>normal</key>
-        <styleUrl>#poly-F57C00-3701-0-nodesc-normal</styleUrl>
+        <styleUrl>#line-FFFF8D-4875-nodesc-normal</styleUrl>
       </Pair>
       <Pair>
         <key>highlight</key>
-        <styleUrl>#poly-F57C00-3701-0-nodesc-highlight</styleUrl>
+        <styleUrl>#line-FFFF8D-4875-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="poly-CE93D8-1-79-nodesc-normal">
+      <LineStyle>
+        <color>ffd893ce</color>
+        <width>0.001</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>4fd893ce</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="poly-CE93D8-1-79-nodesc-highlight">
+      <LineStyle>
+        <color>ffd893ce</color>
+        <width>0.0015</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>4fd893ce</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="poly-CE93D8-1-79-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#poly-CE93D8-1-79-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#poly-CE93D8-1-79-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="poly-F57C00-5101-0-nodesc-normal">
+      <LineStyle>
+        <color>ff007cf5</color>
+        <width>5.101</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>00007cf5</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="poly-F57C00-5101-0-nodesc-highlight">
+      <LineStyle>
+        <color>ff007cf5</color>
+        <width>7.6515</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>00007cf5</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="poly-F57C00-5101-0-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#poly-F57C00-5101-0-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#poly-F57C00-5101-0-nodesc-highlight</styleUrl>
       </Pair>
     </StyleMap>
     <Folder>
       <name>台南捷運</name>
       <Placemark>
-        <name>黃</name>
-        <styleUrl>#line-AFB42B-3906-nodesc</styleUrl>
+        <name>黃 12.5k</name>
+        <styleUrl>#line-FFEA00-4875-nodesc</styleUrl>
         <LineString>
           <tessellate>1</tessellate>
           <coordinates>
-            120.267806,23.0072953,0
+            120.2677792,23.0073151,0
             120.2644265,23.0012983,0
             120.2510476,22.9986393,0
             120.2420501,22.9986162,0
@@ -499,14 +581,14 @@
             120.1638222,23.0025452,0
             120.162052,23.002881,0
             120.161022,23.0028513,0
-            120.1584149,23.0022292,0
-            120.1504809,22.9987479,0
+            120.1578999,23.0020761,0
+            120.1540402,23.0003027,0
           </coordinates>
         </LineString>
       </Placemark>
       <Placemark>
-        <name>黃支</name>
-        <styleUrl>#line-FFEA00-3519-nodesc</styleUrl>
+        <name>黃支 10.7k</name>
+        <styleUrl>#line-FFFF8D-4875-nodesc</styleUrl>
         <LineString>
           <tessellate>1</tessellate>
           <coordinates>
@@ -526,22 +608,72 @@
             120.1744652,23.0491705,0
             120.1712465,23.0490915,0
             120.1436949,23.0604639,0
-            120.133878,23.0611056,0
+            120.1338807,23.0610686,0
           </coordinates>
         </LineString>
       </Placemark>
       <Placemark>
-        <name>黃機廠</name>
-        <styleUrl>#icon-1603-FFEA00-nodesc</styleUrl>
-        <Point>
+        <name>藍 15.7k</name>
+        <styleUrl>#line-0288D1-4875-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
           <coordinates>
-            120.23857,22.9966986,0
+            120.2233565,22.9240175,0
+            120.2211785,22.9280614,0
+            120.2208996,22.9306898,0
+            120.2210043,22.9324633,0
+            120.2209064,22.9419461,0
+            120.2180832,22.9524905,0
+            120.2167046,22.9634612,0
+            120.2135181,22.9784264,0
+            120.2111578,22.983128,0
+            120.2114153,22.9888764,0
+            120.2118766,22.9956615,0
+            120.2121019,22.9968369,0
+            120.2137327,23.0045401,0
+            120.2142262,23.0050733,0
+            120.2202237,23.0073348,0
+            120.2230239,23.0089346,0
+            120.2279592,23.0125391,0
+            120.2306038,23.0134081,0
+            120.2307003,23.0137438,0
+            120.2282917,23.0169729,0
+            120.2253871,23.0190775,0
+            120.2194057,23.022863,0
+            120.2189685,23.0236098,0
+            120.2190837,23.0243837,0
+            120.2347183,23.0393175,0
+            120.2372825,23.0412254,0
           </coordinates>
-        </Point>
+        </LineString>
       </Placemark>
       <Placemark>
-        <name>紅</name>
-        <styleUrl>#line-C2185B-3906-nodesc</styleUrl>
+        <name>藍支 7.7k</name>
+        <styleUrl>#line-A1C2FA-4875-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            120.2306038,23.0134081,0
+            120.2341175,23.0144746,0
+            120.2428079,23.0199649,0
+            120.2458334,23.0206364,0
+            120.2496529,23.021999,0
+            120.2558541,23.0256327,0
+            120.2586436,23.0262844,0
+            120.2595878,23.0270546,0
+            120.2653384,23.0289504,0
+            120.2729344,23.02976,0
+            120.2825689,23.0323667,0
+            120.2884269,23.0346968,0
+            120.2945638,23.0355262,0
+            120.2988124,23.0366715,0
+            120.2998316,23.0365974,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>紅 26.5k</name>
+        <styleUrl>#line-C2185B-4875-nodesc</styleUrl>
         <LineString>
           <tessellate>1</tessellate>
           <coordinates>
@@ -587,18 +719,18 @@
             120.2016307,23.1288167,0
             120.199914,23.1329803,0
             120.1899147,23.1460425,0
-            120.1842632,23.15189,0
+            120.184223,23.1518851,0
           </coordinates>
         </LineString>
       </Placemark>
       <Placemark>
-        <name>紅支</name>
+        <name>紅支 9.6k</name>
         <styleUrl>#line-F48FB1-3906-nodesc</styleUrl>
         <LineString>
           <tessellate>1</tessellate>
           <coordinates>
-            120.212963,23.0757811,0
-            120.2154064,23.0773333,0
+            120.2138964,23.0738613,0
+            120.2156532,23.077432,0
             120.2188396,23.0792185,0
             120.2200413,23.0805905,0
             120.2279699,23.0870651,0
@@ -613,8 +745,8 @@
             120.24593,23.0996383,0
             120.2499533,23.1012863,0
             120.2531719,23.1035758,0
-            120.2589118,23.1065955,0
-            120.2599096,23.1042074,0
+            120.258598,23.1065116,0
+            120.2602314,23.1042074,0
             120.276719,23.1108585,0
             120.2799457,23.1038965,0
             120.2802984,23.1022251,0
@@ -622,81 +754,8 @@
         </LineString>
       </Placemark>
       <Placemark>
-        <name>紅機廠</name>
-        <styleUrl>#icon-1603-C2185B-nodesc</styleUrl>
-        <Point>
-          <coordinates>
-            120.1890135,22.9557062,0
-          </coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name>藍</name>
-        <styleUrl>#line-0288D1-3519-nodesc</styleUrl>
-        <LineString>
-          <tessellate>1</tessellate>
-          <coordinates>
-            120.2257544,22.9186246,0
-            120.2256793,22.9193706,0
-            120.2237964,22.9232393,0
-            120.2211785,22.9280614,0
-            120.2208996,22.9306898,0
-            120.2209318,22.9418154,0
-            120.2179813,22.9525053,0
-            120.2167046,22.9634612,0
-            120.2135181,22.9784264,0
-            120.2111578,22.983128,0
-            120.2121019,22.9968369,0
-            120.2137327,23.0045401,0
-            120.2142262,23.0050733,0
-            120.2202237,23.0073348,0
-            120.2230239,23.0089346,0
-            120.2279592,23.0125391,0
-            120.2307808,23.0134624,0
-            120.2284956,23.0167951,0
-            120.2279484,23.0173481,0
-            120.2181959,23.0235937,0
-            120.2347183,23.0393175,0
-            120.2372718,23.0411538,0
-          </coordinates>
-        </LineString>
-      </Placemark>
-      <Placemark>
-        <name>藍支</name>
-        <styleUrl>#line-A1C2FA-3906-nodesc</styleUrl>
-        <LineString>
-          <tessellate>1</tessellate>
-          <coordinates>
-            120.2307808,23.0134624,0
-            120.2341175,23.0144746,0
-            120.2428079,23.0199649,0
-            120.2458334,23.0206364,0
-            120.2496529,23.021999,0
-            120.2558541,23.0256327,0
-            120.2586436,23.0262844,0
-            120.2595878,23.0270546,0
-            120.2653384,23.0289504,0
-            120.2729344,23.02976,0
-            120.2825689,23.0323667,0
-            120.2884269,23.0346968,0
-            120.2945638,23.0355262,0
-            120.2988124,23.0366715,0
-            120.2997136,23.036632,0
-          </coordinates>
-        </LineString>
-      </Placemark>
-      <Placemark>
-        <name>藍機廠</name>
-        <styleUrl>#icon-1603-0288D1-nodesc</styleUrl>
-        <Point>
-          <coordinates>
-            120.2188826,22.9693783,0
-          </coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name>綠</name>
-        <styleUrl>#line-558B2F-3713-nodesc</styleUrl>
+        <name>綠 17.6k</name>
+        <styleUrl>#line-558B2F-4875-nodesc</styleUrl>
         <LineString>
           <tessellate>1</tessellate>
           <coordinates>
@@ -709,8 +768,8 @@
             120.1690257,22.991316,0
             120.1749587,22.990595,0
             120.179143,22.9899826,0
-            120.1825439,22.989627,0
-            120.1868248,22.9926888,0
+            120.1824929,22.9896369,0
+            120.1868543,22.9926863,0
             120.2044201,22.9889752,0
             120.2114153,22.9888764,0
             120.2243114,22.9848664,0
@@ -728,51 +787,48 @@
         </LineString>
       </Placemark>
       <Placemark>
-        <name>綠/橘 機廠</name>
-        <styleUrl>#icon-1603-7CB342-nodesc</styleUrl>
-        <Point>
-          <coordinates>
-            120.2401471,22.9769843,0
-          </coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name>橘環</name>
-        <styleUrl>#poly-F57C00-3701-0-nodesc</styleUrl>
+        <name>橘環 13.2k</name>
+        <styleUrl>#poly-F57C00-5101-0-nodesc</styleUrl>
         <Polygon>
           <outerBoundaryIs>
             <LinearRing>
               <tessellate>1</tessellate>
               <coordinates>
                 120.2247083,23.002397,0
-                120.2224445,23.0027526,0
-                120.222584,23.0044314,0
-                120.2224982,23.0051425,0
-                120.2208138,23.0076904,0
-                120.2206314,23.009221,0
-                120.2182066,23.0109294,0
-                120.2168334,23.0090334,0
-                120.2157068,23.0092013,0
-                120.2090979,23.0112356,0
-                120.2070379,23.0120058,0
-                120.2050638,23.0123416,0
-                120.2029824,23.0123416,0
-                120.2014589,23.0120058,0
-                120.1951075,23.0096358,0
-                120.1929617,23.0096358,0
-                120.186224,23.0067127,0
+                120.2249658,23.0053646,0
+                120.2247888,23.0061596,0
+                120.2242282,23.0066979,0
+                120.2235443,23.0069596,0
+                120.2207226,23.0076361,0
+                120.2177077,23.0096308,0
+                120.2170748,23.0096024,0
+                120.2165276,23.0092062,0
+                120.2157604,23.0092211,0
+                120.2108038,23.0106554,0
+                120.2071076,23.0120502,0
+                120.2054876,23.0122947,0
+                120.2035939,23.0124379,0
+                120.2019819,23.0122033,0
+                120.1952228,23.0097197,0
+                120.1930019,23.0097173,0
+                120.1868141,23.007125,0
+                120.1863473,23.0064053,0
                 120.1869106,23.0037698,0
                 120.1870394,23.0021699,0
                 120.1863098,22.9949801,0
-                120.1868248,22.9926888,0
+                120.1868543,22.9926863,0
                 120.1869535,22.9890739,0
-                120.1860523,22.9821008,0
+                120.1860469,22.982649,0
+                120.1864493,22.9820514,0
                 120.1915455,22.9815477,0
                 120.2122307,22.9811526,0
                 120.22017,22.9834046,0
                 120.2223587,22.985538,0
-                120.2244616,22.9911876,0
-                120.2238178,22.9916617,0
+                120.2244401,22.9909012,0
+                120.224257,22.9913912,0
+                120.2238235,22.991735,0
+                120.2239855,22.9937776,0
+                120.2240592,22.9949109,0
                 120.2247083,23.002397,0
               </coordinates>
             </LinearRing>
@@ -780,42 +836,102 @@
         </Polygon>
       </Placemark>
       <Placemark>
+        <name>黃機廠</name>
+        <styleUrl>#icon-1591-FFEA00-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            120.2381838,22.9967282,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>藍機廠</name>
+        <styleUrl>#icon-1591-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            120.2188933,22.9693783,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>紅機廠</name>
+        <styleUrl>#icon-1591-C2185B-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            120.1890135,22.9557062,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>綠機廠</name>
+        <styleUrl>#icon-1591-7CB342-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            120.2400237,22.9761842,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>藍橘聯絡</name>
+        <styleUrl>#line-9C27B0-3713-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            120.2115869,22.9811674,0
+            120.2118149,22.9811223,0
+            120.2120215,22.9810427,0
+            120.2121757,22.9809297,0
+            120.2123192,22.9807871,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>綠橘聯絡</name>
+        <styleUrl>#line-9C27B0-5069-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            120.2219779,22.9851776,0
+            120.2221623,22.9853035,0
+            120.2223681,22.9853553,0
+            120.2226115,22.9853726,0
+            120.2228335,22.9853257,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
         <name>鐵路地下化</name>
         <styleUrl>#line-000000-4488-nodesc</styleUrl>
         <LineString>
           <tessellate>1</tessellate>
           <coordinates>
-            120.2174664,22.9678768,0
-            120.2177668,22.970623,0
+            120.2176381,22.967941,0
+            120.2178365,22.9695537,0
+            120.2192876,22.9709477,0
+            120.2208674,22.971512,0
             120.2218652,22.972401,0
-            120.222466,22.9740605,0
-            120.2231741,22.9743173,0
+            120.2222407,22.9735543,0
+            120.2231607,22.9744877,0
             120.2240539,22.974989,0
             120.2328086,22.9849849,0
             120.2334094,22.9860121,0
             120.2354479,23.0055474,0
             120.2352548,23.0063374,0
             120.2307057,23.0138031,0
-            120.2287102,23.016647,0
-            120.2276587,23.0176937,0
-            120.2252984,23.0192144,0
-            120.2251482,23.0204586,0
-            120.2265215,23.0216633,0
+            120.2287102,23.0166026,0
+            120.2276641,23.0176246,0
+            120.2265912,23.0183923,0
+            120.226044,23.0192465,0
+            120.225867,23.0203154,0
+            120.2261782,23.0213917,0
+            120.2273369,23.0226408,0
+            120.2290723,23.0230926,0
           </coordinates>
         </LineString>
       </Placemark>
       <Placemark>
-        <name>台南</name>
-        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
-        <Point>
-          <coordinates>
-            120.2347049,22.998405,0
-          </coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
         <name>大橋</name>
-        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <styleUrl>#icon-1716-000000-nodesc</styleUrl>
         <Point>
           <coordinates>
             120.2308935,23.013492,0
@@ -823,13 +939,70 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>虎尾寮</name>
-        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <name>台南</name>
+        <styleUrl>#icon-1716-000000-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            120.2347049,22.998405,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>東門</name>
+        <styleUrl>#icon-1716-000000-nodesc</styleUrl>
         <Point>
           <coordinates>
             120.2294075,22.9811081,0
           </coordinates>
         </Point>
+      </Placemark>
+      <Placemark>
+        <name>歷史街區</name>
+        <styleUrl>#poly-CE93D8-1-79-nodesc</styleUrl>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <tessellate>1</tessellate>
+              <coordinates>
+                120.2112758,22.9864566,0
+                120.2119088,22.9959085,0
+                120.2127135,22.9999676,0
+                120.2035296,23.0025353,0
+                120.2021885,23.000807,0
+                120.2013946,22.9996417,0
+                120.1947212,23.0019526,0
+                120.1941848,23.000254,0
+                120.1951075,22.9991578,0
+                120.195019,22.9989035,0
+                120.194571,22.998743,0
+                120.1940346,22.9983503,0
+                120.1933587,22.9982393,0
+                120.1925969,22.9983775,0
+                120.1918459,22.9978837,0
+                120.1917708,22.9976146,0
+                120.1921221,22.9975047,0
+                120.1928731,22.9964813,0
+                120.1921463,22.9934987,0
+                120.1932567,22.9933061,0
+                120.193128,22.9927777,0
+                120.1982081,22.9917604,0
+                120.1975,22.9895283,0
+                120.1974893,22.9884912,0
+                120.2002198,22.9883135,0
+                120.2003002,22.9882246,0
+                120.2011907,22.9881752,0
+                120.2018452,22.9880814,0
+                120.2018452,22.9871974,0
+                120.2030226,22.9869579,0
+                120.2027933,22.9861146,0
+                120.2081001,22.9852072,0
+                120.20832,22.9863282,0
+                120.209924,22.9861949,0
+                120.2112758,22.9864566,0
+              </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
       </Placemark>
     </Folder>
   </Document>

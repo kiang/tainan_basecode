@@ -58,14 +58,6 @@ for (var i=0; i<21; ++i) {
   nlscMatrixIds[i] = i;
 }
 
-var points = new ol.layer.Vector({
-  source: new ol.source.Vector({
-    url: 'points.json',
-    format: new ol.format.GeoJSON()
-  }),
-  style: stylePoint
-});
-
 var lines = new ol.layer.Vector({
   source: new ol.source.Vector({
     url: 'lines.kml',
@@ -105,7 +97,7 @@ var appView = new ol.View({
 });
 
 var map = new ol.Map({
-  layers: [baseLayer, points, lines, zone],
+  layers: [baseLayer, lines, zone],
   overlays: [popup],
   target: 'map',
   view: appView
