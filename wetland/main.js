@@ -286,13 +286,7 @@ map.on('singleclick', function(evt) {
   sidebar.open('home');
 });
 
-map.on('pointermove', pointerMoveHandler);
-
-map.getViewport().addEventListener('mouseout', function() {
-  helpTooltipElement.classList.add('hidden');
-});
-
-var typeSelect = document.getElementById('type');
+var typeSelect = 'line';
 
 var draw; // global so we can remove it later
 
@@ -335,7 +329,7 @@ var formatArea = function(polygon) {
 };
 
 function addInteraction() {
-  var type = (typeSelect.value == 'area' ? 'Polygon' : 'LineString');
+  var type = (typeSelect == 'area' ? 'Polygon' : 'LineString');
   draw = new ol.interaction.Draw({
     source: source,
     type: type,
@@ -437,13 +431,24 @@ function createMeasureTooltip() {
   map.addOverlay(measureTooltip);
 }
 
-
-/**
- * Let user change the geometry type.
- */
-typeSelect.onchange = function() {
+$('a.btnLine').click(function(event) {
+  event.preventDefault();
+  typeSelect = 'line';
   map.removeInteraction(draw);
   addInteraction();
-};
+  map.on('pointermove', pointerMoveHandler);
+  map.getViewport().addEventListener('mouseout', function() {
+    helpTooltipElement.classList.add('hidden');
+  });
+})
 
-addInteraction();
+$('a.btnArea').click(function(event) {
+  event.preventDefault();
+  typeSelect = 'area';
+  map.removeInteraction(draw);
+  addInteraction();
+  map.on('pointermove', pointerMoveHandler);
+  map.getViewport().addEventListener('mouseout', function() {
+    helpTooltipElement.classList.add('hidden');
+  });
+})
