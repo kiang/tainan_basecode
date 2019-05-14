@@ -12,16 +12,6 @@ for (var z = 0; z < 20; ++z) {
     resolutions[z] = size / Math.pow(2, z);
     matrixIds[z] = z;
 }
-var container = document.getElementById('popup');
-var content = document.getElementById('popup-content');
-var closer = document.getElementById('popup-closer');
-var popup = new ol.Overlay({
-  element: container,
-  autoPan: true,
-  autoPanAnimation: {
-    duration: 250
-  }
-});
 
 var layerYellow = new ol.style.Style({
   stroke: new ol.style.Stroke({
@@ -39,12 +29,6 @@ var layerYellow = new ol.style.Style({
     })
   })
 });
-
-closer.onclick = function() {
-  popup.setPosition(undefined);
-  closer.blur();
-  return false;
-};
 
 var baseLayer = new ol.layer.Tile({
     source: new ol.source.WMTS({
@@ -84,6 +68,16 @@ var wetlandStyle = new ol.style.Style({
     })
 });
 
+var animalStyle = new ol.style.Style({
+    stroke: new ol.style.Stroke({
+        color: 'rgba(255, 193, 255, 1)',
+        width: 1
+    }),
+    fill: new ol.style.Fill({
+        color: 'rgba(255, 35, 255, 0.5)'
+    })
+});
+
 var sunStyle = new ol.style.Style({
     stroke: new ol.style.Stroke({
         color: 'rgba(200, 200, 10, 1)',
@@ -108,6 +102,14 @@ var wetland = new ol.layer.Vector({
         format: new ol.format.GeoJSON()
     }),
     style: wetlandStyle
+});
+
+var animal = new ol.layer.Vector({
+    source: new ol.source.Vector({
+        url: 'json/animal.json',
+        format: new ol.format.GeoJSON()
+    }),
+    style: animalStyle
 });
 
 var sunProj = new ol.layer.Vector({
@@ -221,14 +223,14 @@ var measureTooltip;
  * Message to show when the user is drawing a polygon.
  * @type {string}
  */
-var continuePolygonMsg = 'Click to continue drawing the polygon';
+var continuePolygonMsg = '點選來繪製多邊形';
 
 
 /**
  * Message to show when the user is drawing a line.
  * @type {string}
  */
-var continueLineMsg = 'Click to continue drawing the line';
+var continueLineMsg = '點選來劃線';
 
 
 /**
@@ -240,7 +242,7 @@ var pointerMoveHandler = function(evt) {
     return;
   }
   /** @type {string} */
-  var helpMsg = 'Click to start drawing';
+  var helpMsg = '點選後開始拉線';
 
   if (sketch) {
     var geom = (sketch.getGeometry());
@@ -258,35 +260,30 @@ var pointerMoveHandler = function(evt) {
 };
 
 var map = new ol.Map({
-  layers: [baseLayer, sunProj, wetland, vector, park],
-  overlays: [popup],
+  layers: [baseLayer, sunProj, wetland, vector, park, animal],
   target: 'map',
   view: appView
 });
 map.addControl(sidebar);
 
-/**
- * Add a click handler to the map to render the popup.
- */
+var content = document.getElementById('sidebarContent');
 map.on('singleclick', function(evt) {
+  content.innerHTML = '';
   clickedCoordinate = evt.coordinate;
+
   map.forEachFeatureAtPixel(evt.pixel, function (feature, layer) {
-      var p = feature.getProperties();
-      console.log(p);
-      var message = '';
-      for(k in p) {
-        if(k !== 'geometry') {
-          message += k + ': ' + p[k] + '<br />';
-        }
+    var message = '';
+    var p = feature.getProperties();
+    for(k in p) {
+      if(k !== 'geometry') {
+        message += k + ': ' + p[k] + '<br />';
       }
-      if(message !== '') {
-        content.innerHTML = message;
-        popup.setPosition(clickedCoordinate);
-      } else {
-        popup.setPosition(undefined);
-        closer.blur();
-      }
+    }
+
+    content.innerHTML += message + '<hr />';
   });
+
+  sidebar.open('home');
 });
 
 map.on('pointermove', pointerMoveHandler);
