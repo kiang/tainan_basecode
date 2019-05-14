@@ -11,6 +11,7 @@
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../ol3/ol.css" type="text/css">
     <link rel="stylesheet" href="css/ol3-sidebar.css" />
+    <link rel="stylesheet" href="css/measure.css" />
     <style>
     body {
       padding: 0;
@@ -90,6 +91,13 @@
         </div>
 </div>
     <div id="map" class="map"></div>
+    <form class="form-inline">
+  <label>Measurement type &nbsp;</label>
+  <select id="type">
+    <option value="length">Length (LineString)</option>
+    <option value="area">Area (Polygon)</option>
+  </select>
+</form>
     <div id="popup" class="ol-popup">
       <a href="#" id="popup-closer" class="ol-popup-closer"></a>
       <div id="popup-content"></div>
