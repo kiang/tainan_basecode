@@ -86,11 +86,11 @@ var wetlandStyle = new ol.style.Style({
 
 var sunStyle = new ol.style.Style({
     stroke: new ol.style.Stroke({
-        color: 'rgba(193, 7, 255, 1)',
+        color: 'rgba(200, 200, 10, 1)',
         width: 1
     }),
     fill: new ol.style.Fill({
-        color: 'rgba(35, 7, 255, 0.5)'
+        color: 'rgba(255, 255, 7, 0.5)'
     })
 });
 
