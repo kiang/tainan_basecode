@@ -121,8 +121,8 @@ var sunProj = new ol.layer.Vector({
 });
 
 var appView = new ol.View({
-  center: ol.proj.fromLonLat([120.301507, 23.124694]),
-  zoom: 10
+  center: ol.proj.fromLonLat([120.071507, 23.094694]),
+  zoom: 14
 });
 
 var geolocation = new ol.Geolocation({
