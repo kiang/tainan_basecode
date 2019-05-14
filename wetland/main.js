@@ -64,6 +64,16 @@ var baseLayer = new ol.layer.Tile({
     opacity: 0.3
 });
 
+var parkStyle = new ol.style.Style({
+    stroke: new ol.style.Stroke({
+        color: 'rgba(193, 255, 7, 1)',
+        width: 1
+    }),
+    fill: new ol.style.Fill({
+        color: 'rgba(35, 255, 7, 0.5)'
+    })
+});
+
 var wetlandStyle = new ol.style.Style({
     stroke: new ol.style.Stroke({
         color: 'rgba(255, 193, 7, 1)',
@@ -76,18 +86,25 @@ var wetlandStyle = new ol.style.Style({
 
 var sunStyle = new ol.style.Style({
     stroke: new ol.style.Stroke({
-        color: 'rgba(193, 255, 7, 1)',
+        color: 'rgba(193, 7, 255, 1)',
         width: 1
     }),
     fill: new ol.style.Fill({
-        color: 'rgba(35, 255, 7, 0.5)'
+        color: 'rgba(35, 7, 255, 0.5)'
     })
 });
 
-// or official from https://data.gov.tw/dataset/35587
+var park = new ol.layer.Vector({
+    source: new ol.source.Vector({
+        url: 'json/park.json',
+        format: new ol.format.GeoJSON()
+    }),
+    style: parkStyle
+});
+
 var wetland = new ol.layer.Vector({
     source: new ol.source.Vector({
-        url: 'json/base.json', // downloaded from https://www.twreporter.org/a/dangerous-fault-architect
+        url: 'json/base.json',
         format: new ol.format.GeoJSON()
     }),
     style: wetlandStyle
@@ -95,7 +112,7 @@ var wetland = new ol.layer.Vector({
 
 var sunProj = new ol.layer.Vector({
     source: new ol.source.Vector({
-        url: 'json/result.json', // downloaded from https://www.twreporter.org/a/dangerous-fault-architect
+        url: 'json/result.json',
         format: new ol.format.GeoJSON()
     }),
     style: sunStyle
@@ -133,122 +150,120 @@ positionFeature.setStyle(new ol.style.Style({
 
 geolocation.on('change:position', function() {
   var coordinates = geolocation.getPosition();
-  positionFeature.setGeometry(coordinates ?
-          new ol.geom.Point(coordinates) : null);
-      });
+  positionFeature.setGeometry(coordinates ? new ol.geom.Point(coordinates) : null);
+});
 
-      new ol.layer.Vector({
-        map: map,
-        source: new ol.source.Vector({
-          features: [positionFeature]
-        })
-      });
+new ol.layer.Vector({
+  map: map,
+  source: new ol.source.Vector({
+    features: [positionFeature]
+  })
+});
 
+var source = new ol.source.Vector();
 
-      var source = new ol.source.Vector();
-
-      var vector = new ol.layer.Vector({
-        source: source,
-        style: new ol.style.Style({
-          fill: new ol.style.Fill({
-            color: 'rgba(255, 255, 255, 0.2)'
-          }),
-          stroke: new ol.style.Stroke({
-            color: '#ffcc33',
-            width: 2
-          }),
-          image: new ol.style.Circle({
-            radius: 7,
-            fill: new ol.style.Fill({
-              color: '#ffcc33'
-            })
-          })
-        })
-      });
+var vector = new ol.layer.Vector({
+  source: source,
+  style: new ol.style.Style({
+    fill: new ol.style.Fill({
+      color: 'rgba(255, 255, 255, 0.2)'
+    }),
+    stroke: new ol.style.Stroke({
+      color: '#ffcc33',
+      width: 2
+    }),
+    image: new ol.style.Circle({
+      radius: 7,
+      fill: new ol.style.Fill({
+        color: '#ffcc33'
+      })
+    })
+  })
+});
 
 
-      /**
-       * Currently drawn feature.
-       * @type {ol.Feature}
-       */
-      var sketch;
+/**
+ * Currently drawn feature.
+ * @type {ol.Feature}
+ */
+var sketch;
 
 
-      /**
-       * The help tooltip element.
-       * @type {Element}
-       */
-      var helpTooltipElement;
+/**
+ * The help tooltip element.
+ * @type {Element}
+ */
+var helpTooltipElement;
 
 
-      /**
-       * Overlay to show the help messages.
-       * @type {ol.Overlay}
-       */
-      var helpTooltip;
+/**
+ * Overlay to show the help messages.
+ * @type {ol.Overlay}
+ */
+var helpTooltip;
 
 
-      /**
-       * The measure tooltip element.
-       * @type {Element}
-       */
-      var measureTooltipElement;
+/**
+ * The measure tooltip element.
+ * @type {Element}
+ */
+var measureTooltipElement;
 
 
-      /**
-       * Overlay to show the measurement.
-       * @type {ol.Overlay}
-       */
-      var measureTooltip;
+/**
+ * Overlay to show the measurement.
+ * @type {ol.Overlay}
+ */
+var measureTooltip;
 
 
-      /**
-       * Message to show when the user is drawing a polygon.
-       * @type {string}
-       */
-      var continuePolygonMsg = 'Click to continue drawing the polygon';
+/**
+ * Message to show when the user is drawing a polygon.
+ * @type {string}
+ */
+var continuePolygonMsg = 'Click to continue drawing the polygon';
 
 
-      /**
-       * Message to show when the user is drawing a line.
-       * @type {string}
-       */
-      var continueLineMsg = 'Click to continue drawing the line';
+/**
+ * Message to show when the user is drawing a line.
+ * @type {string}
+ */
+var continueLineMsg = 'Click to continue drawing the line';
 
 
-      /**
-       * Handle pointer move.
-       * @param {ol.MapBrowserEvent} evt The event.
-       */
-      var pointerMoveHandler = function(evt) {
-        if (evt.dragging) {
-          return;
-        }
-        /** @type {string} */
-        var helpMsg = 'Click to start drawing';
+/**
+ * Handle pointer move.
+ * @param {ol.MapBrowserEvent} evt The event.
+ */
+var pointerMoveHandler = function(evt) {
+  if (evt.dragging) {
+    return;
+  }
+  /** @type {string} */
+  var helpMsg = 'Click to start drawing';
 
-        if (sketch) {
-          var geom = (sketch.getGeometry());
-          if (geom instanceof ol.geom.Polygon) {
-            helpMsg = continuePolygonMsg;
-          } else if (geom instanceof ol.geom.LineString) {
-            helpMsg = continueLineMsg;
-          }
-        }
+  if (sketch) {
+    var geom = (sketch.getGeometry());
+    if (geom instanceof ol.geom.Polygon) {
+      helpMsg = continuePolygonMsg;
+    } else if (geom instanceof ol.geom.LineString) {
+      helpMsg = continueLineMsg;
+    }
+  }
 
-        helpTooltipElement.innerHTML = helpMsg;
-        helpTooltip.setPosition(evt.coordinate);
+  helpTooltipElement.innerHTML = helpMsg;
+  helpTooltip.setPosition(evt.coordinate);
 
-        helpTooltipElement.classList.remove('hidden');
-      };
+  helpTooltipElement.classList.remove('hidden');
+};
 
-      var map = new ol.Map({
-        layers: [baseLayer, sunProj, wetland, vector],
-        overlays: [popup],
-        target: 'map',
-        view: appView
-      });
-      map.addControl(sidebar);
+var map = new ol.Map({
+  layers: [baseLayer, sunProj, wetland, vector, park],
+  overlays: [popup],
+  target: 'map',
+  view: appView
+});
+map.addControl(sidebar);
 
 /**
  * Add a click handler to the map to render the popup.
