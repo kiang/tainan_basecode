@@ -114,6 +114,14 @@ var park = new ol.layer.Vector({
     style: parkStyle
 });
 
+var parkLand = new ol.layer.Vector({
+    source: new ol.source.Vector({
+        url: 'json/park_land.json',
+        format: new ol.format.GeoJSON()
+    }),
+    style: parkStyle
+});
+
 var wetland = new ol.layer.Vector({
     source: new ol.source.Vector({
         url: 'json/base.json',
@@ -278,7 +286,7 @@ var pointerMoveHandler = function(evt) {
 };
 
 var map = new ol.Map({
-  layers: [baseLayer, sunProj, wetland, vector, park, animal, points],
+  layers: [baseLayer, sunProj, wetland, vector, park, parkLand, animal, points],
   target: 'map',
   view: appView
 });
