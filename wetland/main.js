@@ -88,6 +88,24 @@ var sunStyle = new ol.style.Style({
     })
 });
 
+var pointStyle = new ol.style.Style({
+  image: new ol.style.Circle({
+    radius: 3,
+    fill: new ol.style.Fill({
+      color: 'red'
+    }),
+    stroke: new ol.style.Stroke({color: 'black', width: 1})
+  })
+});
+
+var points = new ol.layer.Vector({
+    source: new ol.source.Vector({
+        url: 'json/points.json',
+        format: new ol.format.GeoJSON()
+    }),
+    style: pointStyle
+});
+
 var park = new ol.layer.Vector({
     source: new ol.source.Vector({
         url: 'json/park.json',
@@ -260,7 +278,7 @@ var pointerMoveHandler = function(evt) {
 };
 
 var map = new ol.Map({
-  layers: [baseLayer, sunProj, wetland, vector, park, animal],
+  layers: [baseLayer, sunProj, wetland, vector, park, animal, points],
   target: 'map',
   view: appView
 });
