@@ -129,7 +129,7 @@ map.on('singleclick', function(evt) {
       message += '<a href="https://bing.com/maps/default.aspx?rtp=~pos.' + lonLat[1] + '_' + lonLat[0] + '" target="_blank" class="btn btn-info btn-lg btn-block">Bing 導航</a>';
       message += '</div></td></tr>';
       message += '</tbody></table>';
-      sidebarTitle.innerHTML = p.name;
+      sidebarTitle.innerHTML = schools[p.properties.key]['幼兒園名稱'];
       content.innerHTML = message;
       sidebar.open('home');
       pointClicked = true;
