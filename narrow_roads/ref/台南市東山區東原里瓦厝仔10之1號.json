@@ -1,0 +1,80 @@
+{
+  "Info": [
+    {
+      "IsSuccess": "True",
+      "InAddress": "臺南市東山區東原里瓦厝仔10之1號",
+      "InSRS": "EPSG:4326",
+      "InFuzzyType": "[單雙號機制]+[最近門牌號機制]",
+      "InFuzzyBuffer": "0",
+      "InIsOnlyFullMatch": "False",
+      "InIsLockCounty": "True",
+      "InIsLockTown": "False",
+      "InIsLockVillage": "False",
+      "InIsLockRoadSection": "False",
+      "InIsLockLane": "False",
+      "InIsLockAlley": "False",
+      "InIsLockArea": "False",
+      "InIsSameNumber_SubNumber": "True",
+      "InCanIgnoreVillage": "True",
+      "InCanIgnoreNeighborhood": "True",
+      "InReturnMaxCount": "0",
+      "OutTotal": "3",
+      "OutMatchType": "模糊比對",
+      "OutMatchCode": "[臺南市]\tT:1,V:1,R:-1,S:-1,L:-1,A:-1,SA:-1,T:-1,AR:0,NO:1,E:-1,N:-1",
+      "OutTraceInfo": "[臺南市]\t { 模糊比對 } (東山區)\t找到符合的[鄉鎮市區]，(東原里)\t找到符合的[村里]，(瓦厝仔)\t找不到符合的[地區]，轉換搜尋找不到符合的[地區]，(10之1號)\t找到符合的[門牌號碼]，進行[雙號過濾]，進行[找最小門牌的號之、之號]，模糊比對找到 3 筆符合的門牌地址。"
+    }
+  ],
+  "AddressList": [
+    {
+      "FULL_ADDR": "臺南市東山區東原里10鄰班芝花坑10號之1",
+      "COUNTY": "臺南市",
+      "TOWN": "東山區",
+      "VILLAGE": "東原里",
+      "NEIGHBORHOOD": "10鄰",
+      "ROAD": "",
+      "SECTION": "",
+      "LANE": "",
+      "ALLEY": "",
+      "SUB_ALLEY": "",
+      "TONG": "",
+      "AREA": "班芝花坑",
+      "NUMBER": "10號之1",
+      "X": 120.438863,
+      "Y": 23.282954
+    },
+    {
+      "FULL_ADDR": "臺南市東山區東原里13鄰瓦厝子10號之1",
+      "COUNTY": "臺南市",
+      "TOWN": "東山區",
+      "VILLAGE": "東原里",
+      "NEIGHBORHOOD": "13鄰",
+      "ROAD": "",
+      "SECTION": "",
+      "LANE": "",
+      "ALLEY": "",
+      "SUB_ALLEY": "",
+      "TONG": "",
+      "AREA": "瓦厝子",
+      "NUMBER": "10號之1",
+      "X": 120.448800,
+      "Y": 23.270544
+    },
+    {
+      "FULL_ADDR": "臺南市東山區東原里7鄰前大埔10號之1",
+      "COUNTY": "臺南市",
+      "TOWN": "東山區",
+      "VILLAGE": "東原里",
+      "NEIGHBORHOOD": "7鄰",
+      "ROAD": "",
+      "SECTION": "",
+      "LANE": "",
+      "ALLEY": "",
+      "SUB_ALLEY": "",
+      "TONG": "",
+      "AREA": "前大埔",
+      "NUMBER": "10號之1",
+      "X": 120.446083,
+      "Y": 23.265115
+    }
+  ]
+}
