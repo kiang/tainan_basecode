@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="utf-8">
-  <meta property="og:title" content="台南夜市地圖">
-  <meta property="og:description" content="台南夜市地圖">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="http://kiang.github.io/tainan_basecode/nightmarket/og_image.png">
+    <meta charset="utf-8">
+    <meta property="og:title" content="台南夜市地圖">
+    <meta property="og:description" content="台南夜市地圖">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="http://kiang.github.io/tainan_basecode/nightmarket/og_image.png">
     <title>台南夜市地圖</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../ol3/ol.css" type="text/css">
     <link rel="stylesheet" href="../css/ol3-sidebar.css" type="text/css" />
-    <link rel="stylesheet" href="//stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/dark-hive/theme.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="//stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/dark-hive/theme.min.css"
+        crossorigin="anonymous">
     <style>
         body {
             padding: 0;
@@ -20,7 +23,9 @@
             overflow: hidden;
         }
 
-        html, body, #map {
+        html,
+        body,
+        #map {
             height: 100%;
             font: 10pt "Helvetica Neue", Arial, Helvetica, sans-serif;
         }
@@ -29,20 +34,33 @@
             font-style: italic;
             color: #AAA;
         }
-        .ui-front { z-index: 9999; }
+
+        .ui-front {
+            z-index: 9999;
+        }
     </style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3GE076J7DJ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-3GE076J7DJ');
+    </script>
 </head>
+
 <body>
-  <div id="fb-root"></div>
-<script>
-(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = 'https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.12&appId=1393405437614114&autoLogAppEvents=1';
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
-</script>
+    <div id="fb-root"></div>
+    <script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.12&appId=1393405437614114&autoLogAppEvents=1';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
     <div id="sidebar" class="sidebar collapsed">
         <!-- Nav tabs -->
         <div class="sidebar-tabs">
@@ -50,7 +68,8 @@
                 <li><a href="#home" role="tab"><i class="fa fa-bars"></i></a></li>
                 <li><a href="#book" role="tab"><i class="fa fa-book"></i></a></li>
                 <li><a href="#settings" role="tab"><i class="fa fa-gear"></i></a></li>
-                <li><a href="https://github.com/kiang/tainan_basecode" role="tab" target="_blank"><i class="fa fa-github"></i></a></li>
+                <li><a href="https://github.com/kiang/tainan_basecode" role="tab" target="_blank"><i
+                            class="fa fa-github"></i></a></li>
                 <li><a href="#fb" role="tab"><i class="fa fa-facebook"></i></a></li>
             </ul>
         </div>
@@ -58,77 +77,96 @@
         <!-- Tab panes -->
         <div class="sidebar-content">
             <div class="sidebar-pane" id="home">
-              <h1 class="sidebar-header"><span id="sidebarTitle">請點選地圖中的點</span><span class="sidebar-close"><i class="fa fa-caret-left"></i></span></h1>
-              <div id="sidebarContent">請點選地圖中的點</div>
-              <div class="btn-group-vertical" role="group" style="width: 100%;">
-                <a href="https://github.com/kiang/tainan_basecode/issues" target="_blank" class="btn btn-primary btn-lg btn-block">網站問題反應</a>
-              </div>
+                <h1 class="sidebar-header"><span id="sidebarTitle">請點選地圖中的點</span><span class="sidebar-close"><i
+                            class="fa fa-caret-left"></i></span></h1>
+                <div id="sidebarContent">請點選地圖中的點</div>
+                <div class="btn-group-vertical" role="group" style="width: 100%;">
+                    <a href="https://github.com/kiang/tainan_basecode/issues" target="_blank"
+                        class="btn btn-primary btn-lg btn-block">網站問題反應</a>
+                </div>
             </div>
             <div class="sidebar-pane" id="book">
-                <h1 class="sidebar-header"><span id="weekTitle">說明</span><span class="sidebar-close"><i class="fa fa-caret-left"></i></span></h1>
+                <h1 class="sidebar-header"><span id="weekTitle">說明</span><span class="sidebar-close"><i
+                            class="fa fa-caret-left"></i></span></h1>
                 <div>
                     <ul>
                         <li>夜市提送申請書經各機關聯合審查後原則通過，得於7月12日(含)起進行復業，<strong>暫不開放內用</strong>，須遵守中央公布之指引，違者將依規定論處。</li>
                         <li>請務必依申請書及切結書防疫措施辦理，本處將不定期派員進行稽查，倘查獲違反計劃書規定，三次予以停業一周；再次違反，停業二周；再次違反，停業三周，依此類推。</li>
                         <li>夜市於疫情結束後，依臺南市攤販管理自治條例向臺南市政府申請許可，屆時經查獲未申請或未經許可者，將處負責人或代表人新臺幣一萬元以上五萬元以下罰鍰，並得按次處罰。</li>
                     </ul>
-                    * 上述說明取自<a href="https://www.tainan.gov.tw/News_Content.aspx?n=13371&s=7783376" target="_blank">臺南市政府</a>
+                    * 上述說明取自<a href="https://www.tainan.gov.tw/News_Content.aspx?n=13371&s=7783376"
+                        target="_blank">臺南市政府</a>
                     <hr />
                     <h3>傳統市場及夜市防疫管理措施建議指引</h3>
                     <ol>
                         <li>人員健康管理<ul>
-                            <li>落實體溫量測、健康狀況監測、出入人員實聯制</li>
-                            <li>固定攤從業人員造冊管理。自治會或管理員需自備QRcode巡檢，讓流動攤從業人員掃碼上傳簡訊</li>
-                            <li>建議工作人員穿戴可識別服飾、掛牌，區別攤商、消費者</li>
-                            <li>鼓勵安裝臺灣社交距離App</li>
-                            <li>鼓勵定期篩檢SARS-CoV-2</li>
-                        </ul></li>
+                                <li>落實體溫量測、健康狀況監測、出入人員實聯制</li>
+                                <li>固定攤從業人員造冊管理。自治會或管理員需自備QRcode巡檢，讓流動攤從業人員掃碼上傳簡訊</li>
+                                <li>建議工作人員穿戴可識別服飾、掛牌，區別攤商、消費者</li>
+                                <li>鼓勵安裝臺灣社交距離App</li>
+                                <li>鼓勵定期篩檢SARS-CoV-2</li>
+                            </ul>
+                        </li>
                         <li>人流管制措施<ul>
-                            <li>設立出入口管制，落實顧客實聯制，逾容留人數時暫緩入內</li>
-                            <li>限制消費時間</li>
-                            <li>攤位前以立牌、貼膠條等方式，限制排隊人數及保持社交距離</li>
-                            <li>人車分流，必要時禁止馬路中間擺攤或其他營業降載方式</li>
-                        </ul></li>
+                                <li>設立出入口管制，落實顧客實聯制，逾容留人數時暫緩入內</li>
+                                <li>限制消費時間</li>
+                                <li>攤位前以立牌、貼膠條等方式，限制排隊人數及保持社交距離</li>
+                                <li>人車分流，必要時禁止馬路中間擺攤或其他營業降載方式</li>
+                            </ul>
+                        </li>
                         <li>飲食管制措施規範<ul>
-                            <li>市場、夜市禁止試吃活動、禁止邊走邊吃，鼓勵預約外帶或外送</li>
-                            <li>飲食、熟食攤須加裝遮罩或隔板</li>
-                            <li>顧客不得自助取餐，需由工作人員服務</li>
-                            <li>如宣布提供餐飲內用時，攤台區(吧台席)禁食，桌椅裝置隔板並採梅花座，不同桌保持1.5公尺距離。餐點個人式，不共食</li>
-                        </ul></li>
+                                <li>市場、夜市禁止試吃活動、禁止邊走邊吃，鼓勵預約外帶或外送</li>
+                                <li>飲食、熟食攤須加裝遮罩或隔板</li>
+                                <li>顧客不得自助取餐，需由工作人員服務</li>
+                                <li>如宣布提供餐飲內用時，攤台區(吧台席)禁食，桌椅裝置隔板並採梅花座，不同桌保持1.5公尺距離。餐點個人式，不共食</li>
+                            </ul>
+                        </li>
                         <li>衛生防護建議<ul>
-                            <li>提醒落實戴口罩及手部衛生</li>
-                            <li>增加洗手設備可近性</li>
-                            <li>使用非直接與顧客接觸之收付款方式</li>
-                            <li>應全程佩戴口罩，外場另須全程佩戴面罩，並視需要佩戴手套或穿著防水圍裙。</li>
-                            <li>拋棄式口罩不可重複使用；可重複使用之面罩應確實清潔消毒</li>
-                        </ul></li>
+                                <li>提醒落實戴口罩及手部衛生</li>
+                                <li>增加洗手設備可近性</li>
+                                <li>使用非直接與顧客接觸之收付款方式</li>
+                                <li>應全程佩戴口罩，外場另須全程佩戴面罩，並視需要佩戴手套或穿著防水圍裙。</li>
+                                <li>拋棄式口罩不可重複使用；可重複使用之面罩應確實清潔消毒</li>
+                            </ul>
+                        </li>
                         <li>環境清潔消毒<ul>
-                            <li>訂定環境清潔及消毒計畫</li>
-                            <li>定時執行環境清潔及消毒，每天至少1次以上</li>
-                            <li>增加公共廁所衛生清潔及消毒頻率</li>
-                            <li>已有確定病例足跡時，即時進行全區清潔消毒</li>
-                        </ul></li>
+                                <li>訂定環境清潔及消毒計畫</li>
+                                <li>定時執行環境清潔及消毒，每天至少1次以上</li>
+                                <li>增加公共廁所衛生清潔及消毒頻率</li>
+                                <li>已有確定病例足跡時，即時進行全區清潔消毒</li>
+                            </ul>
+                        </li>
                         <li>確定病例應變措施<ul>
-                            <li>攤商確診，以其為中心九宮格範圍內之攤商，需依指示疫調及停業，並立即進行全區清潔消毒</li>
-                            <li>出現確定病例：降載最大容留人數至75%</li>
-                            <li>出現群聚事件：降載最大容留人數至50% / 降載攤商營業數至75%</li>
-                        </ul></li>
+                                <li>攤商確診，以其為中心九宮格範圍內之攤商，需依指示疫調及停業，並立即進行全區清潔消毒</li>
+                                <li>出現確定病例：降載最大容留人數至75%</li>
+                                <li>出現群聚事件：降載最大容留人數至50% / 降載攤商營業數至75%</li>
+                            </ul>
+                        </li>
                         <li>裁罰規範<ul>
-                            <li>攤商受地方政府依防疫規定令其停止營業者，建議處罰確認一次停業3日；累計兩次停業7日；累計三次以上停業30日</li>
-                            <li>市場、夜市受地方政府依防疫規定令其停止營業者，建議經開立勸導單確認累計三次停業3日；累計四次停業7日；累計五次以上停業14日</li>
-                        </ul></li>
+                                <li>攤商受地方政府依防疫規定令其停止營業者，建議處罰確認一次停業3日；累計兩次停業7日；累計三次以上停業30日</li>
+                                <li>市場、夜市受地方政府依防疫規定令其停止營業者，建議經開立勸導單確認累計三次停業3日；累計四次停業7日；累計五次以上停業14日</li>
+                            </ul>
+                        </li>
                     </ol>
-                    * 上述說明取自<a href="https://www.moea.gov.tw/Mns/populace/news/News.aspx?kind=1&menu_id=40&news_id=96060" target="_blank">經濟部</a>
+                    * 上述說明取自<a
+                        href="https://www.moea.gov.tw/Mns/populace/news/News.aspx?kind=1&menu_id=40&news_id=96060"
+                        target="_blank">經濟部</a>
                 </div>
             </div>
             <div class="sidebar-pane" id="settings">
-                <h1 class="sidebar-header"><span id="weekTitle">設定</span><span class="sidebar-close"><i class="fa fa-caret-left"></i></span></h1>
+                <h1 class="sidebar-header"><span id="weekTitle">設定</span><span class="sidebar-close"><i
+                            class="fa fa-caret-left"></i></span></h1>
                 <div>
                     <a href="#" class="btn btn-primary btn-lg btn-block" id="btn-geolocation">回到目前位置</a>
                 </div>
             </div>
             <div class="sidebar-pane" id="fb">
-              <div class="fb-page" data-href="https://www.facebook.com/k.olc.tw/" data-tabs="timeline" data-width="380" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/k.olc.tw/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/k.olc.tw/">江明宗</a></blockquote></div>
+                <div class="fb-page" data-href="https://www.facebook.com/k.olc.tw/" data-tabs="timeline"
+                    data-width="380" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false"
+                    data-show-facepile="true">
+                    <blockquote cite="https://www.facebook.com/k.olc.tw/" class="fb-xfbml-parse-ignore"><a
+                            href="https://www.facebook.com/k.olc.tw/">江明宗</a></blockquote>
+                </div>
             </div>
         </div>
     </div>
@@ -141,14 +179,6 @@
     <script src="js/ol.js" type="text/javascript"></script>
     <script src="js/ol5-sidebar.min.js" type="text/javascript"></script>
     <script src="js/main.js" type="text/javascript"></script>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-80817009-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-80817009-1');
-</script>
 </body>
+
 </html>

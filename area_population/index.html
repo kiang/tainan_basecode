@@ -1,133 +1,137 @@
 <html lang="zh">
-    <head>
-        <meta charset="utf-8" />
-        <meta property="og:title" content="台南區域人口戶數變化">
-        <meta property="og:description" content="台南區域人口戶數變化">
-        <meta property="og:type" content="website">
-        <meta property="og:image" content="http://kiang.github.io/tainan_basecode/area_population/og_image.png">
-        <title>台南區域人口戶數變化</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css'>
-    </head>
-    <body>
-        <div class="container">
-            <canvas id="chart2" width="400" height="400"></canvas>
-            <canvas id="chart1" width="400" height="400"></canvas>
-        </div>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-annotation/0.5.7/chartjs-plugin-annotation.min.js"></script>
-        <script>
-            $.getJSON('json/data1.json', {}, function(d) {
-                var ctx = document.getElementById('chart1').getContext('2d');
-                new Chart(ctx, {
-                    type: 'line',
-                    data: d,
-                    options: {
-                        responsive: true,
-                        title: {
-                            display: true,
-                            text: '台南區域戶數變化'
-                        },
-                        tooltips: {
-                            mode: 'nearest',
-                            intersect: false
-                        },
-                        scales: {
-                            xAxes: [{
-                                display: true,
-                                scaleLabel: {
-                                    display: true,
-    							    labelString: '年月'
-						        }
-					        }],
-					        yAxes: [{
-						        display: true,
-						        scaleLabel: {
-							        display: true,
-							        labelString: '戶數'
-						    }
-					        }]
-				        },
-                        annotation: {
-                            annotations: [
-                                {
-                                    type: 'line',
-                                    mode: 'vertical',
-                                    scaleID: 'x-axis-0',
-                                    value: '099Y12M',
-                                    borderColor: '#ff0000',
-                                    label: {
-                                        content: '縣市合併',
-                                        enabled: true,
-                                        position: 'top'
-                                    }
-                                }
-                            ]
-                        }
-                    }
-                });
-            });
-            $.getJSON('json/data2.json', {}, function(d) {
-                var ctx = document.getElementById('chart2').getContext('2d');
-                new Chart(ctx, {
-                    type: 'line',
-                    data: d,
-                    options: {
-                        responsive: true,
-                        title: {
-                            display: true,
-                            text: '台南區域人口變化'
-                        },
-                        tooltips: {
-                            mode: 'nearest',
-                            intersect: false
-                        },
-                        scales: {
-                            xAxes: [{
-                                display: true,
-                                scaleLabel: {
-                                    display: true,
-    							    labelString: '年月'
-						        }
-					        }],
-					        yAxes: [{
-						        display: true,
-						        scaleLabel: {
-							        display: true,
-							        labelString: '人數'
-						    }
-					        }]
-				        },
-                        annotation: {
-                            annotations: [
-                                {
-                                    type: 'line',
-                                    mode: 'vertical',
-                                    scaleID: 'x-axis-0',
-                                    value: '099Y12M',
-                                    borderColor: '#ff0000',
-                                    label: {
-                                        content: '縣市合併',
-                                        enabled: true,
-                                        position: 'top'
-                                    }
-                                }
-                            ]
-                        }
-                    }
-                });
-            });
-            </script>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-80817009-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'UA-80817009-1');
-</script>
-    </body>
+<head>
+    <meta charset="utf-8" />
+    <meta property="og:title" content="台南區域人口戶數變化">
+    <meta property="og:description" content="台南區域人口戶數變化">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="http://kiang.github.io/tainan_basecode/area_population/og_image.png">
+    <title>台南區域人口戶數變化</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css'>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3GE076J7DJ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-3GE076J7DJ');
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <canvas id="chart2" width="400" height="400"></canvas>
+        <canvas id="chart1" width="400" height="400"></canvas>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-annotation/0.5.7/chartjs-plugin-annotation.min.js"></script>
+    <script>
+        $.getJSON('json/data1.json', {}, function (d) {
+            var ctx = document.getElementById('chart1').getContext('2d');
+            new Chart(ctx, {
+                type: 'line',
+                data: d,
+                options: {
+                    responsive: true,
+                    title: {
+                        display: true,
+                        text: '台南區域戶數變化'
+                    },
+                    tooltips: {
+                        mode: 'nearest',
+                        intersect: false
+                    },
+                    scales: {
+                        xAxes: [{
+                            display: true,
+                            scaleLabel: {
+                                display: true,
+                                labelString: '年月'
+                            }
+                        }],
+                        yAxes: [{
+                            display: true,
+                            scaleLabel: {
+                                display: true,
+                                labelString: '戶數'
+                            }
+                        }]
+                    },
+                    annotation: {
+                        annotations: [
+                            {
+                                type: 'line',
+                                mode: 'vertical',
+                                scaleID: 'x-axis-0',
+                                value: '099Y12M',
+                                borderColor: '#ff0000',
+                                label: {
+                                    content: '縣市合併',
+                                    enabled: true,
+                                    position: 'top'
+                                }
+                            }
+                        ]
+                    }
+                }
+            });
+        });
+        $.getJSON('json/data2.json', {}, function (d) {
+            var ctx = document.getElementById('chart2').getContext('2d');
+            new Chart(ctx, {
+                type: 'line',
+                data: d,
+                options: {
+                    responsive: true,
+                    title: {
+                        display: true,
+                        text: '台南區域人口變化'
+                    },
+                    tooltips: {
+                        mode: 'nearest',
+                        intersect: false
+                    },
+                    scales: {
+                        xAxes: [{
+                            display: true,
+                            scaleLabel: {
+                                display: true,
+                                labelString: '年月'
+                            }
+                        }],
+                        yAxes: [{
+                            display: true,
+                            scaleLabel: {
+                                display: true,
+                                labelString: '人數'
+                            }
+                        }]
+                    },
+                    annotation: {
+                        annotations: [
+                            {
+                                type: 'line',
+                                mode: 'vertical',
+                                scaleID: 'x-axis-0',
+                                value: '099Y12M',
+                                borderColor: '#ff0000',
+                                label: {
+                                    content: '縣市合併',
+                                    enabled: true,
+                                    position: 'top'
+                                }
+                            }
+                        ]
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+
 </html>

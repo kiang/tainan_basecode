@@ -1,105 +1,122 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
-    <meta charset="utf-8">
-    <meta property="og:title" content="台南市農地工廠">
-    <meta property="og:description" content="台南市農地工廠資料取自農委會農業及農地資源盤查結果查詢圖台，藉此思考台南的農地發展政策">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="http://kiang.github.io/tainan_basecode/factories/og_image.png">
-    <title>台南市農地工廠</title>
-    <link rel="stylesheet" href="../ol3/ol.css" type="text/css">
-    <!-- The line below is only needed for old environments like Internet Explorer and Android 4.x -->
-    <style>
-      html, body {
-        width: 100%;
-        height: 100%;
-        padding: 0px;
-        margin: 0px;
-      }
-      .map {
-        width:100%;
-        height:100%;
-        position: absolute;
-        top: 0px;
-        left: 0px;
-      }
-      .ol-popup {
-        position: absolute;
-        background-color: white;
-        -webkit-filter: drop-shadow(0 1px 4px rgba(0,0,0,0.2));
-        filter: drop-shadow(0 1px 4px rgba(0,0,0,0.2));
-        padding: 15px;
-        border-radius: 10px;
-        border: 1px solid #cccccc;
-        bottom: 12px;
-        left: -50px;
-        min-width: 280px;
-      }
-      .ol-popup:after, .ol-popup:before {
-        top: 100%;
-        border: solid transparent;
-        content: " ";
-        height: 0;
-        width: 0;
-        position: absolute;
-        pointer-events: none;
-      }
-      .ol-popup:after {
-        border-top-color: white;
-        border-width: 10px;
-        left: 48px;
-        margin-left: -10px;
-      }
-      .ol-popup:before {
-        border-top-color: #cccccc;
-        border-width: 11px;
-        left: 48px;
-        margin-left: -11px;
-      }
-      .ol-popup-closer {
-        text-decoration: none;
-        position: absolute;
-        top: 2px;
-        right: 8px;
-      }
-      .ol-popup-closer:after {
-        content: "✖";
-      }
-      .app-button1 {
-        top: 65px;
-        left: .5em;
-      }
-      .ol-touch .app-button1 {
-        top: 80px;
-      }
-      .app-button2 {
-        top: 95px;
-        left: .5em;
-      }
-      .ol-touch .app-button2 {
-        top: 110px;
-      }
-    </style>
-  </head>
-  <body>
-    <div id="map" class="map"></div>
-    <div id="popup" class="ol-popup">
-      <a href="#" id="popup-closer" class="ol-popup-closer"></a>
-      <div id="popup-content"></div>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,URL"></script>
-    <script src="../ol3/ol.js"></script>
-    <script src="main.js"></script>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-80817009-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'UA-80817009-1');
-</script>
-  </body>
+<head>
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta charset="utf-8">
+  <meta property="og:title" content="台南市農地工廠">
+  <meta property="og:description" content="台南市農地工廠資料取自農委會農業及農地資源盤查結果查詢圖台，藉此思考台南的農地發展政策">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="http://kiang.github.io/tainan_basecode/factories/og_image.png">
+  <title>台南市農地工廠</title>
+  <link rel="stylesheet" href="../ol3/ol.css" type="text/css">
+  <!-- The line below is only needed for old environments like Internet Explorer and Android 4.x -->
+  <style>
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      padding: 0px;
+      margin: 0px;
+    }
+
+    .map {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+    }
+
+    .ol-popup {
+      position: absolute;
+      background-color: white;
+      -webkit-filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.2));
+      filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.2));
+      padding: 15px;
+      border-radius: 10px;
+      border: 1px solid #cccccc;
+      bottom: 12px;
+      left: -50px;
+      min-width: 280px;
+    }
+
+    .ol-popup:after,
+    .ol-popup:before {
+      top: 100%;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+    }
+
+    .ol-popup:after {
+      border-top-color: white;
+      border-width: 10px;
+      left: 48px;
+      margin-left: -10px;
+    }
+
+    .ol-popup:before {
+      border-top-color: #cccccc;
+      border-width: 11px;
+      left: 48px;
+      margin-left: -11px;
+    }
+
+    .ol-popup-closer {
+      text-decoration: none;
+      position: absolute;
+      top: 2px;
+      right: 8px;
+    }
+
+    .ol-popup-closer:after {
+      content: "✖";
+    }
+
+    .app-button1 {
+      top: 65px;
+      left: .5em;
+    }
+
+    .ol-touch .app-button1 {
+      top: 80px;
+    }
+
+    .app-button2 {
+      top: 95px;
+      left: .5em;
+    }
+
+    .ol-touch .app-button2 {
+      top: 110px;
+    }
+  </style>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3GE076J7DJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-3GE076J7DJ');
+  </script>
+</head>
+
+<body>
+  <div id="map" class="map"></div>
+  <div id="popup" class="ol-popup">
+    <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+    <div id="popup-content"></div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script
+    src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,URL"></script>
+  <script src="../ol3/ol.js"></script>
+  <script src="main.js"></script>
+</body>
+
 </html>
