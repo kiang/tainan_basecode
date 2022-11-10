@@ -1,0 +1,52 @@
+{
+  "Info": [
+    {
+      "IsSuccess": "True",
+      "InAddress": "臺南市新市區忠孝街90巷37弄6號",
+      "InSRS": "EPSG:4326",
+      "InFuzzyType": "[單雙號機制]+[最近門牌號機制]",
+      "InFuzzyBuffer": "0",
+      "InIsOnlyFullMatch": "False",
+      "InIsSupportPast": "True",
+      "InIsShowCodeBase": "True",
+      "InIsLockCounty": "True",
+      "InIsLockTown": "False",
+      "InIsLockVillage": "False",
+      "InIsLockRoadSection": "False",
+      "InIsLockLane": "False",
+      "InIsLockAlley": "False",
+      "InIsLockArea": "False",
+      "InIsSameNumber_SubNumber": "True",
+      "InCanIgnoreVillage": "True",
+      "InCanIgnoreNeighborhood": "True",
+      "InReturnMaxCount": "0",
+      "OutTotal": "1",
+      "OutMatchType": "完全比對",
+      "OutMatchCode": "[臺南市]\tFULL:1",
+      "OutTraceInfo": "[臺南市]\t { 完全比對 } 找到符合的門牌地址"
+    }
+  ],
+  "AddressList": [
+    {
+      "PERIOD": "",
+      "FULL_ADDR": "臺南市新市區新和里10鄰忠孝街90巷37弄6號",
+      "COUNTY": "臺南市",
+      "TOWN": "新市區",
+      "VILLAGE": "新和里",
+      "NEIGHBORHOOD": "10鄰",
+      "ROAD": "忠孝街",
+      "SECTION": "",
+      "LANE": "90巷",
+      "ALLEY": "37弄",
+      "SUB_ALLEY": "",
+      "TONG": "",
+      "AREA": "",
+      "NUMBER": "6號",
+      "X": 120.294873,
+      "Y": 23.074079,
+      "CODEBASE": "A6720-0203-00",
+      "CODE1": "A6720-09-007",
+      "CODE2": "A6720-09"
+    }
+  ]
+}

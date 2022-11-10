@@ -1,0 +1,52 @@
+{
+  "Info": [
+    {
+      "IsSuccess": "True",
+      "InAddress": "臺南市安南區安和路一段478巷2弄67號",
+      "InSRS": "EPSG:4326",
+      "InFuzzyType": "[單雙號機制]+[最近門牌號機制]",
+      "InFuzzyBuffer": "0",
+      "InIsOnlyFullMatch": "False",
+      "InIsSupportPast": "True",
+      "InIsShowCodeBase": "True",
+      "InIsLockCounty": "True",
+      "InIsLockTown": "False",
+      "InIsLockVillage": "False",
+      "InIsLockRoadSection": "False",
+      "InIsLockLane": "False",
+      "InIsLockAlley": "False",
+      "InIsLockArea": "False",
+      "InIsSameNumber_SubNumber": "True",
+      "InCanIgnoreVillage": "True",
+      "InCanIgnoreNeighborhood": "True",
+      "InReturnMaxCount": "0",
+      "OutTotal": "1",
+      "OutMatchType": "完全比對",
+      "OutMatchCode": "[臺南市]\tFULL:1",
+      "OutTraceInfo": "[臺南市]\t { 完全比對 } 找到符合的門牌地址"
+    }
+  ],
+  "AddressList": [
+    {
+      "PERIOD": "",
+      "FULL_ADDR": "臺南市安南區安東里17鄰安和路一段478巷2弄67號",
+      "COUNTY": "臺南市",
+      "TOWN": "安南區",
+      "VILLAGE": "安東里",
+      "NEIGHBORHOOD": "17鄰",
+      "ROAD": "安和路",
+      "SECTION": "1",
+      "LANE": "478巷",
+      "ALLEY": "2弄",
+      "SUB_ALLEY": "",
+      "TONG": "",
+      "AREA": "",
+      "NUMBER": "67號",
+      "X": 120.213859,
+      "Y": 23.034483,
+      "CODEBASE": "A6735-1043-00",
+      "CODE1": "A6735-31-008",
+      "CODE2": "A6735-31"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "Info": [
+    {
+      "IsSuccess": "True",
+      "InAddress": "臺南市南區金華路一段352巷97弄48號",
+      "InSRS": "EPSG:4326",
+      "InFuzzyType": "[單雙號機制]+[最近門牌號機制]",
+      "InFuzzyBuffer": "0",
+      "InIsOnlyFullMatch": "False",
+      "InIsSupportPast": "True",
+      "InIsShowCodeBase": "True",
+      "InIsLockCounty": "True",
+      "InIsLockTown": "False",
+      "InIsLockVillage": "False",
+      "InIsLockRoadSection": "False",
+      "InIsLockLane": "False",
+      "InIsLockAlley": "False",
+      "InIsLockArea": "False",
+      "InIsSameNumber_SubNumber": "True",
+      "InCanIgnoreVillage": "True",
+      "InCanIgnoreNeighborhood": "True",
+      "InReturnMaxCount": "0",
+      "OutTotal": "1",
+      "OutMatchType": "完全比對",
+      "OutMatchCode": "[臺南市]\tFULL:1",
+      "OutTraceInfo": "[臺南市]\t { 完全比對 } 找到符合的門牌地址"
+    }
+  ],
+  "AddressList": [
+    {
+      "PERIOD": "",
+      "FULL_ADDR": "臺南市南區明亮里17鄰金華路一段352巷97弄48號",
+      "COUNTY": "臺南市",
+      "TOWN": "南區",
+      "VILLAGE": "明亮里",
+      "NEIGHBORHOOD": "17鄰",
+      "ROAD": "金華路",
+      "SECTION": "1",
+      "LANE": "352巷",
+      "ALLEY": "97弄",
+      "SUB_ALLEY": "",
+      "TONG": "",
+      "AREA": "",
+      "NUMBER": "48號",
+      "X": 120.193617,
+      "Y": 22.969906,
+      "CODEBASE": "A6733-0446-00",
+      "CODE1": "A6733-22-007",
+      "CODE2": "A6733-22"
+    }
+  ]
+}

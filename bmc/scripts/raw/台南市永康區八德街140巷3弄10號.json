@@ -1,0 +1,52 @@
+{
+  "Info": [
+    {
+      "IsSuccess": "True",
+      "InAddress": "臺南市永康區八德街140巷3弄10號",
+      "InSRS": "EPSG:4326",
+      "InFuzzyType": "[單雙號機制]+[最近門牌號機制]",
+      "InFuzzyBuffer": "0",
+      "InIsOnlyFullMatch": "False",
+      "InIsSupportPast": "True",
+      "InIsShowCodeBase": "True",
+      "InIsLockCounty": "True",
+      "InIsLockTown": "False",
+      "InIsLockVillage": "False",
+      "InIsLockRoadSection": "False",
+      "InIsLockLane": "False",
+      "InIsLockAlley": "False",
+      "InIsLockArea": "False",
+      "InIsSameNumber_SubNumber": "True",
+      "InCanIgnoreVillage": "True",
+      "InCanIgnoreNeighborhood": "True",
+      "InReturnMaxCount": "0",
+      "OutTotal": "1",
+      "OutMatchType": "完全比對",
+      "OutMatchCode": "[臺南市]\tFULL:1",
+      "OutTraceInfo": "[臺南市]\t { 完全比對 } 找到符合的門牌地址"
+    }
+  ],
+  "AddressList": [
+    {
+      "PERIOD": "",
+      "FULL_ADDR": "臺南市永康區埔園里36鄰八德街140巷3弄10號",
+      "COUNTY": "臺南市",
+      "TOWN": "永康區",
+      "VILLAGE": "埔園里",
+      "NEIGHBORHOOD": "36鄰",
+      "ROAD": "八德街",
+      "SECTION": "",
+      "LANE": "140巷",
+      "ALLEY": "3弄",
+      "SUB_ALLEY": "",
+      "TONG": "",
+      "AREA": "",
+      "NUMBER": "10號",
+      "X": 120.258157,
+      "Y": 23.037291,
+      "CODEBASE": "A6731-0124-00",
+      "CODE1": "A6731-11-002",
+      "CODE2": "A6731-11"
+    }
+  ]
+}
