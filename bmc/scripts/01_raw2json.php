@@ -7,6 +7,7 @@ $fc = [
 $rawPath = __DIR__ . '/raw';
 $fh = fopen(__DIR__ . '/raw.csv', 'r');
 $head = fgetcsv($fh, 2048);
+$head[0] = 'id';
 while ($line = fgetcsv($fh, 2048)) {
     $data = array_combine($head, $line);
     $data['成立核准文號'] = trim($data['成立核准文號'], '\'');
