@@ -7,14 +7,14 @@ var size = ol.extent.getWidth(projectionExtent) / 256;
 var resolutions = new Array(20);
 var matrixIds = new Array(20);
 for (var z = 0; z < 20; ++z) {
-    // generate resolutions and matrixIds arrays for this WMTS
-    resolutions[z] = size / Math.pow(2, z);
-    matrixIds[z] = z;
+  // generate resolutions and matrixIds arrays for this WMTS
+  resolutions[z] = size / Math.pow(2, z);
+  matrixIds[z] = z;
 }
 
 function pointStyleFunction(f) {
   var p = f.getProperties().properties, color, stroke, radius;
-  if(f === currentFeature) {
+  if (f === currentFeature) {
     stroke = new ol.style.Stroke({
       color: '#000',
       width: 5
@@ -27,16 +27,10 @@ function pointStyleFunction(f) {
     });
     radius = 15;
   }
-  var count = 0;
-  for(k in schools[p.key]['招生']) {
-    if(parseInt(schools[p.key]['招生'][k]['可招生名額']) > parseInt(schools[p.key]['招生'][k]['登記名額'])) {
-      count += parseInt(schools[p.key]['招生'][k]['可招生名額']) - parseInt(schools[p.key]['招生'][k]['登記名額']);
-    }
-  }
-  
-  if(count > 5) {
+
+  if (p.count > 5) {
     color = '#48c774';
-  } else if(count > 0) {
+  } else if (p.count > 0) {
     color = '#ffdd57';
   } else {
     color = '#f00';
@@ -66,21 +60,21 @@ var vectorPoints = new ol.layer.Vector({
 });
 
 var baseLayer = new ol.layer.Tile({
-    source: new ol.source.WMTS({
-        matrixSet: 'EPSG:3857',
-        format: 'image/png',
-        url: 'https://wmts.nlsc.gov.tw/wmts',
-        layer: 'EMAP',
-        tileGrid: new ol.tilegrid.WMTS({
-            origin: ol.extent.getTopLeft(projectionExtent),
-            resolutions: resolutions,
-            matrixIds: matrixIds
-        }),
-        style: 'default',
-        wrapX: true,
-        attributions: '<a href="http://maps.nlsc.gov.tw/" target="_blank">國土測繪圖資服務雲</a>'
+  source: new ol.source.WMTS({
+    matrixSet: 'EPSG:3857',
+    format: 'image/png',
+    url: 'https://wmts.nlsc.gov.tw/wmts',
+    layer: 'EMAP',
+    tileGrid: new ol.tilegrid.WMTS({
+      origin: ol.extent.getTopLeft(projectionExtent),
+      resolutions: resolutions,
+      matrixIds: matrixIds
     }),
-    opacity: 0.8
+    style: 'default',
+    wrapX: true,
+    attributions: '<a href="http://maps.nlsc.gov.tw/" target="_blank">國土測繪圖資服務雲</a>'
+  }),
+  opacity: 0.8
 });
 
 var map = new ol.Map({
@@ -94,15 +88,15 @@ var pointClicked = false;
 var previousFeature = false;
 var currentFeature = false;
 
-map.on('singleclick', function(evt) {
+map.on('singleclick', function (evt) {
   content.innerHTML = '';
   pointClicked = false;
   map.forEachFeatureAtPixel(evt.pixel, function (feature, layer) {
-    if(false === pointClicked) {
+    if (false === pointClicked) {
       var p = feature.getProperties();
       currentFeature = feature;
       currentFeature.setStyle(pointStyleFunction(currentFeature));
-      if(false !== previousFeature) {
+      if (false !== previousFeature) {
         previousFeature.setStyle(pointStyleFunction(previousFeature));
       }
       previousFeature = currentFeature;
@@ -114,7 +108,7 @@ map.on('singleclick', function(evt) {
       message += '<tr><th scope="row" style="width: 80px;">名稱</th><td>' + schools[p.properties.key]['幼兒園名稱'] + '</td></tr>';
       message += '<tr><th scope="row">電話</th><td>' + schools[p.properties.key]['幼兒園電話'] + '</td></tr>';
       message += '<tr><th scope="row">住址</th><td>' + schools[p.properties.key]['幼兒園住址'] + '</td></tr>';
-      for(k in schools[p.properties.key]['招生']) {
+      for (k in schools[p.properties.key]['招生']) {
         message += '<tr><th scope="row">' + k + '</th><td>'
         message += '<a href="' + schools[p.properties.key]['招生'][k]['招生簡章網址'] + '" target="_blank">招生簡章</a><br />';
         message += '名額：' + schools[p.properties.key]['招生'][k]['可招生名額'] + '<br />';
@@ -138,14 +132,21 @@ map.on('singleclick', function(evt) {
 });
 
 var schools = {};
-$.getJSON('https://kiang.github.io/kid.tn.edu.tw/result.json', {}, function(c) {
+$.getJSON('https://kiang.github.io/kid.tn.edu.tw/result.json', {}, function (c) {
   schools = c;
   var features = [];
-  for(k in schools) {
+  for (k in schools) {
+    var count = 0;
+    for (j in schools[k]['招生']) {
+      schools[k]['招生'][j]['可招生名額'] = parseInt(schools[k]['招生'][j]['可招生名額']);
+      schools[k]['招生'][j]['登記名額'] = parseInt(schools[k]['招生'][j]['登記名額']);
+      count += schools[k]['招生'][j]['可招生名額'] - schools[k]['招生'][j]['登記名額'];
+    }
     var f = new ol.Feature({
       geometry: new ol.geom.Point(ol.proj.fromLonLat([schools[k].longitude, schools[k].latitude])),
       properties: {
-        key: k
+        key: k,
+        count: count
       }
     });
     features.push(f);
@@ -160,7 +161,7 @@ var geolocation = new ol.Geolocation({
 
 geolocation.setTracking(true);
 
-geolocation.on('error', function(error) {
+geolocation.on('error', function (error) {
   console.log(error.message);
 });
 
@@ -180,10 +181,10 @@ positionFeature.setStyle(new ol.style.Style({
 }));
 
 var firstPosDone = false;
-geolocation.on('change:position', function() {
+geolocation.on('change:position', function () {
   var coordinates = geolocation.getPosition();
   positionFeature.setGeometry(coordinates ? new ol.geom.Point(coordinates) : null);
-  if(false === firstPosDone) {
+  if (false === firstPosDone) {
     appView.setCenter(coordinates);
     firstPosDone = true;
   }
@@ -198,7 +199,7 @@ new ol.layer.Vector({
 
 $('#btn-geolocation').click(function () {
   var coordinates = geolocation.getPosition();
-  if(coordinates) {
+  if (coordinates) {
     appView.setCenter(coordinates);
   } else {
     alert('目前使用的設備無法提供地理資訊');
