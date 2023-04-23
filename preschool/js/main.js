@@ -12,8 +12,18 @@ for (var z = 0; z < 20; ++z) {
   matrixIds[z] = z;
 }
 
+var filter = '';
 function pointStyleFunction(f) {
   var p = f.getProperties().properties, color, stroke, radius;
+  if(filter == 2) {
+    if(!schools[p.key]['招生']['2歲']) {
+      return null;
+    }
+  } else if(filter == 3) {
+    if(!schools[p.key]['招生']['3歲以上']) {
+      return null;
+    }
+  }
   if (f === currentFeature) {
     stroke = new ol.style.Stroke({
       color: '#000',
@@ -135,12 +145,21 @@ var schools = {};
 $.getJSON('https://kiang.github.io/kid.tn.edu.tw/result.json', {}, function (c) {
   schools = c;
   var features = [];
+  var stat = {};
   for (k in schools) {
     var count = 0;
     for (j in schools[k]['招生']) {
       schools[k]['招生'][j]['可招生名額'] = parseInt(schools[k]['招生'][j]['可招生名額']);
       schools[k]['招生'][j]['登記名額'] = parseInt(schools[k]['招生'][j]['登記名額']);
       count += schools[k]['招生'][j]['可招生名額'] - schools[k]['招生'][j]['登記名額'];
+      if(!stat[j]) {
+        stat[j] = {
+          total: 0,
+          available: 0
+        };
+      }
+      stat[j].total += schools[k]['招生'][j]['可招生名額'];
+      stat[j].available += count;
     }
     var f = new ol.Feature({
       geometry: new ol.geom.Point(ol.proj.fromLonLat([schools[k].longitude, schools[k].latitude])),
@@ -152,6 +171,12 @@ $.getJSON('https://kiang.github.io/kid.tn.edu.tw/result.json', {}, function (c) 
     features.push(f);
   }
   vectorPoints.getSource().addFeatures(features);
+  var message = '報名概況<table class="table table-boarded"><tr><th>類型</th><th>剩餘名額</th><th>可招生名額</th></tr>';
+  for(k in stat) {
+    message += '<tr><td>' + k + '</td><td>' + stat[k].available + '</td><td>' + stat[k].total + '</td></tr>';
+  }
+  message += '</table>';
+  $('#statContent').html(message);
 })
 
 
@@ -205,4 +230,19 @@ $('#btn-geolocation').click(function () {
     alert('目前使用的設備無法提供地理資訊');
   }
   return false;
+});
+
+$('#btn-age2').click(function () {
+  filter = 2;
+  vectorPoints.getSource().refresh();
+});
+
+$('#btn-age3').click(function () {
+  filter = 3;
+  vectorPoints.getSource().refresh();
+});
+
+$('#btn-age-all').click(function () {
+  filter = '';
+  vectorPoints.getSource().refresh();
 });
